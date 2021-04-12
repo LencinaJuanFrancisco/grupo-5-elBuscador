@@ -23,11 +23,11 @@ hobbie: "la herreria",
 nivelDeConocimientoWeb: 2
 	},
 	{
-nombre: " Lencina Juan Francisco",
-edad: "37";
-job: "despachante de aeronave",
-hobbie: "la herreria",
-nivelDeConocimientoWeb: 2
+nombre: "Federico Pergola",
+edad: "22";
+job: "Empleado de Farmacia",
+hobbie: "El futbol",
+nivelDeConocimientoWeb: 0
 	},
 	{
 nombre: " Lencina Juan Francisco",
