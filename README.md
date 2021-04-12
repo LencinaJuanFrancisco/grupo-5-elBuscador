@@ -102,11 +102,17 @@ Color: Negro
 ### link y wireframe
 [Página de referencia para el HOME y su wireframe](http://localhost/ "link title")
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
 [Página de referencia para el Detalle del producto y su wireframe](https://littleakiabara.com/mantas/5866-109784.html#/192-talla-_un "LITTLE AKIABARA")
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/1-1-detalle-del-producto-vista-web.png)
+![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/1-2-detalle-del-producto-vista-movil.png)
+
+
 [Página de referencia para el LOGIN y su wireframe](http://localhost/ "link title")
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
 [Página de referencia para el REGISTRO y su wireframe](http://localhost/ "link title")
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
 [Página de referencia para el CARRITO DE COMPRA y su wireframe](https://www.dexter.com.ar/carrito "DEXTER")
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
