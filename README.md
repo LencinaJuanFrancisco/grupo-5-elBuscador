@@ -30,11 +30,11 @@ hobbie: "El futbol",
 nivelDeConocimientoWeb: 0
 	},
 	{
-nombre: " Lencina Juan Francisco",
-edad: "37";
-job: "despachante de aeronave",
-hobbie: "la herreria",
-nivelDeConocimientoWeb: 2
+nombre: "Pablo Ignacio Celi",
+edad: "32";
+job: "Coordinador diplomaturas deporte",
+hobbie: "Yoga",
+nivelDeConocimientoWeb: 0
 	},
 	{
 nombre: " Lencina Juan Francisco",
@@ -100,8 +100,12 @@ Line- Higth: 12 px
 Color: Negro
 ```
 ### link y wireframe
-[Página de referencia para el HOME y su wireframe](http://localhost/ "link title")
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+[Página de referencia para el HOME y su wireframe](https://www.wanama.com/ "Wanama") 
+[Página de referencia para el HOME y su wireframe](https://www.cheeky.com.ar// "Cheeky") 
+![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/3-2homepage-pc.png)
+![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/3-1homepage-mobile.png
+)
+
 
 [Página de referencia para el Detalle del producto y su wireframe](https://littleakiabara.com/mantas/5866-109784.html#/192-talla-_un "LITTLE AKIABARA")
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/1-1-detalle-del-producto-vista-web.png)
