@@ -111,7 +111,7 @@ Color: Negro
 [Página de referencia para el LOGIN y su wireframe](http://localhost/ "link title")
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
-[Página de referencia para el REGISTRO y su wireframe](https://secure.dafiti.com.ar/customer/account/login/)
+[Página de referencia para el REGISTRO y su wireframe](https://secure.dafiti.com.ar/customer/account/login/ "DAFITI")
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/registro.png)
 
 [Página de referencia para el CARRITO DE COMPRA y su wireframe](https://www.dexter.com.ar/carrito "DEXTER")
