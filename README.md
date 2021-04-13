@@ -100,23 +100,39 @@ Line- Higth: 12 px
 Color: Negro
 ```
 ### link y wireframe
+#### HOME
+
+------------
 [Página de referencia para el HOME y su wireframe](https://www.wanama.com/ "Wanama") 
 [Página de referencia para el HOME y su wireframe](https://www.cheeky.com.ar// "Cheeky") 
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/3-2homepage-pc.png)
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/3-1homepage-mobile.png
 )
 
+#### DETALLES DEL PRODUCTO
 
+------------
 [Página de referencia para el Detalle del producto y su wireframe](https://littleakiabara.com/mantas/5866-109784.html#/192-talla-_un "LITTLE AKIABARA")
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/1-1-detalle-del-producto-vista-web.png)
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/1-2-detalle-del-producto-vista-movil.png)
 
+#### LOGIN
 
+------------
 [Página de referencia para el LOGIN y su wireframe](http://localhost/ "link title")
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+
+#### REGISTRO
+
+------------
 
 [Página de referencia para el REGISTRO y su wireframe](https://secure.dafiti.com.ar/customer/account/login/ "DAFITI")
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/registro.png)
 
+#### CARRITO DE COMPRA
+
+------------
 [Página de referencia para el CARRITO DE COMPRA y su wireframe](https://www.dexter.com.ar/carrito "DEXTER")
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/2-1-Carrito-de-compra.png)
+
+------------
