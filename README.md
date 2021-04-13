@@ -106,6 +106,9 @@ Color: Negro
 [Página de referencia para el HOME y su wireframe](https://www.wanama.com/ "Wanama") 
 [Página de referencia para el HOME y su wireframe](https://www.cheeky.com.ar// "Cheeky") 
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/3-2homepage-pc.png)
+
+mobil
+------------
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/3-1homepage-mobile.png
 )
 
@@ -114,6 +117,9 @@ Color: Negro
 ------------
 [Página de referencia para el Detalle del producto y su wireframe](https://littleakiabara.com/mantas/5866-109784.html#/192-talla-_un "LITTLE AKIABARA")
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/1-1-detalle-del-producto-vista-web.png)
+
+mobil
+------------
 ![](https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/blob/master/public/img/wireframe/1-2-detalle-del-producto-vista-movil.png)
 
 #### LOGIN
