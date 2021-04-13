@@ -37,11 +37,11 @@ hobbie: "Yoga",
 nivelDeConocimientoWeb: 0
 	},
 	{
-nombre: " Lencina Juan Francisco",
-edad: "37";
-job: "despachante de aeronave",
-hobbie: "la herreria",
-nivelDeConocimientoWeb: 2
+nombre: " Diego Alejandro Abella",
+edad: "36";
+job: "Electricista",
+hobbie: "Contrabajo",
+nivelDeConocimientoWeb: 0
 }]
 let crearWebElBuscador = function()=>{
 	let paginaWeb = ¨¨
