@@ -58,11 +58,7 @@ crearWebElBuscado(grupo5);
 ### colores a utilizar
 
 ------------
-<font color='#f9989f'>#f9989f rosa pastel</font>
-<font color='red'>test blue color font</font>
-<font color='red'>test blue color font</font>
-<font color='red'>test blue color font</font>
-<font color='red'>test blue color font</font>
+`#f9989f rosa pastel`
 `#f9989f rosa pastel `
 `#fccb8f naranja pastel`
 `#faf096 amarillo pastel`
