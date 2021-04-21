@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*configuracion del menu*/
+.logo {
+    text-align: center;
+}
+
+.burger-menu {
+    background-color: #89609E;
+    color: white;
+    display: block;
+    width: 30px;
+    padding: 5px;
+    border: radius 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.nav {
+    text-align: center;
+    display: none;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    width: 75px;
+    text-align: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #282828;
+    font-Weight: 500;
+    font-Size: 16px;
+    line-Height: 22px;
+}
+
+/*detalle del producto*/
+main{
+    text-align: center;
+}
+h2 {
+   
+    font-Weight: 500;
+    font-Size: 24px;
+    
+    color: #282828;
+    text-align: center;
+
+}
+.img-secundarias{
+    display: none;
+}
+.img-principal{
+    width: 80%;
+    
+    margin: auto;
+    border:1px solid black;
+}
+.img-principal img{
+    width: 100%;
+    margin: auto;
+}
+
+p {
+    font-Weight: 300;
+    font-Size: 15px;
+    line-Height: 26px;
+    color: #282828;
+}
+.btn{
+    margin:20px 10px;
+    border-top: #282828 1px solid;
+    border-bottom: #282828 1px solid;
+}
+.btn button{
+    
+    color: #89609E;
+    margin: 15px 0;
+    font-Weight: 500;
+    font-Size: 12px;
+    line-Height: 23px;
+    width: 115px;
+    height: 41px;
+    border: 1px solid rgb(207, 32, 32);
+
+}
+/*footer*/
+footer{
+    height: 150px;
+    background-color: #282828;
+}
