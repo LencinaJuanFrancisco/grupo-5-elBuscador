@@ -49,8 +49,8 @@ main{
 h2 {
    
     font-Weight: 500;
-    font-Size: 35px;
-    line-Height: 46px;
+    font-Size: 24px;
+    
     color: #282828;
     text-align: center;
 
@@ -68,9 +68,6 @@ h2 {
     width: 100%;
     margin: auto;
 }
-.talle li,.color li{
-    display: inline-block;
-}
 
 p {
     font-Weight: 300;
@@ -83,8 +80,8 @@ p {
     border-top: #282828 1px solid;
     border-bottom: #282828 1px solid;
 }
-.btn a{
-    text-decoration: none;
+.btn button{
+    
     color: #89609E;
     margin: 15px 0;
     font-Weight: 500;
