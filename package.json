@@ -1,0 +1,23 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "El buscador es un proyecto llevado a la web de un emprendimiento de un integrante del grupo, el cual cuenta con un local físico de venta de ropa dirigido a la indumentaria femenina, niñas, niños y bebe.\r Elegimos esta idea de negocio para hacerlo con el objetivo de dar uso a lo aprendido y así poder llevarlo de lo académico a la práctica real.\r - La audiencia a la que está dirigida como objetivo es al público femenino mayor a 22 años.\r - Los productos que vamos a ofrecer en la tienda será todo lo relacionado con indumentaria, accesorios para mujeres, niñas, niños y bebe.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador/issues"
+  },
+  "homepage": "https://github.com/LencinaJuanFrancisco/grupo-5-elBuscador#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
