@@ -39,6 +39,7 @@
                     <div class='img-principal'>
                         <img src="../img/img/jeans-1.jpg" alt="imigen principal">
                     </div>
+                    <!-- estas imagenes se ven recien en modo table en adelante  -->
                     <div class='img-secundarias'>
                         <img src="../img/img/jeans-1.jpg" alt="img secundaria" class="img-sec-1">
                         <img src="../img/img/jeans-1.jpg" alt="img secundaria" class="img-sec-2">
@@ -46,32 +47,54 @@
                         <img src="../img/img/jeans-1.jpg" alt="img secundaria" class="img-sec-4">
                     </div>
             </figure>
-            <div class='footer-producto'>
+            <div class='footer-producto-principal'>
                 <p>Nombre Del Producto</p>
                 <p>$ 3000</p>
-                <p>Talles</p>
-                <form action="" method="POST">
-                   
+                <form action="" method="POST" class="form-color">
+                    <label for="">Color</label>
+                   <div>
+                       <label for="color">rosa</label>
+                       <input type="radio" name="color">
+                       <label for="color">celeste</label>
+                       <input type="radio" name="color">
+                       <label for="color">lila</label>
+                       <input type="radio" name="color">
+                       <label for="color">negro</label>
+                       <input type="radio" name="color">
+                       <label for="color">azul</label>
+                       <input type="radio" name="color">
+                </div>
                 </form>
-                <p>Color</p>
-               <form action="">
-
+                <form action="" class="form-talle">
+                   <label for="">Talle</label>
+                    <div>
+                        <label for="talle">1</label>
+                        <input type="radio" name="talle">
+                        <label for="talle">2</label>
+                        <input type="radio" name="talle">
+                        <label for="talle">3</label>
+                        <input type="radio" name="talle">
+                        <label for="talle">4</label>
+                        <input type="radio" name="talle">
+                        <label for="talle">5</label>
+                        <input type="radio" name="talle">
+                    </div>
                </form>
             </div>
         </article>
-        <article class='btn'>
+        <div class='btn'>
             <button type="submit">Añadir al carrito</button>
             <button type="submit">Comparar ahora</button>
             
-        </article>
+        </div>
         <article class='descripcion-producto'>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam iusto nemo? Tempore, praesentium quasi culpa nihil, aliquid quidem nobis ipsum saepe ab consequuntur laborum ex error commodi repudiandae aut a ut. Dicta nulla, in iste natus quia et aliquid modi dolore illum soluta voluptate at quibusdam, amet commodi blanditiis.
             </p>
         </article>
         </section>
         
-        <h2>Productos Relacionados</h2>
         <section class='productos-relacionados'>
+            <h2>Productos Relacionados</h2>
             <article class='articulo-relacionado'>
                 <div class='img-principal'>
                     <img src="../img/img/jeans-2.jpg" alt="imigen principal">
