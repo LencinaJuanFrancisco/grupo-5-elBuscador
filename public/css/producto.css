@@ -1,256 +1,251 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
 }
 
 /*******configuracion del menu*************/
 .logo {
-    text-align: center;
+  text-align: center;
 }
 
 .burger-menu {
-    background-color: #89609E;
-    color: white;
-    display: block;
-    width: 30px;
-    padding: 5px;
-    border: radius 8px;
-    text-align: center;
-    font-size: 18px;
-    margin: 20px auto;
+  background-color: #89609e;
+  color: white;
+  display: block;
+  width: 30px;
+  padding: 5px;
+  border: radius 8px;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px auto;
 }
 
 .nav {
-    text-align: center;
-    display: none;
+  text-align: center;
+  display: none;
 }
 
 .nav ul li {
-    list-style: none;
-    display: inline-block;
-    width: 75px;
-    text-align: center;
+  list-style: none;
+  display: inline-block;
+  width: 75px;
+  text-align: center;
 }
 
 .nav ul li a {
-    text-decoration: none;
-    color: #282828;
-    font-Weight: 500;
-    font-Size: 16px;
-    line-Height: 22px;
+  text-decoration: none;
+  color: #282828;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /****************detalle del producto************/
-main{
-    text-align: center;
+main {
+  text-align: center;
 }
-h2 {
-   margin: 20px 0;
-    font-Weight: 500;
-    font-Size: 24px;
-    color: #282828;
-    text-align: center;
 
+h2 {
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 24px;
+  color: #282828;
+  text-align: center;
 }
-.img-secundarias{
-    display: none;
+
+.img-secundarias {
+  display: none;
 }
-.img-principal{
-    display: block;
-    width: 303px;
-    height: auto;
-    margin: auto;
-    
+
+.img-principal {
+  display: block;
+  width: 303px;
+  height: auto;
+  margin: auto;
 }
-.img-principal img{
-    width: 100%;
-    margin: auto;
-    
+
+.img-principal img {
+  width: 100%;
+  margin: auto;
 }
-.descripcion-producto{
-    border-bottom: 1px solid #B4B3B7
+
+.descripcion-producto {
+  border-bottom: 1px solid #b4b3b7;
 }
 
 p {
-    font-Weight: 300;
-    font-Size: 15px;
-    line-Height: 26px;
-    color: #282828;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 26px;
+  color: #282828;
 }
-.btn{
-    margin:20px 10px;
-    border-top: #282828 1px solid;
-    border-bottom: #282828 1px solid;
 
+.btn {
+  margin: 20px 10px;
+  border-top: #282828 1px solid;
+  border-bottom: #282828 1px solid;
 }
-.btn button{
-    
-    color: #f9989f;
-    margin: 15px 0;
-    font-Weight: 500;
-    font-Size: 12px;
-    line-Height: 23px;
-    width: 115px;
-    height: 41px;
-    border: 1px solid #f9989f;
 
+.btn button {
+  color: #f9989f;
+  margin: 15px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 23px;
+  width: 115px;
+  height: 41px;
+  border: 1px solid #f9989f;
 }
-.btn button:hover{
-    color:#282828;
-    background-color: #f9989f;
+
+.btn button:hover {
+  color: #282828;
+  background-color: #f9989f;
 }
+
 /***************footer**********************/
-footer{
-    height: 150px;
-    background-color: #282828;
+footer {
+  height: 150px;
+  background-color: #282828;
 }
-@media(min-width:768px){
-.producto{
+
+@media (min-width: 678px) {
+  h2 {
+    display: block;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 35px;
+    color: #282828;
+    text-align: center;
+  }
+
+  .producto {
     width: 100vw;
-    height: auto;
+    max-width: 1200px;
+    height: 75vh;
     display: flex;
     position: relative;
-}
-.producto figure{
-    position:absolute;
-    width: 45%;
-    top: 0;
-    left: 20px;
-}
-    .img-principal{
-        display: block;
-        height: auto;
-        margin: auto;
-        text-align: start;
-    }
-    .img-principal img{
-        width: 100%;
-        margin: auto;
-        
-    }
-    .footer-producto-principal{
-        position: absolute;
-        display: block;
-        width: 45%;
-        top:0px;
-        right: 20px;
-        border: salmon 1px solid;
-    }
-    .form-color-talle{
-        position: absolute;
-        display: inline-block;
-        width: 100%;
-        top: 54px;
-        right: 0;
-        border: salmon 1px solid;
+  }
 
-    }
-    .btn{
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 50px;
-        top: 146px;;
-        right: -73px;
-        border: salmon 1px solid;
-    }
-    .descripcion-producto{
-        position: relative;
-        width: 100%;
-        top:200px;
-        right: 20px;
-        border-bottom: 1px solid #282828;
-    }
-    h2 {
-        margin: 20px 0;
-         font-Weight: 500;
-         font-Size: 35px;
-         color: #282828;
-         text-align: center;
-     
-     }
-     .img-secundarias{
-         display: block;
-         position: relative;
-         width:50vw;
-         justify-content: space-center;
-         align-items: center;
-         margin: auto;
-         
-     }
-     .img-secundarias img{
-         height: auto;
-         width: auto;
-         max-width: 110px;
-         max-height: 100px;
-         margin: 4px;
-     }
-/************************************************/
-/********* productos relacionados **************/
-.productos-relacionados{
-    width: 95vw;
+  .producto figure {
+    position: absolute;
+    width: 45%;
+    max-width: 550px;
+    top: 0;
+    left: 10px;
+  }
+
+  .img-principal {
+    display: block;
+    height: auto;
+    margin: auto;
+    text-align: center;
+  }
+
+  .img-principal img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .footer-producto-principal {
+    position: absolute;
+    max-width: 550px;
+    display: block;
+    width: 50vw;
+    top: 0px;
+    right: 20px;
+    
+  }
+
+  .img-secundarias {
+    display: contents;
+    position: relative;
+    width: 50vw;
+    max-width: 550px;
+    margin: auto;
+  }
+
+  .img-secundarias img {
+    height: auto;
+    width: auto;
+    max-width: 110px;
+    max-height: 100px;
+    margin: 4px;
+  }
+
+  /************************************************/
+  /********* productos relacionados **************/
+  .productos-relacionados {
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-.articulo-relacionado{
-    width: 50%;
-}
-}
-@media(min-width:1200px){
-    .producto{
-        display: inline-block;
-    }
-    .img-principal{
-        display: block;
-        max-width: 40%;
-        height: auto;
-        margin: auto;
-        
-        text-align: start;
-    }
-    .img-principal img{
-        width: 100%;
-        margin: auto;
-        
-    }
-    .descripcion-producto{
-        border-bottom: 1px solid #282828;
-    }
-    h2 {
-        margin: 20px 0;
-         font-Weight: 500;
-         font-Size: 35px;
-         color: #282828;
-         text-align: center;
-     
-     }
-     .img-secundarias{
-         display: block;
-         position: relative;
-         width:50vw;
-         
-         justify-content: space-center;
-         align-items: center;
-         margin: auto;
-         
-     }
-     .img-secundarias img{
-         height: auto;
-         width: auto;
-         max-width: 120px;
-         max-height: 100px;
-         margin: 7px;
-     }
-     
-/************************************************/
-/********* productos relacionados **************/
+  }
 
-    .articulo-relacionado{
-        width: 25%;
-    }
+  .articulo-relacionado {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+    
+  .producto {
+    display: inline-block;
+    max-width: 1200px;
+  }
+
+  .img-principal {
+    display: block;
+    max-width: 550px;
+    height: auto;
+    margin: auto;
+
+    text-align: start;
+  }
+
+  .img-principal img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .descripcion-producto {
+    border-bottom: 1px solid #282828;
+  }
+
+  h2 {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 35px;
+    color: #282828;
+    text-align: center;
+  }
+
+  .img-secundarias {
+    display: block;
+    position: relative;
+    width: 50vw;
+    max-width: 550px;
+
+    justify-content: space-center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .img-secundarias img {
+    height: auto;
+    width: auto;
+    max-width: 120px;
+    max-height: 100px;
+    margin: 7px;
+  }
+
+  /************************************************/
+  /********* productos relacionados **************/
+
+  .articulo-relacionado {
+    width: 25%;
+  }
 }
