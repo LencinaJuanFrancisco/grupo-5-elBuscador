@@ -8,10 +8,12 @@
 
 /*******configuracion del menu*************/
 header{
-  position: relative; 
+  position: fixed; 
+  top: 0;
   max-width: 1200px;
+  width: 100vw;
   height: 80px;
-  margin: 20px auto;
+  
   padding: 10px;
   background-color: #c5f8c8;
   border-radius: 4px;
@@ -45,12 +47,12 @@ header{
   
 }
 .menu-cel.active::before{
-  content: "\f0c9";
+  content: "\f00d";
   font-family: fontAwesome;
   line-height: 40px;
 }
 .menu-cel::before{
-  content: "\f00d";
+  content: "\f0c9";
   font-family: fontAwesome;
   line-height: 40px;
   
@@ -74,7 +76,6 @@ nav{
 }
 nav.active{
   display: block;
-  
   width: 100%;
 
 }
@@ -103,6 +104,7 @@ nav ul li a:hover{
 
 /****************detalle del producto************/
 main {
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -193,8 +195,52 @@ p {
 
 /***************footer**********************/
 footer {
+  width: 100vw;
   height: 150px;
+  
   background-color: #282828;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .contacto{
+  width: 50%;
+  
+}
+footer .contacto p{
+  color: #b4b3b7;
+  padding: 5px;
+}
+footer .redes{
+  text-align: center;
+  width: 50%;
+  
+}
+footer .redes p{
+  color: #b4b3b7;
+}
+footer .redes a{
+  text-decoration: none;
+  color: #b4b3b7;
+  font-size: 24px;
+  margin: 5px;
+  
+  
+}
+footer .face:hover{
+  color:#f9989f;
+  font-size: 26px;
+  
+}
+footer .insta:hover{
+  color:#c5f8c8;
+  font-size: 26px;
+  
+}
+footer .map:hover{
+  color:#faf096;
+  font-size: 26px;
+  
 }
 
 @media (min-width: 678px) {
@@ -251,11 +297,13 @@ nav{
     max-width: 550px;
     display: block;
     width: 50vw;
-    top: 0px;
+    top: 30px;
     right: 20px;
     
   }
-
+  .footer-producto-principa form{
+    margin: 10px 0 0 0;
+  }
   .img-secundarias {
     display: contents;
     position: relative;
@@ -277,13 +325,16 @@ nav{
   .productos-relacionados {
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
   }
 
   .articulo-relacionado {
-    width: 50%;
+    width: 45%;
+    margin:0px 3px;
   }
 }
 
@@ -331,7 +382,6 @@ nav{
     position: relative;
     width: 50vw;
     max-width: 550px;
-
     justify-content: space-center;
     align-items: center;
     margin: auto;
@@ -347,8 +397,22 @@ nav{
 
   /************************************************/
   /********* productos relacionados **************/
+  .productos-relacionados {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+   
+  }
 
   .articulo-relacionado {
-    width: 25%;
+    width: 20%;
+    margin:0px 3px;
   }
+  .img-relacionados{
+    width: 100%;
+  }
+
 }

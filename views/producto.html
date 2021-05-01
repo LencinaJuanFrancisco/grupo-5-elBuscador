@@ -48,16 +48,16 @@
                 <form action="" method="POST" class="form-color">
                     <label for="">Color</label>
                    <div>
-                       <label for="color">rosa</label>
-                       <input type="radio" name="color">
-                       <label for="color">celeste</label>
-                       <input type="radio" name="color">
-                       <label for="color">lila</label>
-                       <input type="radio" name="color">
-                       <label for="color">negro</label>
-                       <input type="radio" name="color">
-                       <label for="color">azul</label>
-                       <input type="radio" name="color">
+                       <label for="color"></label>
+                       <input type="color" name="color" value="#f9989f">
+                       <label for="color"></label>
+                       <input type="color" name="color" value="#fccb8f">
+                       <label for="color"></label>
+                       <input type="color" name="color" value="#faf096">
+                       <label for="color"></label>
+                       <input type="color" name="color" value="#c5f8c8">
+                       <label for="color"></label>
+                       <input type="color" name="color" value="#aeaeae">
                 </div>
                 </form>
                 <form action="" class="form-talle">
@@ -96,7 +96,8 @@
         <h2>Productos Relacionados</h2>
         <section class='productos-relacionados'>
             <article class='articulo-relacionado'>
-                <div class='img-principal'>
+                <div class='img-principal img-relacionados'>
+                    <!-- defino otra clase de img-relacionado para no tener conflicto con la img-principal del detalle del producto -->
                     <img src="../img/img/jeans-2.jpg" alt="imigen principal">
                 </div>
                 <div class='footer-producto'>
@@ -105,7 +106,7 @@
                 </div>
             </article>
             <article class='articulo-relacionado'>
-                <div class='img-principal'>
+                <div class='img-principal img-relacionados'>
                     <img src="../img/img/jeans-2.jpg" alt="imigen principal">
                 </div>
                 <div class='footer-producto'>
@@ -114,7 +115,7 @@
                 </div>
             </article>
             <article class='articulo-relacionado'>
-                <div class='img-principal'>
+                <div class='img-principal img-relacionados'>
                     <img src="../img/img/jeans-2.jpg" alt="imigen principal">
                 </div>
                 <div class='footer-producto'>
@@ -123,7 +124,7 @@
                 </div>
             </article>
             <article class='articulo-relacionado'>
-                <div class='img-principal'>
+                <div class='img-principal img-relacionados'>
                     <img src="../img/img/jeans-2.jpg" alt="imigen principal">
                 </div>
                 <div class='footer-producto'>
@@ -134,7 +135,15 @@
         </section>
     </main>
     <footer>
-
+        <div class="contacto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quas dolore dignissimos </p>
+        </div>
+        <div class="redes">
+            <p>Puedes seguirnos</p>
+            <a class="face" href=""><i class="fab fa-facebook"></i></a>
+            <a class="insta" href=""><i class="fab fa-instagram"></i></a>
+            <a class="map" href=""><i class="fas fa-map-marked-alt"></i></a>
+        </div>
     </footer>
     <!-- instalcion de jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
