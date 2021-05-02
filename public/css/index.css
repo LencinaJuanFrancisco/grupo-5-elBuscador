@@ -10,17 +10,15 @@
 header{
   position: fixed; 
   top: 0;
-  max-width: 1200px;
   width: 100vw;
   height: 80px;
-  
-  padding: 10px;
+    padding: 10px;
   background-color: #c5f8c8;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 999;
   opacity: 0.9;
 }
 .logo{
@@ -297,8 +295,27 @@ footer {
 }
 footer .contacto{
   width: 50%;
-  
+  padding-left: 40px;  
 }
+
+  footer .contacto a{
+    display: block;
+    text-decoration: none;
+    color: #b4b3b7;
+    width: 20px;
+  }
+
+  footer .contacto a:hover{
+    display: block;
+    text-decoration: none;
+    color: #f9989f;
+    width: 20px;
+  }
+
+  footer .contacto h3{
+    color: #b4b3b7;
+  }
+
 footer .contacto p{
   color: #b4b3b7;
   padding: 5px;
@@ -524,8 +541,7 @@ nav{
 @media (min-width: 1200px) {
  /************* menu ****************************/
  header{
-  margin: 20px auto;
-  max-width: 1200px;
+  margin: 0 auto;
 
 }
  /******************************************/   
@@ -596,6 +612,14 @@ nav{
   }
   .img-relacionados{
     width: 100%;
+  }
+
+  #whatsapp {
+    height: 60px;
+    width: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
   }
 
 }
