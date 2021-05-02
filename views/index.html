@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/99035ba4e5.js" crossorigin="anonymous"></script>
+    <title>Producto</title>
 </head>
 <body>
-    <h1>home</h1>
+    <header>
+        <a href="" class="logo">El Buscador</a>
+        <div class="menu-cel">
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" class="active">Home</a></li>
+                <li><a href="/producto">Producto</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="registro">Registro</a></li>
+                <li><a href="carrito">Carrito</a></li>
+            </ul>
+        </nav>
+
+
+       
+    </header>
+    <main>
+        <section class="section-home-first">
+            
+            <div class="img-section-home-first">
+                <!--<div class="contenedor-home-promocion">
+                    <h4>Promoción otoño: 25% de descuento</h4>
+                </div>
+            -->
+                <img  src="../img/img/armario.jpg" alt="Armario">
+
+                    <div class='btn' id="boton-stock">
+                        <button>Ver stock</button>   
+                     </div>            
+ 
+            </div>
+            </div>
+
+
+
+        </section>
+        <section class="section-home-second">
+            <div class="container-home-second">
+                <div class="description-home">
+                    <h2>Mujeres</h2>
+                </div>
+                <div class="container-img-homen-second">
+                    <img  src="../img/img/mujeres.jpg" alt="Mujeres">
+                </div>
+                
+            </div>
+            <div class="container-home-second">
+                <div class="container-img-homen-second">
+                    <img  src="../img/img/niñas.jpg" alt="Niñas">
+                </div>
+                <div class="description-home" id="titulo-niñas-cambio-orden">
+                    <h2>Niñas</h2>
+                </div>
+                
+            </div>
+            <div class="container-home-second">
+                <div class="description-home">
+                    <h2>Niños</h2>
+                </div>
+                <div class="container-img-homen-second">
+                    <img  src="../img/img/niños.jpg" alt="Niños">
+                </div>
+            </div>
+        </section>
+    </main>
+    <a href="https://api.whatsapp.com/send?phone=5491165399375">
+        <img id="whatsapp" src="img/img/whatsapp.png" alt="whatsapp">
+    </a>    
+    <footer>
+           
+    </footer>
+
+        <!-- instalcion de jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menu-cel").click(function(){
+                $(".menu-cel").toggleClass("active")
+                $("nav").toggleClass("active")
+            })
+        });
+        </script>
+
 </body>
 </html>
