@@ -310,6 +310,7 @@ p {
   position: fixed;
   bottom: 20px;
   right: 15px;
+  z-index: 999;
 }
 
 
@@ -702,6 +703,7 @@ nav{
     position: fixed;
     bottom: 20px;
     right: 15px;
+    z-index: 999;
   }
 
 }
