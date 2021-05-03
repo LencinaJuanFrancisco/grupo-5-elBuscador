@@ -140,6 +140,7 @@ nav ul li a:hover{
       
     .section-home-second {
       height: 75vh;
+      margin-bottom: 10px;
 
     }
 
@@ -157,9 +158,9 @@ nav ul li a:hover{
 
     .container-home-second{
         height: 33%;
-        margin: 0 20px;
         display:flex;
         justify-content: space-around;
+        margin-bottom: 5px;
     }
 
     .container-home-fotos-pc {
@@ -170,15 +171,39 @@ nav ul li a:hover{
       height: 100%;
       width: 48%;
       display:flex;
+      border: solid #f9989f 3px;
   }
 
-  .description-home{
-    height: 100%;
-    width: 48%;
-    background-color: #c5f8c8;
-    display:flex;
-    align-self: center;
 
+
+  .corte-home{
+    width: 48%;
+    height: 100%;
+    background-image:
+    linear-gradient(0deg, rgba(197,248,200,1) 0%, rgba(253,187,45,0.3561799719887955) 100%), url("/img/img/fondo-flores.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; 
+    display:flex;
+    border: solid #f9989f 3px;
+  
+  }
+  .corte-home div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .corte-home div h2{
+    color: #f9989f;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px black;
+
+    
+  
   }
 
   
@@ -373,6 +398,68 @@ footer .map:hover{
   
   }
 
+  /* CODIGO BARRA CORTE --------------------------------------------*/
+  .corte div{
+  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .corte div h2{
+    color: #f9989f;
+    font-size: 54px;
+    font-weight: 700;
+    
+  
+  }
+  .corte{
+    width: 100vw;
+    height: 250px;
+    margin: 50px 0;
+    background-image:
+    linear-gradient(0deg, rgba(197,248,200,1) 0%, rgba(253,187,45,0.3561799719887955) 100%), url("/img/img/fondo-flores.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; 
+  
+  }
+
+
+  .corte-home div{
+  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .corte-home div h2{
+    color: #f9989f;
+    font-size: 54px;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px black;
+
+    
+  
+  }
+  .corte-home{
+    width: 100vw;
+    height: 150px;
+    margin: 20px 0 0 0;
+    background-image:
+    linear-gradient(0deg, rgba(197,248,200,1) 0%, rgba(253,187,45,0.3561799719887955) 100%), url("/img/img/fondo-flores.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; 
+  
+  }
+  /* HASTA ACA CODIGO BARRA CORTE --------------------------------------------*/
+
+
 
   .section-home-second {
     display:inline;
@@ -434,15 +521,6 @@ footer .map:hover{
 
 #titulo-niñas-cambio-orden {
   order: -1;
-}
-
-.description-home{
-  height: 80px;
-  width: 100%;
-  background-color: #c5f8c8;
-  display:flex;
-  align-self: center;
-  border: solid 1px;
 }
 
   /***********************/
