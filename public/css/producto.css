@@ -13,7 +13,7 @@ header{
   position: fixed; 
   top: 0;
   margin: 0 auto;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   width: 100vw;
   height: 80px;
   padding: 10px;
@@ -21,7 +21,7 @@ header{
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-betweenc;
   z-index: 9999;
 
 }
@@ -198,8 +198,7 @@ p {
   
 
 }
-/*************** carusel
-**********************/
+/*************** carusel**********************/
 .carusel a{
   text-decoration: none;
   background-color: transparent;
@@ -260,7 +259,7 @@ p {
   transform: translate(-50%,-50%);
   width: 100%;
   height: 100%;
-  background-color: rgba(92,95,236,0.6);
+  background-color:rgba(197, 248, 200,0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,7 +280,7 @@ p {
 }
 .btn-comprar:hover{
   color: #ffffff;
-  background-color: #f15fa3;
+  background-color: #f9989f;
   transition: all ease 300ms;
 }
 /* ocultamos ca lapa para cuando hacemos hover sobre la img la hacemos aparecer */
@@ -303,11 +302,41 @@ p {
 }
 .carusel{
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/*****************************************************/
+/*************** secciones ****************************/
+.secciones{
+  width: 100vw;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.seccion {
+  width: 45%;
+  height: 50%;
+}
+.seccion a{
+  display: block;
+  width: 45%;
+  height: 100px;
+  background-color: #b4b3b7;
+}
+/*****************************************************/
+/************* whatsapp *******************************/
+#whatsapp {
+  height: 40px;
+  width: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}
+
 /***************footer**********************/
 footer {
   width: 100vw;
@@ -435,32 +464,17 @@ nav{
     margin: 4px;
   }
 
-  /************************************************/
-  /********* productos relacionados **************/
-  .productos-relacionados {
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  .articulo-relacionado {
-    width: 45%;
-    margin:0px 3px;
-  }
+  
 }
 
 @media (min-width: 1200px) {
  /************* menu ****************************/
- header{
-  /* top: 0;
+ /* header{
+  top: 0;
   margin:0 auto;
-  max-width: 1200px; */
+  max-width: 1200px;
 
-}
+} */
  /******************************************/   
   .producto {
     display: inline-block;
@@ -510,25 +524,13 @@ nav{
     max-height: 100px;
     margin: 7px;
   }
-
-  /************************************************/
-  /********* productos relacionados **************/
-  .productos-relacionados {
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-   
+  #whatsapp {
+    height: 60px;
+    width: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
   }
-
-  .articulo-relacionado {
-    width: 20%;
-    margin:0px 3px;
-  }
-  .img-relacionados{
-    width: 100%;
-  }
+  
 
 }
