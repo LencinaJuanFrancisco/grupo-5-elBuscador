@@ -6,6 +6,10 @@
   
 }
 
+body {
+  background-color: #eef8ff;
+}
+
 /*******configuracion del menu*************/
 header{
   position: fixed; 
@@ -501,7 +505,7 @@ footer .map:hover{
   width: 25%;
   display:flex;
   position:relative;
-  border: solid 1px;
+  border: solid #f9989f 2px;
 }
 
 .container-home-fotos-pc div .btn{
