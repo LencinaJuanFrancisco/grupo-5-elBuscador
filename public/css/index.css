@@ -110,6 +110,8 @@ nav ul li a:hover{
     .section-home-first {
       min-height: 40vh;
       max-height: 80vh;
+      margin-top:-20px;
+      margin-bottom: 0px;
     }
 
 
@@ -117,7 +119,7 @@ nav ul li a:hover{
         object-fit: cover;
         width: 100%;
         min-height: 40vh;
-        max-height: 80vh;
+        max-height: 85vh;
       }
 
     .contenedor-home-promocion {
@@ -454,7 +456,7 @@ footer .map:hover{
   .corte-home{
     width: 100vw;
     height: 150px;
-    margin: 20px 0 0 0;
+    margin: 0;
     background-image:
     linear-gradient(0deg, rgba(197,248,200,1) 0%, rgba(253,187,45,0.3561799719887955) 100%), url("/img/img/fondo-flores.jpg");
     background-repeat: no-repeat;
@@ -465,7 +467,12 @@ footer .map:hover{
   }
   /* HASTA ACA CODIGO BARRA CORTE --------------------------------------------*/
 
-
+  .section-home-first {
+    min-height: 40vh;
+    max-height: 80vh;
+    margin-top:-20px;
+    margin-bottom: 55px;
+  }
 
   .section-home-second {
     display:inline;

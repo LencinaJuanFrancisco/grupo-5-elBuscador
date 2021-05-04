@@ -10,6 +10,10 @@ app.listen(3000,()=>{
     console.log('SERVER corriendo en http://localhost:3000/index')
 })
 
+app.get('/',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/index.html'))
+})
+
 app.get('/index',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/index.html'))
 })
