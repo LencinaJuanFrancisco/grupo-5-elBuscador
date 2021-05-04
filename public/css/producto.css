@@ -338,6 +338,11 @@ p {
 }
 
 /***************footer**********************/
+.ola{
+  color: #282828;
+
+}
+
 footer {
   width: 100vw;
   height: 150px;
@@ -349,8 +354,30 @@ footer {
 }
 footer .contacto{
   width: 50%;
-  
+  padding-left: 40px;  
 }
+
+  footer .contacto a{
+    display: block;
+    text-decoration: none;
+    color: #b4b3b7;
+    width: 20px;
+  }
+
+  footer .contacto a:hover{
+    display: block;
+    text-decoration: none;
+    color: #f9989f;
+    width: 20px;
+  }
+
+  footer .contacto h3{
+    color: #b4b3b7;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 900;
+  }
+
 footer .contacto p{
   color: #b4b3b7;
   padding: 5px;
@@ -412,7 +439,7 @@ nav{
     position: relative;
     width: 100vw;
     max-width: 1200px;
-    height: 80vh;
+    height: 60vh;
     display: flex;
   }
 
