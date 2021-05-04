@@ -1,12 +1,121 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="shortcut icon" href="../img/img/icono-web.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/99035ba4e5.js" crossorigin="anonymous"></script>
+    <title>El Buscador - Ropa y accesorios</title>
 </head>
+
 <body>
-    <h1>Registro</h1>
+    <header>
+        <a href="/index" class="logo">El Buscador</a>
+        <div class="menu-cel">
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" class="active">Home</a></li>
+                <li><a href="/producto">Producto</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="registro">Registro</a></li>
+                <li><a href="carrito">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <H2>CREA TU CUENTA GRATIS</H2>
+        </div>
+
+        <form action="">
+            <div class="Nombre">
+                <div>
+                    <label for="Nombre y apellido">Nombre y Apellido</label>
+                </div>
+                <div>
+                    <input type="text" name="Nombre y Apellido" placeholder="">
+                </div>
+            </div>
+
+            <div class="dni">
+                <div>
+                    <label for="DNI">DNI</label>
+                </div>
+                <div>
+                    <input type="number" name="DNI" placeholder="">
+                </div>
+            </div>
+            <div class="email">
+                <div>
+                    <label for="Email">Email</label>
+                </div>
+                <div>
+                    <input type="email" name="Email" placeholder="">
+                </div>
+            </div>
+            <div class="Usuario">
+                <div>
+                    <label for="Usuario">Usuario</label>
+                </div>
+                <div>
+                    <input type="text" name="Usuario" placeholder="">
+                </div>
+            </div>
+            <div class="Contraseña">
+                <div>
+                    <label for="Contraseña">Contraseña</label>
+                </div>
+                <div>
+                    <input type="password" name="Contraseña" placeholder="">
+                </div>
+            </div>
+            <div>
+                <div class="guardar">
+                    <input type="button" value="Guardar">
+                </div>
+                <div class="borrar">
+                    <input type="button" value="Borrar">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="https://api.whatsapp.com/send?phone=">
+            <img id="whatsapp" src="/img/whatsapp.png" alt="whatsapp">
+        </a>
+        <div class="contacto">
+            <h3>El Buscador</h3>
+            <a href="/index">Home</a>
+            <a href="/producto">Producto</a>
+            <a href="/login">Login</a>
+            <a href="registro">Registro</a>
+        </div>
+        <div class="redes">
+            <p>Puedes seguirnos</p>
+            <a class="face" href=""><i class="fab fa-facebook"></i></a>
+            <a class="insta" href=""><i class="fab fa-instagram"></i></a>
+            <a class="map" href=""><i class="fas fa-map-marked-alt"></i></a>
+        </div>
+    </footer>
+    <!-- instalcion de jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu-cel").click(function () {
+                $(".menu-cel").toggleClass("active")
+                $("nav").toggleClass("active")
+            })
+        });
+    </script>
 </body>
+
 </html>
