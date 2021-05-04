@@ -8,17 +8,16 @@
 header{
   position: fixed; 
   top: 0;
-  max-width: 1200px;
   width: 100vw;
   height: 80px;
-  
-  padding: 10px;
+    padding: 10px;
   background-color: #c5f8c8;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
-
+  z-index: 999;
+  opacity: 0.9;
 }
 .logo{
   display: block;
@@ -103,7 +102,7 @@ nav ul li a:hover{
 
   main{
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 100px auto 10px auto;
 } 
   .estructura{margin: 10px auto;
     border-top: #42B218 1px solid;
@@ -205,6 +204,8 @@ nav ul li a:hover{
     color: #f9989f;
     font-size: 54px;
     font-weight: 700;
+    text-align: center;
+    padding: 0 20px;
     
   
   }
@@ -250,6 +251,44 @@ nav ul li a:hover{
   }
 
   /*-----Footer-----*/
+  #whatsapp {
+    height: 40px;
+    width: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 999;
+  }
+  footer .contacto{
+    width: 50%;
+    padding-left: 40px;  
+  }
+  
+    footer .contacto a{
+      display: block;
+      text-decoration: none;
+      color: #b4b3b7;
+      width: 20px;
+    }
+  
+    footer .contacto a:hover{
+      display: block;
+      text-decoration: none;
+      color: #f9989f;
+      width: 20px;
+    }
+  
+    footer .contacto h3{
+      color: #b4b3b7;
+      font-size: 20px;
+      text-align: left;
+      font-weight: 900;
+    }
+  
+  footer .contacto p{
+    color: #b4b3b7;
+    padding: 5px;
+  }
   footer {
     width: 100vw;
     height: 150px;
@@ -300,7 +339,7 @@ nav ul li a:hover{
   }
 
 
-  @media (min-width:768px){
+  @media (min-width:678px){
     
     .estructura{
           display: flex;
@@ -322,7 +361,39 @@ nav ul li a:hover{
       .info{
           width: 50%;
       }
+
+
+
+
+        /***********************/
+  .menu-cel{
+    display: none;
+}
+nav{
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+  /***********************/
+
   }
 
- 
+  @media (min-width: 1200px) {
+    /************* menu ****************************/
+ header{
+  margin: 0 auto;
+
+}
+ /******************************************/  
+     #whatsapp {
+       height: 60px;
+       width: auto;
+       position: fixed;
+       bottom: 20px;
+       right: 15px;
+       z-index: 999;
+     }
+   
+   }
+   
   
