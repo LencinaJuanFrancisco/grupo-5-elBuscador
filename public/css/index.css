@@ -268,6 +268,7 @@ p {
   width: 115px;
   height: 41px;
   border: 1px solid #f9989f;
+  transition: all 0.2s
 }
 
 .btn button:hover {
