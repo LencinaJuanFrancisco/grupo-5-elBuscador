@@ -1,3 +1,8 @@
+Link de Trello
+https://trello.com/b/BExQAyhH/grupo-5
+
+
+
 # El Buscador
 El buscador es un proyecto llevado a la web de un emprendimiento de un integrante del grupo, el cual cuenta con un local físico de venta de ropa dirigido a la indumentaria femenina, niñas, niños y bebe.
 Elegimos esta idea de negocio para hacerlo con el objetivo de dar uso a lo aprendido y así poder llevarlo de lo académico a la práctica real.
