@@ -4,7 +4,11 @@ const controllerProducto= require('../controllers/controllerProductos');
 
 router.get('/', controllerProducto.detalle);
 
+router.get('/carga',controllerProducto.cargaProducto);
+
+
 router.get('/carrito', controllerProducto.carrito);
+
 
 router.get('/:id', controllerProducto.detalle);
 

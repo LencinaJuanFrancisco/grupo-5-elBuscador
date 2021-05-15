@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cargas.css">
+    <title>ABM Productos</title>
+</head>
+<body>
+    <!-- MENU -->
+<!-- header -->
+<%- include('../views/partials/header') %>
+
+    <!-- FORMULARIO DE CARGA -->
+    <main>
+        <form action="" method="POST">
+            <div>
+                <button  class="btn" type="submit">Crear</button>
+                <button class="btn" type="submit">Editar</button>
+                <button class="btn" type="submit">Eliminar</button>
+            </div>
+            <div>
+                <label for="nombre-producto">Nombre del Producto</label>
+                <input type="text" name="nombre-producto">
+            </div>
+            <div>
+                <label for="detalle-producto">Detalle </label>
+                <textarea name="detalle-producto" rows="5" cols="40">Detalle del producto</textarea>
+            </div>
+            <div>
+                <label for="talles">Talles</label>
+                <label for="talles">
+                    <input type="radio" id="1" name="talles"> 1
+                </label>
+                <label for="talles">
+                    <input type="radio" id="2" name="talles"> 2
+                </label>
+                <label for="talles">
+                    <input type="radio" id="3" name="talles"> 3
+                </label>
+                <label for="talles">
+                    <input type="radio" id="4" name="talles"> 4
+                </label>
+                <label for="talles">
+                    <input type="radio" id="5" name="talles"> 5
+                </label>
+            </div>
+            <div>
+                <label for="">Colores</label>
+                
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#f9989f" />
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#fccb8f" />
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#faf096" />
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#c5f8c8" />
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#aeaeae" />
+            </div>
+            <div>
+                <label for="">Genero</label>
+                <label for="genero">
+                    <input type="radio" name="genero" id="mujer">Mujer
+                </label>
+                <label for="genero">
+                    <input type="radio" name="genero" id="niñas">Niñas
+                </label>
+                <label for="genero">
+                    <input type="radio" name="genero" id="niños">Niños
+                </label>
+            </div>
+            <div>
+                <label for="">Precio</label>
+                <label for="precio">$
+                    <input type="text" name="precio">
+                </label>
+                
+            </div>
+            <div>
+                <label for="">Cantidad</label>
+                <label for="cantidad">
+                    <input type="text" name="cantidad">
+                </label>
+            </div>
+            <div>
+                <label for="">Temporada</label>
+                <label for="temporada">
+                    <input type="radio" name="temporada" id="verano">Verano
+                </label>
+                <label for="temporada">
+                    <input type="radio" name="temporada" id="invierno">Invierno
+                </label>
+            </div>
+            <div>
+                <label for="img-principal"> Imagen Principal</label>
+                <input type="file" name="img-principal">
+            </div>
+            <div>
+                <label for="img-secundaria"> Imagenes Secundarias</label>
+                <div>
+                    <label for=""> 1- 
+                        <input type="file" name="img-secundaria" id="img-secundaria-1">
+                    </label>
+                </div>
+                <div>
+                    <label for="">2- 
+                        <input type="file" name="img-secundaria" id="img-secundaria-2">
+                    </label>
+                </div>
+
+                <div>
+                    <label for=""> 3- 
+                        <input type="file" name="img-secundaria" id="img-secundaria-3">
+                    </label>
+                </div>
+                <div>
+                    <label for=""> 4- 
+                        <input type="file" name="img-secundaria" id="img-secundaria-4">
+                    </label>
+                </div>
+
+            </div>
+
+        </form>
+    </main>
+    <!-- FOOTER -->
+</body>
+</html>
