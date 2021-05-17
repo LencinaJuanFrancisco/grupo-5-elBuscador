@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/cargas.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/99035ba4e5.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- Jquery -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
     <title>ABM Productos</title>
 </head>
 <body>
@@ -13,23 +24,23 @@
 <%- include('../views/partials/header') %>
 
     <!-- FORMULARIO DE CARGA -->
-    <main>
-        <form action="" method="POST">
-            <div>
-                <button  class="btn" type="submit">Crear</button>
-                <button class="btn" type="submit">Editar</button>
-                <button class="btn" type="submit">Eliminar</button>
-            </div>
+    <main class="main-carga">
+        <div class="div-btn">
+            <button class="btn" type="submit">Crear</button>
+            <button class="btn" type="submit">Editar</button>
+            <button class="btn" type="submit">Eliminar</button>
+        </div>
+        <form class="form-carga" action="" method="POST">
             <div>
                 <label for="nombre-producto">Nombre del Producto</label>
                 <input type="text" name="nombre-producto">
             </div>
+            <div>Detalle</div>
             <div>
-                <label for="detalle-producto">Detalle </label>
-                <textarea name="detalle-producto" rows="5" cols="40">Detalle del producto</textarea>
+                <textarea name="detalle-producto" rows="5" cols="25">Detalle del producto</textarea>
             </div>
             <div>
-                <label for="talles">Talles</label>
+                <div>Talles</div>
                 <label for="talles">
                     <input type="radio" id="1" name="talles"> 1
                 </label>
@@ -47,32 +58,6 @@
                 </label>
             </div>
             <div>
-                <label for="">Colores</label>
-                
-                <label for="colorres"></label>
-                    <input type="color" name="colorres" value="#f9989f" />
-                <label for="colorres"></label>
-                    <input type="color" name="colorres" value="#fccb8f" />
-                <label for="colorres"></label>
-                    <input type="color" name="colorres" value="#faf096" />
-                <label for="colorres"></label>
-                    <input type="color" name="colorres" value="#c5f8c8" />
-                <label for="colorres"></label>
-                    <input type="color" name="colorres" value="#aeaeae" />
-            </div>
-            <div>
-                <label for="">Genero</label>
-                <label for="genero">
-                    <input type="radio" name="genero" id="mujer">Mujer
-                </label>
-                <label for="genero">
-                    <input type="radio" name="genero" id="niñas">Niñas
-                </label>
-                <label for="genero">
-                    <input type="radio" name="genero" id="niños">Niños
-                </label>
-            </div>
-            <div>
                 <label for="">Precio</label>
                 <label for="precio">$
                     <input type="text" name="precio">
@@ -86,7 +71,33 @@
                 </label>
             </div>
             <div>
-                <label for="">Temporada</label>
+                <div>Colores</div>
+                
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#f9989f" />
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#fccb8f" />
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#faf096" />
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#c5f8c8" />
+                <label for="colorres"></label>
+                    <input type="color" name="colorres" value="#aeaeae" />
+            </div>
+            <div>
+                <div>Genero</div>
+                <label for="genero">
+                    <input type="radio" name="genero" id="mujer">Mujer
+                </label>
+                <label for="genero">
+                    <input type="radio" name="genero" id="niñas">Niñas
+                </label>
+                <label for="genero">
+                    <input type="radio" name="genero" id="niños">Niños
+                </label>
+            </div>
+            <div>
+                <div>Temporada</div>
                 <label for="temporada">
                     <input type="radio" name="temporada" id="verano">Verano
                 </label>
@@ -95,11 +106,16 @@
                 </label>
             </div>
             <div>
-                <label for="img-principal"> Imagen Principal</label>
+                
+                <div>
+                    Imagen Principal
+                </div>
                 <input type="file" name="img-principal">
             </div>
             <div>
-                <label for="img-secundaria"> Imagenes Secundarias</label>
+                <div>
+                    Imagen Principal
+                </div>
                 <div>
                     <label for=""> 1- 
                         <input type="file" name="img-secundaria" id="img-secundaria-1">
@@ -126,7 +142,21 @@
 
         </form>
     </main>
-    <!-- FOOTER -->
-    <%- include ("../views/partials/footer.ejs") %> 
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menu-cel").click(function () {
+          $(".menu-cel").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+    </script>
 </body>
 </html>

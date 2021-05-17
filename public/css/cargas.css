@@ -2,26 +2,248 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 body{
     background-color: #eef8ff;
+    background-image: url('../img/img/fondo-flores.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+     height: 80vh;
+
 }
-main{
+/*******configuracion del menu*************/
+header{
+    position: fixed; 
+    top: 0;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+    width: 100vw;
+    height: 80px;
+    padding: 10px;
+    background-color: #c5f8c8;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    opacity: 0.9;
+  
+  
+  }
+  .logo{
+    display: block;
+    color: #f9989f;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding:0 20px ;
+    position: absolute;
+    display: flex;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .menu-cel{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #f9989f;
+    position:absolute;
+    right: 20px;
+    
+  }
+  .menu-cel.active::before{
+    content: "\f00d";
+    font-family: fontAwesome;
+    line-height: 40px;
+  }
+  .menu-cel::before{
+    content: "\f0c9";
+    font-family: fontAwesome;
+    line-height: 40px;
+    
+  }
+  nav ul{
+    display: flex;
+    
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  nav{
+    display: none;
+  }
+  nav.active{
+    display: block;
+    width: 100%;
+  
+  }
+  nav.active ul{
+    display: block;
+    width:100% ;
+    margin-top: 70px;
+    background-color: #c5f8c8;
+    border-radius: 5px;
+  }
+  nav.active ul li a{
+    
+    margin: 0;
+  }
+  
+  nav ul li a.active,
+  nav ul li a:hover{
+    background-color:#f9989f ;
+    letter-spacing: 1px;
+    transition: 500ms;
+    transform: translate(-5px,-5px);
+    border-radius: 5px;
+  
+  }
+
+
+.main-carga{
+    width: 100vw;
     margin-top: 100px;
 }
-main{
-    width: 100vw;
-}
-form{
+.form-carga{
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    background-color:rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 10px -6px black;
     padding: 10px;
+    font-size: 14px;
+    margin: 20px auto;
+    min-height: 360px;
+    max-width:550px ;
+    height:750px ;
+    color: #faf096;
 }
-form div{
+.form-carga div{
     margin: 5px auto;
+    text-align: center;
+}
+/* .form-carga label{
+  width: 100px;
+} */
+
+.div-btn{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
 .btn{
     width: 30%;
-    margin: 0 auto;
+    max-width: 70px;
+    margin: 5px;
 }
-.separador{
 
+
+/*****************************************************/
+/************* whatsapp *******************************/
+#whatsapp {
+    height: 40px;
+    width: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+  }
+  /***************footer**********************/
+.ola{
+    color: #282828;
+  
+  }
+  
+  footer {
+    width: 100vw;
+    height: 150px;
+    
+    background-color: #282828;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .contacto{
+    width: 50%;
+    padding-left: 40px;  
+  }
+  
+    footer .contacto a{
+      display: block;
+      text-decoration: none;
+      color: #b4b3b7;
+      width: 20px;
+    }
+  
+    footer .contacto a:hover{
+      display: block;
+      text-decoration: none;
+      color: #f9989f;
+      width: 20px;
+    }
+  
+    footer .contacto h3{
+      color: #b4b3b7;
+      font-size: 20px;
+      text-align: left;
+      font-weight: 900;
+    }
+  
+  footer .contacto p{
+    color: #b4b3b7;
+    padding: 5px;
+  }
+  footer .redes{
+    text-align: center;
+    width: 50%;
+    
+  }
+  footer .redes p{
+    color: #b4b3b7;
+  }
+  footer .redes a{
+    text-decoration: none;
+    color: #b4b3b7;
+    font-size: 24px;
+    margin: 5px;
+    
+    
+  }
+  footer .face:hover{
+    color:#f9989f;
+    font-size: 26px;
+    
+  }
+  footer .insta:hover{
+    color:#c5f8c8;
+    font-size: 26px;
+    
+  }
+  footer .map:hover{
+    color:#faf096;
+    font-size: 26px;
+    
+  }
+  
+@media (min-width: 678px) {
+
+    /***********************/
+    .menu-cel{
+      display: none;
+  }
+  nav{
+    display: block;
+    position: absolute;
+    right: 20px;
+}
 }

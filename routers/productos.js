@@ -6,6 +6,7 @@ router.get('/', controllerProducto.detalle);
 
 router.get('/carga',controllerProducto.cargaProducto);
 
+router.get('/listadoProducto', controllerProducto.listadoProducto)
 
 router.get('/carrito', controllerProducto.carrito);
 

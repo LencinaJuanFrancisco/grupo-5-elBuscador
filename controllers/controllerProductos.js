@@ -13,7 +13,9 @@ const controllerProducto = {
         res.render('carga');
     },
     
-
+    listadoProducto:(req,res)=>{
+        res.render('listadoProducto')
+    }
 
 }
 module.exports = controllerProducto;
