@@ -313,7 +313,6 @@ article .productos {
 footer {
   width: 100vw;
   height: 150px;
-
   background-color: #282828;
   display: flex;
   justify-content: space-around;
@@ -424,7 +423,6 @@ footer .map:hover {
   }
   .filtrado-producto {
     display: block;
-    position: fixed;
   }
   .filtrado-producto a{
     text-decoration: none;
@@ -440,7 +438,7 @@ footer .map:hover {
   }
   .aside-filtar {
     
-    width: 30vw;
+    width: 25vw;
   }
   
   .li-titulos{
