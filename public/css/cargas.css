@@ -6,11 +6,7 @@
 }
 body{
     background-color: #eef8ff;
-    background-image: url('../img/img/fondo-flores.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-     background-attachment: fixed;
-     background-size: cover;
+
      height: 80vh;
 
 }
@@ -115,7 +111,13 @@ header{
 
 .main-carga{
     width: 100vw;
-    margin-top: 100px;
+    margin-top: 80px;
+    background-image: url('../img/img/fondo-flores.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+    padding: 40px 0;
 }
 .form-carga{
   display: flex;

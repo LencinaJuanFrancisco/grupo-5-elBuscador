@@ -124,6 +124,7 @@ nav ul li a:hover {
 main {
   margin: 0 auto;
   max-width: 1200px;
+  padding-bottom: 40px;
 }
 
 
@@ -133,6 +134,10 @@ main {
   font-size: 36px;
   text-align: center;
   width: 100vw;
+}
+
+.titulo-header h1 {
+  font-size: 30px;
 }
 
 /* 
@@ -390,7 +395,11 @@ footer .map:hover {
 
 }
 
-@media (min-width:360px) {}
+@media (min-width:360px) {
+
+
+
+}
 
 @media (min-width: 678px) {
 
@@ -455,6 +464,10 @@ footer .map:hover {
     width: 70vw;
   }
 
+  .titulo-header h1 {
+    font-size: 35px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -483,4 +496,11 @@ footer .map:hover {
   .article-productos {
     width: 65vw;
   }
+
+  .titulo-header h1 {
+    font-size: 50px;
+  }
+
+
+
 }
