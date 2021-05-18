@@ -118,6 +118,14 @@ header{
     margin-top: 100px;
 }
 .form-carga{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+}
+.bolsillo-izq,.bolsillo-der{
     clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
     background-color:rgba(0,0,0,0.7);
     box-shadow: 0px 10px 10px -6px black;
@@ -126,16 +134,41 @@ header{
     margin: 20px auto;
     min-height: 360px;
     max-width:550px ;
-    height:750px ;
+    min-width: 350px;
+    height:500px ;
     color: #faf096;
 }
+.div-nom_producto{
+  text-align: center;
+}
+.div-nom_producto input{
+  display: block;
+  margin: 0 auto;
+  width: 313px;
+
+}
+.div-cantidad,.div-precio{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-cantidad label,.div-precio label{
+  display: inline-flex;
+  width: 75px;
+}
+.div-cantidad input,.div-precio input{
+  display: block;
+  width: 75px;
+}
+.div-colores input{
+  display: inline-block;
+  width: 50px;
+}
+
 .form-carga div{
     margin: 5px auto;
     text-align: center;
 }
-/* .form-carga label{
-  width: 100px;
-} */
 
 .div-btn{
     display: flex;

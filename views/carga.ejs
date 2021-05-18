@@ -31,47 +31,55 @@
             <button class="btn" type="submit">Eliminar</button>
         </div>
         <form class="form-carga" action="" method="POST">
-            <div>
-                <label for="nombre-producto">Nombre del Producto</label>
-                <input type="text" name="nombre-producto">
-            </div>
-            <div>Detalle</div>
-            <div>
-                <textarea name="detalle-producto" rows="5" cols="25">Detalle del producto</textarea>
-            </div>
-            <div>
-                <div>Talles</div>
-                <label for="talles">
-                    <input type="radio" id="1" name="talles"> 1
-                </label>
-                <label for="talles">
-                    <input type="radio" id="2" name="talles"> 2
-                </label>
-                <label for="talles">
-                    <input type="radio" id="3" name="talles"> 3
-                </label>
-                <label for="talles">
-                    <input type="radio" id="4" name="talles"> 4
-                </label>
-                <label for="talles">
-                    <input type="radio" id="5" name="talles"> 5
-                </label>
-            </div>
-            <div>
-                <label for="">Precio</label>
-                <label for="precio">$
-                    <input type="text" name="precio">
-                </label>
-                
-            </div>
-            <div>
-                <label for="">Cantidad</label>
-                <label for="cantidad">
-                    <input type="text" name="cantidad">
-                </label>
-            </div>
-            <div>
-                <div>Colores</div>
+            <div class="bolsillo-izq">
+
+                <div class="div-nom_producto">
+                    <label for="nombre-producto">Nombre del Producto</label>
+                    <input type="text" name="nombre-producto">
+                </div>
+                <div>Detalle</div>
+                <div>
+                    <textarea name="detalle-producto" rows="5" cols="20">Detalle del producto</textarea>
+                </div>
+                <div>
+                    <div>Talles</div>
+                    <label for="talles">
+                        <input type="radio" id="1" name="talles"> 1
+                    </label>
+                    <label for="talles">
+                        <input type="radio" id="2" name="talles"> 2
+                    </label>
+                    <label for="talles">
+                        <input type="radio" id="3" name="talles"> 3
+                    </label>
+                    <label for="talles">
+                        <input type="radio" id="4" name="talles"> 4
+                    </label>
+                    <label for="talles">
+                        <input type="radio" id="5" name="talles"> 5
+                    </label>
+                </div>
+                <div class="div-precio">
+                    <label for="">Precio $ </label>
+                        <label for="precio">
+                            <input type="text" name="precio"></label>
+
+                        </label>
+                    
+                    
+                </div>
+                <div class="div-cantidad">
+                    <label for="">Cantidad</label>
+                    <label for="cantidad">
+                        <input type="text" name="cantidad">
+                    </label>
+                </div>
+            </div> <!--cierre de bolsillo izquierdo -->
+            <div class="bolsillo-der">
+            
+            
+            <div class="div-colores">
+                <div >Colores</div>
                 
                 <label for="colorres"></label>
                     <input type="color" name="colorres" value="#f9989f" />
@@ -126,7 +134,7 @@
                         <input type="file" name="img-secundaria" id="img-secundaria-2">
                     </label>
                 </div>
-
+    
                 <div>
                     <label for=""> 3- 
                         <input type="file" name="img-secundaria" id="img-secundaria-3">
@@ -137,8 +145,11 @@
                         <input type="file" name="img-secundaria" id="img-secundaria-4">
                     </label>
                 </div>
-
+                <button class="btn" type="submit">Aceptar</button>
+    
             </div>
+        </div><!--bolsillo derecho  -->
+
 
         </form>
     </main>

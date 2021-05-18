@@ -128,7 +128,9 @@ main {
 
 
 .titulo-header {
-  margin-top: 100px;
+  margin-top: 130px;
+  margin-bottom: 40px;
+  font-size: 36px;
   text-align: center;
   width: 100vw;
 }
@@ -137,13 +139,14 @@ main {
   ********************************************************
   **************** asaide **** filtrado ****************** */
 
-aside {
+.aside-filtar{
   position: relative;
   width: 100vw;
-  background-color: brown;
+  
   min-height: 50px;
   padding-left: 20PX;
-}
+  border-radius: 10px;
+} 
 
 
 .aside-filtar h2{
@@ -423,8 +426,9 @@ footer .map:hover {
     background-size: cover;
   }
   .filtrado-producto {
-    display: block;
-    position: fixed;
+    display: flex;
+    align-items: center;
+    /* position: fixed; */
   }
   .filtrado-producto a{
     text-decoration: none;
