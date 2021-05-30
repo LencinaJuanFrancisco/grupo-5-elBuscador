@@ -97,6 +97,11 @@
           <div class="btn">
             <button type="submit">Añadir al carrito</button>
             <button type="submit">Comparar ahora</button>
+            <button type="submit"> <a href="./editar/<%=product.id %>">Editar</a> </button>
+            <form action="/producto/borrar/<%=product.id %>?_method=delete" method="POST">
+              <button type="submit"> Borrar </button>
+            </form>
+
           </div>
           <article class="descripcion-producto">
             <p>

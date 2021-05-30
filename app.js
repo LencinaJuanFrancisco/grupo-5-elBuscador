@@ -5,8 +5,13 @@ const path = require('path');
 const routeIndex=    require('./src/routers/index');
 const routeProducto= require('./src/routers/productos')
 const routeUsers =require ('./src/routers/users')
+const methodOverride = require("method-override");
+
 
 app.use(express.static(path.resolve(__dirname,'./public')))
+app.use(methodOverride("_method"));
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
 //views engine
 app.set('view engine', 'ejs');
