@@ -2,9 +2,9 @@ const express = require ('express');
 
 const app= express();
 const path = require('path');
-const routeIndex=    require('./routers/index');
-const routeProducto= require('./routers/productos')
-const routeUsers =require ('./routers/users')
+const routeIndex=    require('./src/routers/index');
+const routeProducto= require('./src/routers/productos')
+const routeUsers =require ('./src/routers/users')
 
 app.use(express.static(path.resolve(__dirname,'./public')))
 
