@@ -97,6 +97,7 @@
           <div class="btn">
             <button type="submit">Añadir al carrito</button>
             <button type="submit">Comparar ahora</button>
+            
             <button type="submit"> <a href="./editar/<%=product.id %>">Editar</a> </button>
             <form action="/producto/borrar/<%=product.id %>?_method=delete" method="POST">
               <button type="submit"> Borrar </button>
@@ -104,7 +105,7 @@
 
           </div>
           <article class="descripcion-producto">
-            <p><%= product.detalleProductoProducto %> </p>
+            <p><%= product.detalleProducto%> </p>
           </article>
         </div>
       </section>
@@ -137,7 +138,7 @@
               <!-- detalle-producto -->
               <div class="detalle-producto">
                 <div class="type">
-                  <a href=""><%= product.nombreProducto %> </a>
+                  <a href="/producto/<%= product.id %> "><%= product.nombreProducto %> </a>
                   <span>New Arrival</span>
                 </div>
                 <a href="" class="price">$<%= product.precio %> </a>

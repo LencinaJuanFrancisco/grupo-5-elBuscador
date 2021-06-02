@@ -12,19 +12,34 @@ const controllerProducto = {
     
     detalle: (req,res)=>{
        // filtro para mostrar solo el producto que selecciono el usuario
-            let productoToView = products.filter(product=>{
-                 return product.id == req.params.id;
-            } )
-            let genero= productoToView.genero
+       let productoToView = {};
+       let generoToView=[];
+
+       products.forEach(product=>{
+           if (product.id == req.params.id) {
+               productoToView = product;
+           }  
+       })
+        products.forEach(product=>{
+            if (product.genero == productoToView.genero) {
+                generoToView.push(product)
+            }
+        })
+        
+    //    let productoToView = products.filter(product=>{
+    //              return product.id == req.params.id;
+    //         } )
+    //         let genero= productoToView.genero
 
         // filtro por el genero que producto seleccionodo para el carrusel
-            let generoToView = products.filter(product=>{
-                return product.genero == genero;
-            })
+            // let generoToView = products.filter(product=>{
+            //     return product.genero == genero;
+            // })
+             
+
+
             res.render('producto',{product: productoToView, products: generoToView,toThousand});
             
-            console.log(productoToView)
-            console.log(generoToView);
         
         
     },
@@ -67,7 +82,7 @@ const controllerProducto = {
         products.forEach(product => {
             if(product.id == productoElegido) {
                 product.nombreProducto = req.body.nombreProducto,
-                product.detalleProductoProducto = req.body.detalleProductoProducto,
+                product.detalleProducto = req.body.detalleProducto,
                 product.talles = req.body.talles,
                 product.precio = req.body.precio,
                 product.cantidad = req.body.cantidad,
