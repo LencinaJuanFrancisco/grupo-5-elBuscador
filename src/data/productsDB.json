@@ -21,7 +21,7 @@
         "colores": "Negro",
         "genero": "Niña",
         "temporada": "Verano",
-        "imgPrincipal": "jean-1.jpg"
+        "imgPrincipal": "calzado-niña.jpg"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "colores": "rojo",
         "genero": "Mujer",
         "temporada": "Veramp",
-        "imgPrincipal": "calzado-niña.jpg"
+        "imgPrincipal": "jeans-2.jpg"
     },
     {
         "id": 4,
@@ -117,7 +117,7 @@
         "colores": "Blanco",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "imgPrincipal": "remera.jpg"
+        "imgPrincipal": "remera-mujer.jpg"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@
         "colores": "Gris",
         "genero": "Niña",
         "temporada": "Invierno",
-        "imgPrincipal": "Babucha.jpg"
+        "imgPrincipal": "pantalon-niña.jpg"
     },
     {
         "id": 12,
@@ -141,7 +141,7 @@
         "colores": "Blanco",
         "genero": "Niño",
         "temporada": "Verano",
-        "imgPrincipal": "pack-medias.jpg"
+        "imgPrincipal": "niñas.jpg"
     },
     {
         "id": 13,
@@ -153,7 +153,7 @@
         "colores": "Gris",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "imgPrincipal": "pañuelo.jpg"
+        "imgPrincipal": "pantalon-mujer.jpg"
     },
     {
         "id": 14,
@@ -177,7 +177,7 @@
         "colores": "Azul",
         "genero": "Niña",
         "temporada": "Invierno",
-        "imgPrincipal": "Campera-niña.jpg"
+        "imgPrincipal": "remera-niña.jpg"
     },
     {
         "id": 16,

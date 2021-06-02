@@ -29,7 +29,7 @@
     <section class="seccion-header">
       <!-- titulo -->
       <div class="titulo-header">
-        <h1>Listado de Productos Mujeres</h1>
+        <h1>Listado de Productos</h1>
       </div>
     </section>
     <aside class="aside-filtar">
@@ -61,12 +61,12 @@
           <ul>
             <li class="li-items"><a href=""> Remeras</a> </li>
             <li class="li-items"><a href=""> Short</a> </li>
-            <li class="li-items"><a href=""> Calsa</a> </li>
+            <li class="li-items"><a href=""> Calza</a> </li>
             <li class="li-items"><a href=""> Pantalon</a> </li>
-            <li class="li-items"><a href=""> Pollera</a> Pollera</li>
+            <li class="li-items"><a href=""> Pollera</a> </li>
             <li class="li-items"><a href=""> Vestidos</a> </li>
-            <li class="li-items"><a href=""> Jogin</a> </li>
-            <li class="li-items"><a href=""> Buso</a> </li>
+            <li class="li-items"><a href=""> Jogging</a> </li>
+            <li class="li-items"><a href=""> Buzos</a> </li>
             <li class="li-items"><a href=""> Ropa Interior</a> </li>
             <li class="li-items"><a href=""> Accesorios</a> </li>
           </ul>
@@ -78,10 +78,11 @@
     <article class="article-productos">
       <div class='productos'>
 
+        <% products.forEach(product => { %>
         <div class="box">
           <!-- box-producto -->
           <div class="slide-img">
-            <img src="../img/img/jeans-1.jpg" alt="" />
+            <img src="../img/img/<%= product.imgPrincipal%>" alt="imagen de <%= product.nombreProducto %>"/>
             <!-- capa -->
             <div class="capa">
               <!-- btn comprar -->
@@ -91,290 +92,13 @@
           <!-- detalle-producto -->
           <div class="detalle-producto">
             <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
+              <a href=""><%= product.nombreProducto %></a>
               <span>New Arrival</span>
             </div>
-            <a href="" class="price">$3500</a>
+            <a href="" class="price">$<%= product.precio %></a>
           </div>
         </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/abrigo-mujer.jpg" alt="abrigo-mujer" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$1500</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/abrigo-niña.jpg" alt="abrigo-niña" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$2499</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/abrigo-niño.jpg" alt="abrigo-niño" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$6499</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/calzado-mujer.jpg" alt="calzado-mujer" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$999</a>
-          </div>
-        </div>
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/niñas.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$2500</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/mujeres.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$3499</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/calzado-niña.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$3899</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/calzado-niño.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$6799</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/jeans-2.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$6999</a>
-          </div>
-        </div>
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/pantalon-mujer.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$2999</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/pantalon-niña.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$7999</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/pantalon-niño.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$8999</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/remera-mujer.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$9999</a>
-          </div>
-        </div>
-
-        <div class="box">
-          <!-- box-producto -->
-          <div class="slide-img">
-            <img src="../img/img/remera-niña.jpg" alt="" />
-            <!-- capa -->
-            <div class="capa">
-              <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
-            </div>
-          </div>
-          <!-- detalle-producto -->
-          <div class="detalle-producto">
-            <div class="type">
-              <a href="">Lorem ipsum dolor sit</a>
-              <span>New Arrival</span>
-            </div>
-            <a href="" class="price">$2879</a>
-          </div>
-        </div>
+        <% }) %>
 
 
 

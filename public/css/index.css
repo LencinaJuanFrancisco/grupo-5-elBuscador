@@ -140,6 +140,11 @@ nav ul li a:hover{
       width: 90px;
       height: 35px;
     }
+
+    #boton-stock button a {
+      text-decoration: none;
+      color: black;
+    }  
       
     .section-home-second {
       height: 75vh;

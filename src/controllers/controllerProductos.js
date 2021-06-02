@@ -38,7 +38,7 @@ const controllerProducto = {
     },
     
     listadoProducto:(req,res)=>{
-        res.render('listadoProducto')
+        res.render('listadoProducto', {products})
     },
     viewCarga: (req, res) => {
         res.render("carga");
