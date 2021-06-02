@@ -86,16 +86,16 @@
             <!-- capa -->
             <div class="capa">
               <!-- btn comprar -->
-              <a href="" class="btn-comprar">Comprar</a>
+              <a href="/producto/<%= product.id%>" class="btn-comprar">Comprar</a>
             </div>
           </div>
           <!-- detalle-producto -->
           <div class="detalle-producto">
             <div class="type">
-              <a href=""><%= product.nombreProducto %></a>
+              <a href="/producto/<%= product.id%>"><%= product.nombreProducto %></a>
               <span>New Arrival</span>
             </div>
-            <a href="" class="price">$<%= product.precio %></a>
+            <a href="/producto/<%= product.id%>" class="price">$<%= product.precio %></a>
           </div>
         </div>
         <% }) %>
