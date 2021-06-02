@@ -5,11 +5,27 @@ const productId = require("../utils/idUtils")
 const productsFilePath = path.join(__dirname, '../data/productsDB.json');
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 
 const controllerProducto = {
     
     detalle: (req,res)=>{
-        res.render('producto');
+       // filtro para mostrar solo el producto que selecciono el usuario
+            let productoToView = products.filter(product=>{
+                 return product.id == req.params.id;
+            } )
+            let genero= productoToView.genero
+
+        // filtro por el genero que producto seleccionodo para el carrusel
+            let generoToView = products.filter(product=>{
+                return product.genero == genero;
+            })
+            res.render('producto',{product: productoToView, products: generoToView,toThousand});
+            
+            console.log(productoToView)
+            console.log(generoToView);
+        
         
     },
     carrito: (req,res)=>{
@@ -50,15 +66,15 @@ const controllerProducto = {
         let productoElegido = req.params.id;
         products.forEach(product => {
             if(product.id == productoElegido) {
-                product[nombre-producto] = req.body.nombre-producto,
-                product[detalle-producto] = req.body.detalle-producto,
+                product.nombreProducto = req.body.nombreProducto,
+                product.detalleProductoProducto = req.body.detalleProductoProducto,
                 product.talles = req.body.talles,
                 product.precio = req.body.precio,
                 product.cantidad = req.body.cantidad,
                 product.colores = req.body.colores,
                 product.genero = req.body.genero,
-                product.temporada = req.body.temporada,
-                product[img-principal] = req.body.img-principal                
+                product.temporada = req.body.temporada
+               // product.imgPrincipal = req.body.imgPrincipal                
             }   
         })
         let productsJson = JSON.stringify(products, null, 4);

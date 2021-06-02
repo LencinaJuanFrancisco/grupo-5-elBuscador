@@ -10,6 +10,8 @@ router.get('/listadoProducto', controllerProducto.listadoProducto)
 router.get('/carga', controllerProducto.viewCarga)
 router.post('/carga', controllerProducto.store)
 
+
+
 router.get('/editar/:id', controllerProducto.viewEdit)
 router.put('/editar/:id', controllerProducto.update)
 

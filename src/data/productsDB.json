@@ -1,440 +1,440 @@
 [
     {
         "id": 1,
-        "nombre-producto": "Jeans chupin con rotura",
-        "detalle-producto-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Jeans chupin con rotura",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 36,
         "precio": 1800,
         "cantidad": 30,
         "colores": "Azul",
         "genero": "Mujer",
         "temporada": "Verano",
-        "img-principal": "jeans-1.jpg"
+        "imgPrincipal": "jeans-1.jpg"
     },
     {
         "id": 2,
-        "nombre-producto": "Zapatillas Converse niña",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Zapatillas Converse niña",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 33,
         "precio": 2000,
         "cantidad": 60,
         "colores": "Negro",
         "genero": "Niña",
         "temporada": "Verano",
-        "img-principal": "jean-1.jpg"
+        "imgPrincipal": "jean-1.jpg"
     },
     {
         "id": 3,
-        "nombre-producto": "Jeans chupin con rotura",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Jeans chupin con rotura",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 900,
         "cantidad": 30,
         "colores": "rojo",
         "genero": "Mujer",
         "temporada": "Veramp",
-        "img-principal": "calzado-niña.jpg"
+        "imgPrincipal": "calzado-niña.jpg"
     },
     {
         "id": 4,
-        "nombre-producto": "Campera con corderito mujer",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Campera con corderito mujer",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 3000,
         "cantidad": 50,
         "colores": "Gris",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "img-principal": "abrigo-mujer.jpg"
+        "imgPrincipal": "abrigo-mujer.jpg"
     },
     {
         "id": 5,
-        "nombre-producto": "Juego de gorro y guantes tejido",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Juego de gorro y guantes tejido",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 2,
         "precio": 1500,
         "cantidad": 20,
         "colores": "Blanco",
         "genero": "Niña",
         "temporada": "invierno",
-        "img-principal": "abrigo-niña.jpg"
+        "imgPrincipal": "abrigo-niña.jpg"
     },
     {
         "id": 6,
-        "nombre-producto": "Campera de algodon tipo escocesa",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Campera de algodon tipo escocesa",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 5,
         "precio": 2400,
         "cantidad": 29,
         "colores": "Marron",
         "genero": "Niño",
         "temporada": "Invierno",
-        "img-principal": "abrigo-niño.jpg"
+        "imgPrincipal": "abrigo-niño.jpg"
     },
     {
         "id": 7,
-        "nombre-producto": "Botas bordadas",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Botas bordadas",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 38,
         "precio": 3300,
         "cantidad": 25,
         "colores": "Negro",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "img-principal": "calzado-mujer.jpg"
+        "imgPrincipal": "calzado-mujer.jpg"
     },
     {
         "id": 8,
-        "nombre-producto": "Zapatillas converse niño",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Zapatillas converse niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 30,
         "precio": 2000,
         "cantidad": 40,
         "colores": "Negro",
         "genero": "Niño",
         "temporada": "Invierno",
-        "img-principal": "calzado-niño.jpg"
+        "imgPrincipal": "calzado-niño.jpg"
     },
     {
         "id": 9,
-        "nombre-producto": "Jeans con desgaste niño",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Jeans con desgaste niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 10,
         "precio": 2600,
         "cantidad": 40,
         "colores": "azul",
         "genero": "Niño",
         "temporada": "Verano",
-        "img-principal": "pantalon-niño.jpg"
+        "imgPrincipal": "pantalon-niño.jpg"
     },
     {
         "id": 10,
-        "nombre-producto": "Remera manga larga lisa",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Remera manga larga lisa",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 3,
         "precio": 900,
         "cantidad": 30,
         "colores": "Blanco",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "img-principal": "remera.jpg"
+        "imgPrincipal": "remera.jpg"
     },
     {
         "id": 11,
-        "nombre-producto": "Babucha deportiva",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Babucha deportiva",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 10,
         "precio": 700,
         "cantidad": 60,
         "colores": "Gris",
         "genero": "Niña",
         "temporada": "Invierno",
-        "img-principal": "Babucha.jpg"
+        "imgPrincipal": "Babucha.jpg"
     },
     {
         "id": 12,
-        "nombre-producto": "pack de medias x 3",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "pack de medias x 3",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 30,
         "precio": 900,
         "cantidad": 100,
         "colores": "Blanco",
         "genero": "Niño",
         "temporada": "Verano",
-        "img-principal": "pack-medias.jpg"
+        "imgPrincipal": "pack-medias.jpg"
     },
     {
         "id": 13,
-        "nombre-producto": "pañuelos panchito",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "pañuelos panchito",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 1,
         "precio": 300,
         "cantidad": 200,
         "colores": "Gris",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "img-principal": "pañuelo.jpg"
+        "imgPrincipal": "pañuelo.jpg"
     },
     {
         "id": 14,
-        "nombre-producto": "buzo frizado niño",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "buzo frizado niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 1500,
         "cantidad": 35,
         "colores": "Azul",
         "genero": "Niño",
         "temporada": "invierno",
-        "img-principal": "abrigo-niño.jpg"
+        "imgPrincipal": "abrigo-niño.jpg"
     },
     {
         "id": 15,
-        "nombre-producto": "Campera de jean nena",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Campera de jean nena",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 5,
         "precio": 2900,
         "cantidad": 25,
         "colores": "Azul",
         "genero": "Niña",
         "temporada": "Invierno",
-        "img-principal": "Campera-niña.jpg"
+        "imgPrincipal": "Campera-niña.jpg"
     },
     {
         "id": 16,
-        "nombre-producto": "chaleco polar niña",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "chaleco polar niña",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 10,
         "precio": 2200,
         "cantidad": 50,
         "colores": "Verde Militar",
         "genero": "Niña",
         "temporada": "Invierno",
-        "img-principal": "chaleco.jpg"
+        "imgPrincipal": "chaleco.jpg"
     },
     {
         "id": 17,
-        "nombre-producto": "Zapatillas urbanas mujer",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Zapatillas urbanas mujer",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 36,
         "precio": 2500,
         "cantidad": 60,
         "colores": "Gris",
         "genero": "Mujer",
         "temporada": "Verano",
-        "img-principal": "Zapas-urbanas.jpg"
+        "imgPrincipal": "Zapas-urbanas.jpg"
     },
     {
         "id": 18,
-        "nombre-producto": "Vestidos de modal cortos",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Vestidos de modal cortos",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 1000,
         "cantidad": 35,
         "colores": "Rojo",
         "genero": "Mujer",
         "temporada": "Verano",
-        "img-principal": "Vestido-corto.jpg"
+        "imgPrincipal": "Vestido-corto.jpg"
     },
     {
         "id": 19,
-        "nombre-producto": "Vestido de modal largos",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Vestido de modal largos",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 1200,
         "cantidad": 70,
         "colores": "Negro",
         "genero": "Mujer",
         "temporada": "Verano",
-        "img-principal": "Vestido-largo.jpg"
+        "imgPrincipal": "Vestido-largo.jpg"
     },
     {
         "id": 20,
-        "nombre-producto": "Zapatillas Converse niña",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Zapatillas Converse niña",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 33,
         "precio": 2000,
         "cantidad": 60,
         "colores": "Negro",
         "genero": "Niña",
         "temporada": "Verano",
-        "img-principal": "jean-1.jpg"
+        "imgPrincipal": "jean-1.jpg"
     },
     {
         "id": 21,
-        "nombre-producto": "Babucha de algodon niño",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Babucha de algodon niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 12,
         "precio": 1500,
         "cantidad": 30,
         "colores": "Negro",
         "genero": "Niño",
         "temporada": "Invierno",
-        "img-principal": "babucha-niño.jpg"
+        "imgPrincipal": "babucha-niño.jpg"
     },
     {
         "id": 22,
-        "nombre-producto": "Campera con corderito mujer",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Campera con corderito mujer",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 3000,
         "cantidad": 50,
         "colores": "Gris",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "img-principal": "abrigo-mujer.jpg"
+        "imgPrincipal": "abrigo-mujer.jpg"
     },
     {
         "id": 23,
-        "nombre-producto": "Juego de gorro y guantes tejido",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Juego de gorro y guantes tejido",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 2,
         "precio": 1500,
         "cantidad": 20,
         "colores": "Blanco",
         "genero": "Niña",
         "temporada": "invierno",
-        "img-principal": "abrigo-niña.jpg"
+        "imgPrincipal": "abrigo-niña.jpg"
     },
     {
         "id": 24,
-        "nombre-producto": "Campera de algodon tipo escocesa",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Campera de algodon tipo escocesa",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 5,
         "precio": 2400,
         "cantidad": 29,
         "colores": "Marron",
         "genero": "Niño",
         "temporada": "Invierno",
-        "img-principal": "abrigo-niño.jpg"
+        "imgPrincipal": "abrigo-niño.jpg"
     },
     {
         "id": 25,
-        "nombre-producto": "Botas bordadas",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Botas bordadas",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 38,
         "precio": 3300,
         "cantidad": 25,
         "colores": "Negro",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "img-principal": "calzado-mujer.jpg"
+        "imgPrincipal": "calzado-mujer.jpg"
     },
     {
         "id": 26,
-        "nombre-producto": "Zapatillas converse niño",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Zapatillas converse niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 30,
         "precio": 2000,
         "cantidad": 40,
         "colores": "Negro",
         "genero": "Niño",
         "temporada": "Invierno",
-        "img-principal": "calzado-niño.jpg"
+        "imgPrincipal": "calzado-niño.jpg"
     },
     {
         "id": 27,
-        "nombre-producto": "Jeans con desgaste niño",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Jeans con desgaste niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 10,
         "precio": 2600,
         "cantidad": 40,
         "colores": "azul",
         "genero": "Niño",
         "temporada": "Verano",
-        "img-principal": "pantalon-niño.jpg"
+        "imgPrincipal": "pantalon-niño.jpg"
     },
     {
         "id": 28,
-        "nombre-producto": "Jeans chupin con rotura",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Jeans chupin con rotura",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 900,
         "cantidad": 30,
         "colores": "rojo",
         "genero": "Mujer",
         "temporada": "Verano",
-        "img-principal": "jean-1.jpg"
+        "imgPrincipal": "jean-1.jpg"
     },
     {
         "id": 29,
-        "nombre-producto": "Zapatillas Converse niña",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Zapatillas Converse niña",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 33,
         "precio": 2000,
         "cantidad": 60,
         "colores": "Negro",
         "genero": "Niña",
         "temporada": "Verano",
-        "img-principal": "jean-1.jpg"
+        "imgPrincipal": "jean-1.jpg"
     },
     {
         "id": 30,
-        "nombre-producto": "Jeans chupin con rotura",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Jeans chupin con rotura",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 900,
         "cantidad": 30,
         "colores": "rojo",
         "genero": "Mujer",
         "temporada": "Verano",
-        "img-principal": "calzado-niña.jpg"
+        "imgPrincipal": "calzado-niña.jpg"
     },
     {
         "id": 31,
-        "nombre-producto": "Campera con corderito mujer",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Campera con corderito mujer",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 4,
         "precio": 3000,
         "cantidad": 50,
         "colores": "Gris",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "img-principal": "abrigo-mujer.jpg"
+        "imgPrincipal": "abrigo-mujer.jpg"
     },
     {
         "id": 32,
-        "nombre-producto": "Juego de gorro y guantes tejido",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Juego de gorro y guantes tejido",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 2,
         "precio": 1500,
         "cantidad": 20,
         "colores": "Blanco",
         "genero": "Niña",
         "temporada": "invierno",
-        "img-principal": "abrigo-niña.jpg"
+        "imgPrincipal": "abrigo-niña.jpg"
     },
     {
         "id": 33,
-        "nombre-producto": "Campera de algodon tipo escocesa",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Campera de algodon tipo escocesa",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 5,
         "precio": 2400,
         "cantidad": 29,
         "colores": "Marron",
         "genero": "Niño",
         "temporada": "Invierno",
-        "img-principal": "abrigo-niño.jpg"
+        "imgPrincipal": "abrigo-niño.jpg"
     },
     {
         "id": 34,
-        "nombre-producto": "Botas bordadas",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Botas bordadas",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 38,
         "precio": 3300,
         "cantidad": 25,
         "colores": "Negro",
         "genero": "Mujer",
         "temporada": "Invierno",
-        "img-principal": "calzado-mujer.jpg"
+        "imgPrincipal": "calzado-mujer.jpg"
     },
     {
         "id": 35,
-        "nombre-producto": "Zapatillas converse niño",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Zapatillas converse niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 30,
         "precio": 2000,
         "cantidad": 40,
         "colores": "Negro",
         "genero": "Niño",
         "temporada": "Invierno",
-        "img-principal": "calzado-niño.jpg"
+        "imgPrincipal": "calzado-niño.jpg"
     },
     {
         "id": 36,
-        "nombre-producto": "Jeans con desgaste niño",
-        "detalle-producto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Jeans con desgaste niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 10,
         "precio": 2600,
         "cantidad": 40,
         "colores": "azul",
         "genero": "Niño",
         "temporada": "Verano",
-        "img-principal": "pantalon-niño.jpg"
+        "imgPrincipal": "pantalon-niño.jpg"
     },
     {
         "id": 37,
-        "nombre-producto": "pantalon",
-        "detalle-producto": "largo",
+        "nombreProducto": "pantalon",
+        "detalleProducto": "largo",
         "talles": "on",
         "precio": "11111",
         "cantidad": "1",
@@ -447,7 +447,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "img-principal": "",
+        "imgPrincipal": "",
         "img-secundaria": [
             "",
             "",
@@ -457,8 +457,8 @@
     },
     {
         "id": 38,
-        "nombre-producto": "pantalon",
-        "detalle-producto": "largo",
+        "nombreProducto": "pantalon",
+        "detalleProducto": "largo",
         "talles": "on",
         "precio": "11111",
         "cantidad": "1",
@@ -471,7 +471,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "img-principal": "",
+        "imgPrincipal": "",
         "img-secundaria": [
             "",
             "",
@@ -481,8 +481,8 @@
     },
     {
         "id": 39,
-        "nombre-producto": "pantalon",
-        "detalle-producto": "largo",
+        "nombreProducto": "pantalon",
+        "detalleProducto": "largo",
         "talles": "on",
         "precio": "135",
         "cantidad": "2",
@@ -495,7 +495,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "img-principal": "",
+        "imgPrincipal": "",
         "img-secundaria": [
             "",
             "",
@@ -505,8 +505,8 @@
     },
     {
         "id": 40,
-        "nombre-producto": "pantalon",
-        "detalle-producto": "largo",
+        "nombreProducto": "pantalon",
+        "detalleProducto": "largo",
         "talles": "on",
         "precio": "135",
         "cantidad": "2",
@@ -519,7 +519,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "img-principal": "",
+        "imgPrincipal": "",
         "img-secundaria": [
             "",
             "",
@@ -529,8 +529,8 @@
     },
     {
         "id": 41,
-        "nombre-producto": "buzo rojo",
-        "detalle-producto": "Para no cagarte de frio",
+        "nombreProducto": "buzo rojo",
+        "detalleProducto": "Para no cagarte de frio",
         "talles": "on",
         "precio": "167",
         "cantidad": "3",
@@ -543,7 +543,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "img-principal": "",
+        "imgPrincipal": "",
         "img-secundaria": [
             "",
             "",

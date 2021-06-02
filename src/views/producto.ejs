@@ -34,62 +34,62 @@
         <!-- <article> -->
         <figure>
           <div class="img-principal">
-            <img src="../img/img/jeans-1.jpg" alt="imigen principal" />
+            <img src="../img/img/<%= product.imgPrincipal  %> " alt="imigen principal" />
           </div>
           <!-- estas imagenes se ven recien en modo table en adelante  -->
           <div class="img-secundarias">
             <img
-              src="../img/img/jeans-1.jpg"
+              src="../img/img/<%= product.imgPrincipal %>"
               alt="img secundaria"
               class="img-sec-1"
             />
             <img
-              src="../img/img/jeans-1.jpg"
+              src="../img/img/<%= product.imgPrincipal%>""
               alt="img secundaria"
               class="img-sec-2"
             />
             <img
-              src="../img/img/jeans-1.jpg"
+              src="../img/img/<%= product.imgPrincipal %>"
               alt="img secundaria"
               class="img-sec-3"
             />
             <img
-              src="../img/img/jeans-1.jpg"
+              src="../img/img/<%= product.imgPrincipal%>"
               alt="img secundaria"
               class="img-sec-4"
             />
           </div>
         </figure>
         <div class="footer-producto-principal">
-          <p>Nombre Del Producto</p>
-          <p>$ 3000</p>
+          <p><%= product.nombreProducto %></p>
+          <p>$ <%= product.precio %></p>
           <form action="" method="POST" class="form-color">
             <label for="">Color</label>
             <div>
               <label for="color"></label>
-              <input type="color" name="color" value="#f9989f" />
+              <input type="color" name="color" value="<%= product.colores %> " />
               <label for="color"></label>
-              <input type="color" name="color" value="#fccb8f" />
+              <input type="color" name="color" value="<%= product.colores %> " />
               <label for="color"></label>
-              <input type="color" name="color" value="#faf096" />
+              <input type="color" name="color" value="<%= product.colores %> " />
               <label for="color"></label>
-              <input type="color" name="color" value="#c5f8c8" />
+              <input type="color" name="color" value="<%= product.colores %> " />
               <label for="color"></label>
-              <input type="color" name="color" value="#aeaeae" />
+              <input type="color" name="color" value="<%= product.colores %> " />
             </div>
           </form>
           <form action="" class="form-talle">
             <label for="">Talle</label>
             <div>
-              <label for="talle">1</label>
+              <label for="talle"><%= product.talles %> </label>
               <input type="radio" name="talle" />
-              <label for="talle">2</label>
+              <label for="talle"><%= product.talles %></label>
               <input type="radio" name="talle" />
-              <label for="talle">3</label>
+              <label for="talle"><%= product.talles %></label>
               <input type="radio" name="talle" />
-              <label for="talle">4</label>
+              <label for="talle"><%= product.talles %></label>
               <input type="radio" name="talle" />
-              <label for="talle">5</label>
+              <label for="talle"><%= product.talles %></label>
               <input type="radio" name="talle" />
             </div>
           </form>
@@ -104,14 +104,7 @@
 
           </div>
           <article class="descripcion-producto">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              aliquam iusto nemo? Tempore, praesentium quasi culpa nihil,
-              aliquid quidem nobis ipsum saepe ab consequuntur laborum ex error
-              commodi repudiandae aut a ut. Dicta nulla, in iste natus quia et
-              aliquid modi dolore illum soluta voluptate at quibusdam, amet
-              commodi blanditiis.
-            </p>
+            <p><%= product.detalleProductoProducto %> </p>
           </article>
         </div>
       </section>
@@ -123,16 +116,18 @@
             </div>
         </section>
 
-      <h2>Productos Relacionados</h2>
+      <h2>Productos Relacionados con <%= product.genero %> </h2>
       <section class="carusel">
         <!-- codigo extraido de http://sachinchoolur.github.io/lightslider/examples.html -->
         <ul id="autoWidth" class="cs-hidden">
+        <% products.forEach(product => {%>
+          
           <!-- img-1 ------------------------------->
           <li class="item">
             <div class="box">
               <!-- box-producto -->
               <div class="slide-img">
-                <img src="../img/img/jeans-1.jpg" alt="" />
+                <img src="../img/img/<%= product.imgPrincipal %> " alt="" />
                 <!-- capa -->
                 <div class="capa">
                   <!-- btn comprar -->
@@ -142,175 +137,16 @@
               <!-- detalle-producto -->
               <div class="detalle-producto">
                 <div class="type">
-                  <a href="">Lorem ipsum dolor sit</a>
+                  <a href=""><%= product.nombreProducto %> </a>
                   <span>New Arrival</span>
                 </div>
-                <a href="" class="price">$23</a>
+                <a href="" class="price">$<%= product.precio %> </a>
               </div>
             </div>
             <!-- cierre-box -->
           </li>
-          <!-- img-2 ------------------------------->
-          <li class="item">
-            <div class="box">
-              <!-- box-producto -->
-              <div class="slide-img">
-                <img src="../img/img/jeans-2.jpg" alt="" />
-                <!-- capa -->
-                <div class="capa">
-                  <!-- btn comprar -->
-                  <a href="" class="btn-comprar">Comprar</a>
-                </div>
-              </div>
-              <!-- detalle-producto -->
-              <div class="detalle-producto">
-                <div class="type">
-                  <a href="">Lorem ipsum dolor sit</a>
-                  <span>New Arrival</span>
-                </div>
-                <a href="" class="price">$23</a>
-              </div>
-            </div>
-            <!-- cierre-box -->
-          </li>
-          <!-- img-3 ------------------------------->
-          <li class="item">
-            <div class="box">
-              <!-- box-producto -->
-              <div class="slide-img">
-                <img src="../img/img/pantalon-mujer.jpg" alt="" />
-                <!-- capa -->
-                <div class="capa">
-                  <!-- btn comprar -->
-                  <a href="" class="btn-comprar">Comprar</a>
-                </div>
-              </div>
-              <!-- detalle-producto -->
-              <div class="detalle-producto">
-                <div class="type">
-                  <a href="">Lorem ipsum dolor sit</a>
-                  <span>New Arrival</span>
-                </div>
-                <a href="" class="price">$23</a>
-              </div>
-            </div>
-            <!-- cierre-box -->
-          </li>
-          <!-- img-4 ------------------------------->
-          <li class="item">
-            <div class="box">
-              <!-- box-producto -->
-              <div class="slide-img">
-                <img src="../img/img/pantalon-niña.jpg" alt="" />
-                <!-- capa -->
-                <div class="capa">
-                  <!-- btn comprar -->
-                  <a href="" class="btn-comprar">Comprar</a>
-                </div>
-              </div>
-              <!-- detalle-producto -->
-              <div class="detalle-producto">
-                <div class="type">
-                  <a href="">Lorem ipsum dolor sit</a>
-                  <span>New Arrival</span>
-                </div>
-                <a href="" class="price">$23</a>
-              </div>
-            </div>
-            <!-- cierre-box -->
-          </li>
-          <!-- img-5 ------------------------------->
-          <li class="item">
-            <div class="box">
-              <!-- box-producto -->
-              <div class="slide-img">
-                <img src="../img/img/niñas.jpg" alt="" />
-                <!-- capa -->
-                <div class="capa">
-                  <!-- btn comprar -->
-                  <a href="" class="btn-comprar">Comprar</a>
-                </div>
-              </div>
-              <!-- detalle-producto -->
-              <div class="detalle-producto">
-                <div class="type">
-                  <a href="">Lorem ipsum dolor sit</a>
-                  <span>New Arrival</span>
-                </div>
-                <a href="" class="price">$23</a>
-              </div>
-            </div>
-            <!-- cierre-box -->
-          </li>
-          <!-- img-6 ------------------------------->
-          <li class="item">
-            <div class="box">
-              <!-- box-producto -->
-              <div class="slide-img">
-                <img src="../img/img/niños.jpg" alt="" />
-                <!-- capa -->
-                <div class="capa">
-                  <!-- btn comprar -->
-                  <a href="" class="btn-comprar">Comprar</a>
-                </div>
-              </div>
-              <!-- detalle-producto -->
-              <div class="detalle-producto">
-                <div class="type">
-                  <a href="">Lorem ipsum dolor sit</a>
-                  <span>New Arrival</span>
-                </div>
-                <a href="" class="price">$23</a>
-              </div>
-            </div>
-            <!-- cierre-box -->
-          </li>
-          <!-- img-7 ------------------------------->
-          <li class="item">
-            <div class="box">
-              <!-- box-producto -->
-              <div class="slide-img">
-                <img src="../img/img/remera-niño.jpg" alt="" />
-                <!-- capa -->
-                <div class="capa">
-                  <!-- btn comprar -->
-                  <a href="" class="btn-comprar">Comprar</a>
-                </div>
-              </div>
-              <!-- detalle-producto -->
-              <div class="detalle-producto">
-                <div class="type">
-                  <a href="">Lorem ipsum dolor sit</a>
-                  <span>New Arrival</span>
-                </div>
-                <a href="" class="price">$23</a>
-              </div>
-            </div>
-            <!-- cierre-box -->
-          </li>
-          <!-- img-8 ------------------------------->
-          <li class="item">
-            <div class="box">
-              <!-- box-producto -->
-              <div class="slide-img">
-                <img src="../img/img/remera-mujer.jpg" alt="" />
-                <!-- capa -->
-                <div class="capa">
-                  <!-- btn comprar -->
-                  <a href="" class="btn-comprar">Comprar</a>
-                </div>
-              </div>
-              <!-- detalle-producto -->
-              <div class="detalle-producto">
-                <div class="type">
-                  <a href="">Lorem ipsum dolor sit</a>
-                  <span>New Arrival</span>
-                </div>
-                <a href="" class="price">$23</a>
-              </div>
-            </div>
-            <!-- cierre-box -->
-          </li>
+          <%});%>
+          
         </ul>
       </section>
 
