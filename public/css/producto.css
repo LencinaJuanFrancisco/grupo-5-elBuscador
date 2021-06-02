@@ -201,99 +201,146 @@ p {
 
 }
 /*************** carusel**********************/
-.carusel a{
-  text-decoration: none;
-  background-color: transparent;
-}
-.box{
-  width: 300px;
-  box-shadow: 2px 2px 30px rgba(0, 0  , 0, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 25px;
- 
-
-}
-.slide-img{
-  height:450px ;
-  /* ponemos position:relative para poder manupular el btn de comprar */
-  position: relative;
-}
-.slide-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.detalle-producto{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  padding: 10px 20px;
-}
-.type{
-  display: flex;
-  flex-direction: column;
-}
-.type a{
-  color:#222222 ;
-  margin: 5px 0px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding-right: 8px ;
-}
-.type span{
-  color: rgba(26, 26, 26, 0.5);
-}
-.price{
-  color:#333333 ;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.5px;
-}
-.capa{
-  position: absolute;
-  /* usamos left y top 50% para centar, luego el trasform como artilijio para que quede bien centrado */
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
-  background-color:rgba(197, 248, 200,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn-comprar{
-  width: 160px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  color: #252525;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 20px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-}
-.btn-comprar:hover{
-  color: #ffffff;
-  background-color: #f9989f;
-  transition: all ease 300ms;
-}
-/* ocultamos ca lapa para cuando hacemos hover sobre la img la hacemos aparecer */
-.capa{
-  visibility: hidden;
-}
-.slide-img:hover .capa{
-  visibility: visible;
-  animation: aparecer 500ms;
-
-}
+/* *******************************************************
+  ****************** productos ************************** */
+  article {
+    width: 100vw;
+    max-width: 1200px;
+  }
+  
+  article .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 160px;
+    height: 250px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    /* el overflow si lo sacamos no se ven las puntas redondeadas */
+    overflow: hidden;
+    margin: 5px;
+    text-align: center;
+  
+  }
+  
+  .box a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  .slide-img {
+    height: 65%;
+    /* ponemos position:relative para poder manupular el btn de comprar */
+    position: relative;
+  }
+  
+  .slide-img img {
+    width: 100%;
+    height: 100%;
+  
+    object-fit: cover;
+  }
+  
+  .detalle-producto {
+  
+  
+    /* display: flex;
+      justify-content: space-between;
+      align-items: center; */
+    font-family: 'Poppins', sans-serif;
+    padding: 5px
+  }
+  
+  .type {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .type a {
+    color: #222222;
+    text-decoration: none;
+    margin: 5px 0px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+  }
+  
+  .type span {
+    color: rgba(26, 26, 26, 0.5);
+    font-size: 12px;
+  }
+  
+  .price {
+    display: block;
+    padding: 2px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .capa {
+    position: absolute;
+    /* usamos left y top 50% para centar, luego el trasform como artilijio para que quede bien centrado */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(197, 248, 200, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-comprar {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #f9989f;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-comprar:hover {
+    color: #ffffff;
+    background-color: #f9989f;
+    transition: all ease 300ms;
+  }
+  
+  /* ocultamos ca lapa para cuando hacemos hover sobre la img la hacemos aparecer */
+  .capa {
+    visibility: hidden;
+  }
+  
+  .slide-img:hover .capa {
+    visibility: visible;
+    animation: aparecer 500ms;
+  
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
 @keyframes aparecer{
   0%{
       opacity: 0;
@@ -303,11 +350,12 @@ p {
   }
 }
 .carusel{
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 /*****************************************************/
 /*************** secciones ****************************/
