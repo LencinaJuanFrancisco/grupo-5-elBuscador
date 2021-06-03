@@ -35,28 +35,28 @@
 
                 <div class="div-nom_producto">
                     <label for="nombre-producto">Nombre del Producto</label>
-                    <input type="text" name="nombreProducto">
+                    <input type="text" name="nombreProducto" value=" <%= product.nombreProducto %>">
                 </div>
                 <div>Detalle</div>
                 <div>
-                    <textarea name="detalleProducto" rows="5" cols="20" value="<%= product.nombreProducto %> ">Detalle del producto</textarea>
+                    <textarea name="detalleProducto" rows="5" cols="40" value="<%= product.nombreProducto %>">Detalle del producto</textarea>
                 </div>
                 <div>
                     <div>Talles</div>
                     <label for="talles">
-                        <input type="radio" id="1" name="talles" value=<%="product.talles"%>> 1
+                        <input type="radio" id="1" name="talles" value="<%=product.talles%>"> 1
                     </label>
                     <label for="talles">
-                        <input type="radio" id="2" name="talles"> 2
+                        <input type="radio" id="2" name="talles" value="<%=product.talles%>"> 2
                     </label>
                     <label for="talles">
-                        <input type="radio" id="3" name="talles"> 3
+                        <input type="radio" id="3" name="talles" value="<%=product.talles%>"> 3
                     </label>
                     <label for="talles">
-                        <input type="radio" id="4" name="talles"> 4
+                        <input type="radio" id="4" name="talles" value="<%=product.talles%>"> 4
                     </label>
                     <label for="talles">
-                        <input type="radio" id="5" name="talles"> 5
+                        <input type="radio" id="5" name="talles" value="<%=product.talles%>"> 5
                     </label>
                 </div>
                 <div class="div-precio">
@@ -82,15 +82,15 @@
                 <div >Colores</div>
                 
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#f9989f" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#fccb8f" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#faf096" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#c5f8c8" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#aeaeae" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
             </div>
             <div>
                 <div>Genero</div>
