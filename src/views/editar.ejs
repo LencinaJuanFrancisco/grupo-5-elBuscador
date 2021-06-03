@@ -39,12 +39,12 @@
                 </div>
                 <div>Detalle</div>
                 <div>
-                    <textarea name="detalleProducto" rows="5" cols="20">Detalle del producto</textarea>
+                    <textarea name="detalleProducto" rows="5" cols="20" value="<%= product.nombreProducto %> ">Detalle del producto</textarea>
                 </div>
                 <div>
                     <div>Talles</div>
                     <label for="talles">
-                        <input type="radio" id="1" name="talles"> 1
+                        <input type="radio" id="1" name="talles" value=<%="product.talles"%>> 1
                     </label>
                     <label for="talles">
                         <input type="radio" id="2" name="talles"> 2
@@ -62,7 +62,7 @@
                 <div class="div-precio">
                     <label for="">Precio $ </label>
                         <label for="precio">
-                            <input type="text" name="precio"></label>
+                            <input type="text" name="precio" value="<%= product.precio %> "></label>
 
                         </label>
                     
@@ -71,7 +71,7 @@
                 <div class="div-cantidad">
                     <label for="">Cantidad</label>
                     <label for="cantidad">
-                        <input type="text" name="cantidad">
+                        <input type="text" name="cantidad" value= "<%= product.cantidad %> ">
                     </label>
                 </div>
             </div> <!--cierre de bolsillo izquierdo -->
@@ -95,22 +95,22 @@
             <div>
                 <div>Genero</div>
                 <label for="genero">
-                    <input type="radio" name="genero" id="mujer">Mujer
+                    <input type="radio" name="genero" id="mujer" value="<%= product.genero %> ">Mujer
                 </label>
                 <label for="genero">
-                    <input type="radio" name="genero" id="niñas">Niñas
+                    <input type="radio" name="genero" id="niñas" value="<%= product.genero %> ">Niñas
                 </label>
                 <label for="genero">
-                    <input type="radio" name="genero" id="niños">Niños
+                    <input type="radio" name="genero" id="niños" value="<%= product.genero %> ">Niños
                 </label>
             </div>
             <div>
                 <div>Temporada</div>
                 <label for="temporada">
-                    <input type="radio" name="temporada" id="verano">Verano
+                    <input type="radio" name="temporada" id="verano" value="<%= product.temporada %> ">Verano
                 </label>
                 <label for="temporada">
-                    <input type="radio" name="temporada" id="invierno">Invierno
+                    <input type="radio" name="temporada" id="invierno" value="<%= product.temporada %> ">Invierno
                 </label>
             </div>
             <div>
