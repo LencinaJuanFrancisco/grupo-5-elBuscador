@@ -94,10 +94,12 @@
             </div>
           </form>
           <!-- </article> -->
-          <div class="btn">
+          <div class="btn btn-cliente">
             <button type="submit">Añadir al carrito</button>
             <button type="submit">Comparar ahora</button>
             
+          </div>
+          <div class="btn btn-admin">
             <button type="submit"> <a href="./editar/<%=product.id %>">Editar</a> </button>
             <form action="/producto/borrar/<%=product.id %>?_method=delete" method="POST">
               <button type="submit"> Borrar </button>
