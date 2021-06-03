@@ -181,7 +181,7 @@
     },
     {
         "id": 16,
-        "nombreProducto": "chaleco polar niña",
+        "nombreProducto": "Gorro para niño",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 10,
         "precio": 2200,
@@ -189,7 +189,7 @@
         "colores": "Verde Militar",
         "genero": "Niña",
         "temporada": "Invierno",
-        "imgPrincipal": "chaleco.jpg"
+        "imgPrincipal": "16-gorro-niño.jpg"
     },
     {
         "id": 17,
@@ -201,7 +201,7 @@
         "colores": "Gris",
         "genero": "Mujer",
         "temporada": "Verano",
-        "imgPrincipal": "Zapas-urbanas.jpg"
+        "imgPrincipal": "17-zapatillas-urbanas.jpg"
     },
     {
         "id": 18,
@@ -213,7 +213,7 @@
         "colores": "Rojo",
         "genero": "Mujer",
         "temporada": "Verano",
-        "imgPrincipal": "Vestido-corto.jpg"
+        "imgPrincipal": "18-vestido-cortp.jpg"
     },
     {
         "id": 19,
@@ -225,7 +225,7 @@
         "colores": "Negro",
         "genero": "Mujer",
         "temporada": "Verano",
-        "imgPrincipal": "Vestido-largo.jpg"
+        "imgPrincipal": "19-vestido-largo.jpg"
     },
     {
         "id": 20,
@@ -237,11 +237,11 @@
         "colores": "Negro",
         "genero": "Niña",
         "temporada": "Verano",
-        "imgPrincipal": "jean-1.jpg"
+        "imgPrincipal": "20-converse-niña.jpg"
     },
     {
         "id": 21,
-        "nombreProducto": "Babucha de algodon niño",
+        "nombreProducto": "Remera mangas largas niña",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 12,
         "precio": 1500,
@@ -249,7 +249,7 @@
         "colores": "Negro",
         "genero": "Niño",
         "temporada": "Invierno",
-        "imgPrincipal": "babucha-niño.jpg"
+        "imgPrincipal": "21-remera-niña.mangaslargas.jpg"
     },
     {
         "id": 22,
@@ -333,11 +333,11 @@
         "colores": "rojo",
         "genero": "Mujer",
         "temporada": "Verano",
-        "imgPrincipal": "jean-1.jpg"
+        "imgPrincipal": "28-jeans-rotura.jpg"
     },
     {
         "id": 29,
-        "nombreProducto": "Zapatillas Converse niña",
+        "nombreProducto": "Campera de mujer",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": 33,
         "precio": 2000,
@@ -345,7 +345,7 @@
         "colores": "Negro",
         "genero": "Niña",
         "temporada": "Verano",
-        "imgPrincipal": "jean-1.jpg"
+        "imgPrincipal": "29-campera-mujer.jpg"
     },
     {
         "id": 30,
@@ -433,10 +433,10 @@
     },
     {
         "id": 37,
-        "nombreProducto": "pantalon",
+        "nombreProducto": "Conjunto mujer",
         "detalleProducto": "largo",
         "talles": "on",
-        "precio": "11111",
+        "precio": "2700",
         "cantidad": "1",
         "colores": [
             "#c6a9ab",
@@ -447,7 +447,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "imgPrincipal": "",
+        "imgPrincipal": "37-conjunto-mujer.jpg",
         "img-secundaria": [
             "",
             "",
@@ -457,10 +457,10 @@
     },
     {
         "id": 38,
-        "nombreProducto": "pantalon",
+        "nombreProducto": "Vestido mujer",
         "detalleProducto": "largo",
         "talles": "on",
-        "precio": "11111",
+        "precio": "2100",
         "cantidad": "1",
         "colores": [
             "#c6a9ab",
@@ -471,7 +471,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "imgPrincipal": "",
+        "imgPrincipal": "38-vestido-mujer.jpg",
         "img-secundaria": [
             "",
             "",
@@ -481,7 +481,7 @@
     },
     {
         "id": 39,
-        "nombreProducto": "pantalon",
+        "nombreProducto": "Sweater mujer",
         "detalleProducto": "largo",
         "talles": "on",
         "precio": "135",
@@ -495,7 +495,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "imgPrincipal": "",
+        "imgPrincipal": "39-sweater-mujer.jpg",
         "img-secundaria": [
             "",
             "",
@@ -505,7 +505,7 @@
     },
     {
         "id": 40,
-        "nombreProducto": "pantalon",
+        "nombreProducto": "Sweater niña",
         "detalleProducto": "largo",
         "talles": "on",
         "precio": "135",
@@ -519,7 +519,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "imgPrincipal": "",
+        "imgPrincipal": "40-sweater-niña.jpg",
         "img-secundaria": [
             "",
             "",
@@ -529,7 +529,7 @@
     },
     {
         "id": 41,
-        "nombreProducto": "buzo rojo",
+        "nombreProducto": "Sweater niño",
         "detalleProducto": "Para no cagarte de frio",
         "talles": "on",
         "precio": "167",
@@ -543,7 +543,7 @@
         ],
         "genero": "on",
         "temporada": "on",
-        "imgPrincipal": "",
+        "imgPrincipal": "41-sweater-niño.jpg",
         "img-secundaria": [
             "",
             "",
