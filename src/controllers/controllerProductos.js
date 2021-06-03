@@ -72,9 +72,10 @@ const controllerProducto = {
         let productoElegido = req.params.id;
         products.forEach(product => {
             if(product.id == productoElegido) {
+           
                 res.render("editar", {product})
             };           
-
+              
         });
     },
     update: (req, res) => {

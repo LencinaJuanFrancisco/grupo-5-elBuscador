@@ -35,34 +35,34 @@
 
                 <div class="div-nom_producto">
                     <label for="nombre-producto">Nombre del Producto</label>
-                    <input type="text" name="nombre-producto">
+                    <input type="text" name="nombreProducto" value=" <%= product.nombreProducto %>">
                 </div>
                 <div>Detalle</div>
                 <div>
-                    <textarea name="detalle-producto" rows="5" cols="20">Detalle del producto</textarea>
+                    <textarea name="detalleProducto" rows="5" cols="40" "><%= product.detalleProducto %> </textarea>
                 </div>
                 <div>
                     <div>Talles</div>
                     <label for="talles">
-                        <input type="radio" id="1" name="talles"> 1
+                        <input type="radio" id="1" name="talles" value="<%=product.talles%>"> 1
                     </label>
                     <label for="talles">
-                        <input type="radio" id="2" name="talles"> 2
+                        <input type="radio" id="2" name="talles" value="<%=product.talles%>"> 2
                     </label>
                     <label for="talles">
-                        <input type="radio" id="3" name="talles"> 3
+                        <input type="radio" id="3" name="talles" value="<%=product.talles%>"> 3
                     </label>
                     <label for="talles">
-                        <input type="radio" id="4" name="talles"> 4
+                        <input type="radio" id="4" name="talles" value="<%=product.talles%>"> 4
                     </label>
                     <label for="talles">
-                        <input type="radio" id="5" name="talles"> 5
+                        <input type="radio" id="5" name="talles" value="<%=product.talles%>"> 5
                     </label>
                 </div>
                 <div class="div-precio">
                     <label for="">Precio $ </label>
                         <label for="precio">
-                            <input type="text" name="precio"></label>
+                            <input type="text" name="precio" value="<%= product.precio %> "></label>
 
                         </label>
                     
@@ -71,7 +71,7 @@
                 <div class="div-cantidad">
                     <label for="">Cantidad</label>
                     <label for="cantidad">
-                        <input type="text" name="cantidad">
+                        <input type="text" name="cantidad" value= "<%= product.cantidad %> ">
                     </label>
                 </div>
             </div> <!--cierre de bolsillo izquierdo -->
@@ -82,35 +82,35 @@
                 <div >Colores</div>
                 
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#f9989f" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#fccb8f" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#faf096" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#c5f8c8" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#aeaeae" />
+                    <input type="color" name="colores" value="<%=product.colores%>" />
             </div>
             <div>
                 <div>Genero</div>
                 <label for="genero">
-                    <input type="radio" name="genero" id="mujer">Mujer
+                    <input type="radio" name="genero" id="mujer" value="<%= product.genero %> ">Mujer
                 </label>
                 <label for="genero">
-                    <input type="radio" name="genero" id="niñas">Niñas
+                    <input type="radio" name="genero" id="niñas" value="<%= product.genero %> ">Niñas
                 </label>
                 <label for="genero">
-                    <input type="radio" name="genero" id="niños">Niños
+                    <input type="radio" name="genero" id="niños" value="<%= product.genero %> ">Niños
                 </label>
             </div>
             <div>
                 <div>Temporada</div>
                 <label for="temporada">
-                    <input type="radio" name="temporada" id="verano">Verano
+                    <input type="radio" name="temporada" id="verano" value="<%= product.temporada %> ">Verano
                 </label>
                 <label for="temporada">
-                    <input type="radio" name="temporada" id="invierno">Invierno
+                    <input type="radio" name="temporada" id="invierno" value="<%= product.temporada %> ">Invierno
                 </label>
             </div>
             <div>
@@ -118,7 +118,7 @@
                 <div>
                     Imagen Principal
                 </div>
-                <input type="file" name="img-principal">
+                <input type="file" name="imgPrincipal">
             </div>
             <div>
                 <div>
@@ -126,23 +126,23 @@
                 </div>
                 <div>
                     <label for=""> 1- 
-                        <input type="file" name="img-secundaria" id="img-secundaria-1">
+                        <input type="file" name="imgPecundaria" id="img-secundaria-1">
                     </label>
                 </div>
                 <div>
                     <label for="">2- 
-                        <input type="file" name="img-secundaria" id="img-secundaria-2">
+                        <input type="file" name="imgPecundaria" id="img-secundaria-2">
                     </label>
                 </div>
     
                 <div>
                     <label for=""> 3- 
-                        <input type="file" name="img-secundaria" id="img-secundaria-3">
+                        <input type="file" name="imgPecundaria" id="img-secundaria-3">
                     </label>
                 </div>
                 <div>
                     <label for=""> 4- 
-                        <input type="file" name="img-secundaria" id="img-secundaria-4">
+                        <input type="file" name="imgPecundaria" id="img-secundaria-4">
                     </label>
                 </div>
                 <button class="btn" type="submit">Aceptar</button>
