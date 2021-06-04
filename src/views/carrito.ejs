@@ -18,111 +18,101 @@
     <!-- header -->
     <%- include('../views/partials/header') %>
 
-    <main>
-        <h2>TU CARRITO</h2>
-        <div class="carrito">
-            <div class="estructura">
-                <div class="imagen-principal">
-                    <img src="../img/img/remera-niño.jpg" alt="imagen1">
-                </div>
-                <div class="descripcion">
-                    <div class="descripcion_titulo">
-                        <p>Titulo de la publicacion</p>
+        <main>
+            <h2>TU CARRITO</h2>
+
+            <% carrito.forEach(producto=> {%>
+                <div class="carrito">
+
+                    <div class="estructura">
+                        <div class="imagen-principal">
+                            <img src="../img/img/<%=producto.imgPrincipal%>" alt="imagen1">
+                        </div>
+                        <div class="descripcion">
+                            <div class="descripcion_titulo">
+                                <p>
+                                    <%=producto.nombreProducto%>
+                                </p>
+                            </div>
+                            <p>
+                                $ <%=producto.precio%>
+                            </p>
+                            <p>
+                                Talle: <%=producto.talles%>
+                            </p>
+                            <p>
+                                Color: <%=producto.colores%>
+                            </p>
+                        </div>
                     </div>
-                    <p>Precio</p>
-                    <p>talle</p>
-                    <p>Color</p>
                 </div>
+                <% });%>
 
 
+
+
+
+
+
+
+                    <!-- cierra carrito -->
+                    <div class="info">
+                        <div class="envio">
+                            <p>Envio Gratis</p>
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="retiro">
+                            <p>Retiro en tienda</p>
+                            <i class="fas fa-home"></i>
+                        </div>
+
+                    </div>
+                    <h3>RESUMEN DEL PEDIDO</h3>
+                    <div class="resumen-del-pedido">
+                        <p>Precio</p>
+                        <p>Descuento</p>
+                        <p>Envio</p>
+                        <p>Total a pagar</p>
+                    </div>
+                    <div class="form">
+                        <form action=""></form>
+                        <input type="text" placeholder="Codigo Promocional">
+                    </div>
+
+                    <div class="btn">
+                        <a href="/index"><button type="submit"> Volver</button></a>
+                        <button type="submit">Avanzar</button>
+                    </div>
+
+
+
+
+
+        </main>
+        <section class="corte">
+            <div>
+                <h2>SUMMER 2022</h2>
 
             </div>
-            <div class="estructura">
-                <div class="imagen-principal">
-                    <img src="../img/img/jeans-1.jpg" alt="imagen1">
-                </div>
-                <div class="descripcion">
-                    <p>Titulo de la publicacion</p>
-                    <p>Precio</p>
-                    <p>talle</p>
-                    <p>Color</p>
-                </div>
+        </section>
+
+        <!-- FOOTER -->
+        <%- include ("../views/partials/footer.ejs") %>
+            <!-- instalcion de jquery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.js"
+                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
 
 
-
-            </div>
-            <div class="estructura">
-                <div class="imagen-principal">
-                    <img src="../img/img/jeans-2.jpg" alt="imagen1">
-                </div>
-                <div class="descripcion">
-                    <p>Titulo de la publicacion</p>
-                    <p>Precio</p>
-                    <p>talle</p>
-                    <p>Color</p>
-                </div>
-
-
-
-            </div>
-        </div>
-        <!-- cierra carrito -->
-        <div class="info">
-            <div class="envio">
-                <p>Envio Gratis</p>
-                <i class="fas fa-shipping-fast"></i>
-            </div>
-            <div class="retiro">
-                <p>Retiro en tienda</p>
-                <i class="fas fa-home"></i>
-            </div>
-            
-        </div>
-        <h3>RESUMEN DEL PEDIDO</h3>
-        <div class="resumen-del-pedido">
-            <p>Precio</p>
-            <p>Descuento</p>
-            <p>Envio</p>
-            <p>Total a pagar</p>
-        </div>
-        <div class="form">
-            <form action=""></form>
-            <input type="text" placeholder="Codigo Promocional">
-        </div>
-       
-        <div class="btn">
-            <a href="/index"><button type="submit"> Volver</button></a>
-            <button type="submit">Avanzar</button>
-        </div>
-  
-
-
-
-
-    </main>
-    <section class="corte">
-        <div>
-            <h2>SUMMER 2022</h2>
-
-        </div>
-    </section>
-    
-    <!-- FOOTER -->
-    <%- include ("../views/partials/footer.ejs") %> 
-          <!-- instalcion de jquery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
-       
-        
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(".menu-cel").click(function(){
-                    $(".menu-cel").toggleClass("active")
-                    $("nav").toggleClass("active")
-                })
-            });
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".menu-cel").click(function () {
+                        $(".menu-cel").toggleClass("active")
+                        $("nav").toggleClass("active")
+                    })
+                });
             </script>
-    
+
 
 </body>
 

@@ -44,8 +44,69 @@ const controllerProducto = {
         
     },
     carrito: (req,res)=>{
-        res.render('carrito', {products});
-        
+        let carrito = [  {
+            "id": 1,
+            "nombreProducto": "Jeans chupin con rotura",
+            "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+            "talles": 36,
+            "precio": 1800,
+            "cantidad": 30,
+            "colores": "Azul",
+            "genero": "Mujer",
+            "temporada": "Verano",
+            "imgPrincipal": "jeans-1.jpg"
+        },
+        {
+            "id": 2,
+            "nombreProducto": "Zapatillas Converse niña",
+            "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+            "talles": 33,
+            "precio": 2000,
+            "cantidad": 60,
+            "colores": "Negro",
+            "genero": "Niña",
+            "temporada": "Verano",
+            "imgPrincipal": "jean-1.jpg"
+        },
+        {
+            "id": 3,
+            "nombreProducto": "Jeans chupin con rotura",
+            "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+            "talles": 4,
+            "precio": 900,
+            "cantidad": 30,
+            "colores": "rojo",
+            "genero": "Mujer",
+            "temporada": "Verano",
+            "imgPrincipal": "calzado-niña.jpg"
+        },
+        {
+            "id": 4,
+            "nombreProducto": "Campera con corderito mujer",
+            "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+            "talles": 4,
+            "precio": 3000,
+            "cantidad": 50,
+            "colores": "Gris",
+            "genero": "Mujer",
+            "temporada": "Invierno",
+            "imgPrincipal": "abrigo-mujer.jpg"
+        },
+        {
+            "id": 5,
+            "nombreProducto": "Juego de gorro y guantes tejido",
+            "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+            "talles": 2,
+            "precio": 1500,
+            "cantidad": 20,
+            "colores": "Blanco",
+            "genero": "Niña",
+            "temporada": "invierno",
+            "imgPrincipal": "abrigo-niña.jpg"
+        }]
+        res.render('carrito', {carrito});
+       
+          
     },
     cargaProducto: (req,res)=>{
 

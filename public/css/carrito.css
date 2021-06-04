@@ -111,6 +111,7 @@ nav ul li a:hover{
   .estructura{margin: 10px auto;
     border-top: #42B218 1px solid;
     border-bottom: #42B218 1px solid;
+    text-align: left;
     
 
   }
@@ -133,7 +134,13 @@ nav ul li a:hover{
   }
   .descripcion{
       display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
 
+  }
+  .descripcion_titulo{
+    width: 100%;
   }
   .descripcion p{
   /*margin: 20px 10px;
@@ -358,13 +365,25 @@ nav ul li a:hover{
           margin: 5px;
       }
       .descripcion{
-          width: 5%;
+          width: 95%;
           display: flex;
+          align-items: center;
+          flex-wrap: wrap;
       }
       .descripcion p{
-          margin: 2px;
-          display: block;
+        margin: 2px;
+        display: block;
+        width: 15%;
+    }
+      .descripcion_titulo{
+        width: 50%;
+      
       }
+      .descripcion_titulo p{
+        width: 100%;
+      }
+     
+    
       .info{
           width: 50%;
       }
