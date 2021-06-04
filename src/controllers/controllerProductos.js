@@ -114,7 +114,7 @@ const controllerProducto = {
     },
     
     listadoProducto:(req,res)=>{
-        res.render('listadoProducto')
+        res.render('listadoProducto', {products})
     },
     viewCarga: (req, res) => {
         res.render("carga");
@@ -133,9 +133,10 @@ const controllerProducto = {
         let productoElegido = req.params.id;
         products.forEach(product => {
             if(product.id == productoElegido) {
+           
                 res.render("editar", {product})
             };           
-
+              
         });
     },
     update: (req, res) => {

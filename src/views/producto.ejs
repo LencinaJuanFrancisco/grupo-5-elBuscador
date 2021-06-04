@@ -89,19 +89,21 @@
               <input type="radio" name="talle" />
               <label for="talle"><%= product.talles %></label>
               <input type="radio" name="talle" />
-              <label for="talle"><%= product.talles %></label>
+              <label for="talle" ><%= product.talles %></label>
               <input type="radio" name="talle" />
             </div>
           </form>
           <!-- </article> -->
-          <div class="btn">
+          <div class="btn btn-cliente">
             <button type="submit">Añadir al carrito</button>
             <button type="submit">Comparar ahora</button>
             
+          </div>
+          <div class="btn btn-admin">
             <button type="submit"> <a href="./editar/<%=product.id %>">Editar</a> </button>
-            <form action="/producto/borrar/<%=product.id %>?_method=delete" method="POST">
-              <button type="submit"> Borrar </button>
-            </form>
+            
+              <button type="submit"> <a href="./editar/<%=product.id %>">Borrar</a> </button>
+            
 
           </div>
           <article class="descripcion-producto">
