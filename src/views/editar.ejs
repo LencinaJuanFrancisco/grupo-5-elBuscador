@@ -26,8 +26,10 @@
     <!-- FORMULARIO DE CARGA -->
     <main class="main-carga">
         <div class="div-btn">
-            <button class="btn" type="submit">Crear</button>
+           
+            <form  action="/producto/editar/<%=product.id %>?_method=PUT" method="POST">
             <button class="btn" type="submit">Editar</button>
+            </form>
             <button class="btn" type="submit">Eliminar</button>
         </div>
         <form class="form-carga" action="/producto/editar/<%=product.id %>?_method=PUT" method="POST">

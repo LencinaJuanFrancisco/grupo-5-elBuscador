@@ -156,7 +156,7 @@ const controllerProducto = {
         })
         let productsJson = JSON.stringify(products, null, 4);
         fs.writeFileSync(productsFilePath, productsJson);
-        res.redirect(`/producto/${productNew.id}`);
+        res.redirect(`/producto/${productoElegido.id}`);
         },
         delete: (req, res) => {
             let newProducts = products.filter(
