@@ -141,6 +141,7 @@ const controllerProducto = {
     },
     update: (req, res) => {
         let productoElegido = req.params.id;
+        console.log(req.body);
         products.forEach(product => {
             if(product.id == productoElegido) {
                 product.nombreProducto = req.body.nombreProducto,
@@ -151,13 +152,20 @@ const controllerProducto = {
                 product.colores = req.body.colores,
                 product.genero = req.body.genero,
                 product.temporada = req.body.temporada
+
+                console.log(product)
                // product.imgPrincipal = req.body.imgPrincipal                
             }   
         })
+        
         let productsJson = JSON.stringify(products, null, 4);
         fs.writeFileSync(productsFilePath, productsJson);
-        res.redirect(`/producto/${productNew.id}`);
+        products.forEach(product =>{
+            if(product.id == productoElegido)
+            res.redirect('/producto/'+product.id);
+        })
         },
+
         delete: (req, res) => {
             let newProducts = products.filter(
                 product => {

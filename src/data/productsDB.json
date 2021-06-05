@@ -73,15 +73,20 @@
     },
     {
         "id": 12,
-        "nombreProducto": "pack de medias x 3",
-        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 30,
-        "precio": 900,
-        "cantidad": 100,
-        "colores": "Blanco",
-        "genero": "Niño",
-        "temporada": "Verano",
-        "imgPrincipal": "niñas.jpg"
+        "nombreProducto": "    pack de medias x 5",
+        "detalleProducto": "lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.       ",
+        "precio": "1000 ",
+        "cantidad": "100  ",
+        "colores": [
+            "#c20f0f",
+            "#1058cb",
+            "#14cc98",
+            "#acd41c",
+            "#db06c9"
+        ],
+        "imgPrincipal": "niñas.jpg",
+        "genero": "  ",
+        "temporada": " "
     },
     {
         "id": 13,
@@ -229,26 +234,36 @@
     },
     {
         "id": 25,
-        "nombreProducto": "Botas bordadas",
-        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 38,
-        "precio": 3300,
-        "cantidad": 25,
-        "colores": "Negro",
-        "genero": "Mujer",
-        "temporada": "Invierno",
+        "nombreProducto": " Botas",
+        "detalleProducto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus. ",
+        "talles": "38",
+        "precio": "3300 ",
+        "cantidad": "25 ",
+        "colores": [
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
         "imgPrincipal": "calzado-mujer.jpg"
     },
     {
         "id": 26,
-        "nombreProducto": "Zapatillas converse niño",
-        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 30,
-        "precio": 2000,
-        "cantidad": 40,
-        "colores": "Negro",
-        "genero": "Niño",
-        "temporada": "Invierno",
+        "nombreProducto": "   Zapatillas 26",
+        "detalleProducto": "LORENA ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.   ",
+        "talles": "30",
+        "precio": "1000  ",
+        "cantidad": "50  ",
+        "colores": [
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "genero": "Niño   ",
+        "temporada": "Invierno   ",
         "imgPrincipal": "calzado-niño.jpg"
     },
     {
@@ -485,6 +500,16 @@
         "temporada": "on",
         "imgPrincipal": "41-sweater-niño.jpg",
         "img-secundaria": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": 42,
+        "imgPrincipal": "",
+        "imgSecundaria": [
             "",
             "",
             "",

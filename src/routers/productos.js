@@ -2,7 +2,7 @@ const express= require('express');
 const router = express.Router();
 const controllerProducto= require('../controllers/controllerProductos');
 
-router.get('/', controllerProducto.detalle);
+//router.get('/', controllerProducto.detalle);
 
 router.get('/carga',controllerProducto.cargaProducto);
 
