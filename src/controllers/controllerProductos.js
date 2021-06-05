@@ -160,10 +160,14 @@ const controllerProducto = {
         
         let productsJson = JSON.stringify(products, null, 4);
         fs.writeFileSync(productsFilePath, productsJson);
+<<<<<<< HEAD
         products.forEach(product =>{
             if(product.id == productoElegido)
             res.redirect('/producto/'+product.id);
         })
+=======
+        res.redirect(`/producto/${productoElegido.id}`);
+>>>>>>> 6e3b78021428813ff80b0521eb93c00795f5d3fd
         },
 
         delete: (req, res) => {
