@@ -43,14 +43,25 @@
                 </div>
                 <div>
                     <div>Talles</div> 
-                    <%  { product.talles.forEach(product.talle => { %>
-                        
-                 
-                        <label for="<%=product.talle%>">
-                            <input type="radio" id="<%=product.talle%>" name="talles"> 1
+                    <div class=" talles">
+                        <label for="talles">
+                             <input type="text" name="talles"  value=""  >
                         </label>
-                    
-                    <%   }); %>
+                        <label for="talles">
+                            <input type="text" name="talles"  value=""  >
+                       </label>
+                       <label for="talles">
+                        <input type="text" name="talles"  value=""  >
+                   </label>
+                   <label for="talles">
+                    <input type="text" name="talles"  value=""  >
+               </label>
+               <label for="talles">
+                <input type="text" name="talles"  value=""  >
+           </label>
+                       
+                            
+                    </div>
                     
                 </div>
                 <div class="div-precio">
@@ -89,22 +100,22 @@
             <div>
                 <div>Genero</div>
                 <label for="genero">
-                    <input type="radio" name="genero" id="mujer">Mujer
+                    <input type="radio" name="genero" id="mujer" value="mujer">Mujer
                 </label>
                 <label for="genero">
-                    <input type="radio" name="genero" id="niñas">Niñas
+                    <input type="radio" name="genero" id="niñas" value="niñas">Niñas
                 </label>
                 <label for="genero">
-                    <input type="radio" name="genero" id="niños">Niños
+                    <input type="radio" name="genero" id="niños" value="nuños">Niños
                 </label>
             </div>
             <div>
                 <div>Temporada</div>
                 <label for="temporada">
-                    <input type="radio" name="temporada" id="verano">Verano
+                    <input type="radio" name="temporada" id="verano" value="verano">Verano
                 </label>
                 <label for="temporada">
-                    <input type="radio" name="temporada" id="invierno">Invierno
+                    <input type="radio" name="temporada" id="invierno" value="invierno">Invierno
                 </label>
             </div>
             <div>

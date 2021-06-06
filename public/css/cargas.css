@@ -151,12 +151,11 @@ header{
 }
 .talles input{
   width: 35px;
+  margin: 5px;
+  
 }
-.color{
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-}
+
+
 .div-cantidad,.div-precio{
   display:flex;
   justify-content: center;

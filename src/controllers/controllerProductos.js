@@ -135,7 +135,7 @@ const controllerProducto = {
     },
     viewEdit: (req, res) => {
         let productoElegido = req.params.id;
-        let talles, temporada,genero, colores=[];
+        let talles, temporada,genero, colores =[];
         
         products.forEach(product => {
             if(product.id == productoElegido) {
@@ -184,7 +184,7 @@ const controllerProducto = {
                 } )
                 let productsJson = JSON.stringify(newProducts, null, 4);
                 fs.writeFileSync(productsFilePath, productsJson);
-                res.redirect(`/listadoProducto`);
+                res.redirect('/listadoProducto');
                    }
         }
 module.exports = controllerProducto;

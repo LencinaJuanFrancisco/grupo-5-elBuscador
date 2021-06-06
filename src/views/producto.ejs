@@ -34,7 +34,10 @@
         <!-- <article> -->
         <figure>
           <div class="img-principal">
-            <img src="../img/img/<%= product.imgPrincipal  %> " alt="imigen principal" />
+            <img
+              src="../img/img/<%= product.imgPrincipal  %> "
+              alt="imigen principal"
+            />
           </div>
           <!-- estas imagenes se ven recien en modo table en adelante  -->
           <div class="img-secundarias">
@@ -43,11 +46,8 @@
               alt="img secundaria"
               class="img-sec-1"
             />
-            <img
-              src="../img/img/<%= product.imgPrincipal%>""
-              alt="img secundaria"
-              class="img-sec-2"
-            />
+            <img src="../img/img/<%= product.imgPrincipal%>"" alt="img
+            secundaria" class="img-sec-2" />
             <img
               src="../img/img/<%= product.imgPrincipal %>"
               alt="img secundaria"
@@ -64,68 +64,65 @@
           <p><%= product.nombreProducto %></p>
           <p>$ <%= product.precio %></p>
           <form action="" method="POST" class="form-color">
-            <label for="">Color</label>
-            <div>
+            <label for="">Color :</label>
+
+            <% colores.forEach(color => { %>
+
+            <div
               
-              <% colores.forEach(color => { %> 
-               
-                <label for="<%= color %> "> <div class="color" style="background-color: <%=color%>">
-                
-                </div>
-                <input type="radio" name="colores"  >
+              style="
+                background-color: <%=color%>;
+                width: 35px;
+                display: inline-block;
+              "
+            >
+              <label for="<%= color %> ">
+                <input type="radio" name="colores" />
               </label>
-                
-                <%});%> 
-
-              
-
-
-
-            
+            </div>
+            <%});%>
           </form>
           <form action="" class="form-talle">
-            <label for="">Talle</label>
+            <label for="">Talles</label>
             <div>
-              <% talles.forEach(talle => { %> 
-                
-                <label for="talles"><%= talle %> </label>
-                <input type="radio" name="talles" />
-                
-                <%});%> 
+              <% talles.forEach(talle => { %>
+
+              <label for="talles"><%= talle.toUpperCase() %> </label>
+              <input type="radio" name="talles" /> / <%});%>
             </div>
           </form>
           <!-- </article> -->
           <div class="btn btn-cliente">
             <button type="submit">Añadir al carrito</button>
             <button type="submit">Comparar ahora</button>
-            
           </div>
           <div class="btn btn-admin">
-            <button type="submit"> <a href="./editar/<%=product.id %>">Editar</a> </button>
-            
-              <button type="submit"> <a href="./editar/<%=product.id %>">Borrar</a> </button>
-            
+            <button type="submit">
+              <a href="./editar/<%=product.id %>">Editar</a>
+            </button>
 
+            <button type="submit">
+              <a href="./editar/<%=product.id %>">Borrar</a>
+            </button>
           </div>
           <article class="descripcion-producto">
-            <p><%= product.detalleProducto%> </p>
+            <p><%= product.detalleProducto%></p>
           </article>
         </div>
       </section>
 
       <section class="corte">
-            <div>
-                <h2>SUMMER 2022</h2>
+        <div>
+          <h2>SUMMER 2022</h2>
+        </div>
+      </section>
 
-            </div>
-        </section>
-
-      <h2>Productos Relacionados con <%= product.genero %> </h2>
+      <h2>Productos Relacionados con <%= product.genero %></h2>
       <section class="carusel">
         <!-- codigo extraido de http://sachinchoolur.github.io/lightslider/examples.html -->
         <ul id="autoWidth" class="cs-hidden">
-        <% products.forEach(product => {%>
-          
+          <% products.forEach(product => {%>
+
           <!-- img-1 ------------------------------->
           <li class="item">
             <div class="box">
@@ -141,7 +138,9 @@
               <!-- detalle-producto -->
               <div class="detalle-producto">
                 <div class="type">
-                  <a href="/producto/<%= product.id %> "><%= product.nombreProducto %> </a>
+                  <a href="/producto/<%= product.id %> "
+                    ><%= product.nombreProducto %>
+                  </a>
                   <span>New Arrival</span>
                 </div>
                 <a href="" class="price">$<%= product.precio %> </a>
@@ -150,7 +149,6 @@
             <!-- cierre-box -->
           </li>
           <%});%>
-          
         </ul>
       </section>
 
@@ -186,10 +184,9 @@
           ></path>
         </svg>
       </div> -->
-
     </main>
     <!-- FOOTER -->
-    <%- include ("../views/partials/footer.ejs") %> 
+    <%- include ("../views/partials/footer.ejs") %>
     <!-- script del carusel -->
     <script type="text/javascript" src="../js/script.js"></script>
 

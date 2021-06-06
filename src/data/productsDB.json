@@ -1,17 +1,25 @@
 [
     {
-        "id": 3,
-        "imgPrincipal": "calzado-niña.jpg"
-    },
-    {
         "id": 5,
         "nombreProducto": "Juego de gorro y guantes tejido",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 2,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 1500,
         "cantidad": 20,
-        "colores": "Blanco",
-        "genero": "Niña",
+        "colores": [
+            "#fa0000",
+            "#7331c4",
+            "#e5e90c",
+            "#06d0f4",
+            "#ed07e6"
+        ],
+        "genero": "niñas",
         "temporada": "invierno",
         "imgPrincipal": "abrigo-niña.jpg"
     },
@@ -19,11 +27,23 @@
         "id": 6,
         "nombreProducto": "Campera de algodon tipo escocesa",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 5,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 2400,
         "cantidad": 29,
-        "colores": "Marron",
-        "genero": "Niño",
+        "colores": [
+            "#fa0000",
+            "#7331c4",
+            "#e5e90c",
+            "#06d0f4",
+            "#ed07e6"
+        ],
+        "genero": "niños",
         "temporada": "Invierno",
         "imgPrincipal": "abrigo-niño.jpg"
     },
@@ -40,8 +60,14 @@
         ],
         "precio": 3300,
         "cantidad": 25,
-        "colores": "Negro",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0000",
+            "#7331c4",
+            "#e5e90c",
+            "#06d0f4",
+            "#ed07e6"
+        ],
+        "genero": "mujer",
         "temporada": "Invierno",
         "imgPrincipal": "calzado-mujer.jpg"
     },
@@ -49,11 +75,23 @@
         "id": 9,
         "nombreProducto": "Jeans con desgaste niño",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 10,
+        "talles": [
+            "      S",
+            "      M",
+            "      L",
+            "      XL",
+            "      XXL"
+        ],
         "precio": 2600,
         "cantidad": 40,
-        "colores": "azul",
-        "genero": "Niño",
+        "colores": [
+            "#fa0000",
+            "#7331c4",
+            "#e5e90c",
+            "#06d0f4",
+            "#ed07e6"
+        ],
+        "genero": "niños",
         "temporada": "Verano",
         "imgPrincipal": "pantalon-niño.jpg"
     },
@@ -61,30 +99,49 @@
         "id": 11,
         "nombreProducto": "Babucha deportiva",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 10,
+        "talles": [
+            "      S",
+            "      M",
+            "      L",
+            "      XL",
+            "      XXL"
+        ],
         "precio": 700,
         "cantidad": 60,
-        "colores": "Gris",
-        "genero": "Niña",
+        "colores": [
+            "#fa0000",
+            "#7331c4",
+            "#e5e90c",
+            "#06d0f4",
+            "#ed07e6"
+        ],
+        "genero": "niñas",
         "temporada": "Invierno",
         "imgPrincipal": "pantalon-niña.jpg"
     },
     {
         "id": 12,
-        "nombreProducto": "    pack de medias x 5",
-        "detalleProducto": "lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.       ",
-        "precio": "1000 ",
-        "cantidad": "100  ",
+        "nombreProducto": "     Pack de medias x 5",
+        "detalleProducto": "lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.             ",
+        "talles": [
+            "      S",
+            "      M",
+            "      L",
+            "      XL",
+            "      XXL"
+        ],
+        "precio": "1000       ",
+        "cantidad": "100        ",
         "colores": [
-            "#c20f0f",
-            "#1058cb",
-            "#14cc98",
-            "#acd41c",
-            "#db06c9"
+            "#fa0000",
+            "#7331c4",
+            "#e5e90c",
+            "#06d0f4",
+            "#ed07e6"
         ],
         "imgPrincipal": "niñas.jpg",
-        "genero": "  ",
-        "temporada": " "
+        "genero": "mujer",
+        "temporada": "verano"
     },
     {
         "id": 13,
@@ -99,8 +156,14 @@
         ],
         "precio": 300,
         "cantidad": 200,
-        "colores": "Gris",
-        "genero": "Mujer",
+        "colores": [
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "genero": "mujer",
         "temporada": "Invierno",
         "imgPrincipal": "pantalon-mujer.jpg"
     },
@@ -124,51 +187,61 @@
             "l",
             "xl",
             "xxl"
-        ]
+        ],
+        "genero": "niños",
+        "temporada": "verano"
     },
     {
         "id": 15,
-        "nombreProducto": "  REMERA ESTAMPADA ",
-        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.     ",
+        "nombreProducto": "   REMERA ESTAMPADA ",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.      ",
         "talles": [
-            "   1",
-            "2",
-            "3",
-            "4",
-            "5"
+            "    1",
+            " 2",
+            " 3",
+            " 4",
+            " 5"
         ],
-        "precio": "3000  ",
-        "cantidad": "20   ",
+        "precio": "3000   ",
+        "cantidad": "20    ",
         "colores": [
-            "#000000",
-            "#000000",
-            "#000000",
-            "#000000",
-            "#000000"
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
         ],
-        "imgPrincipal": "remera-niña.jpg"
+        "imgPrincipal": "remera-niña.jpg",
+        "genero": "mujer",
+        "temporada": "verano"
     },
     {
         "id": 16,
         "nombreProducto": "Gorro para niño",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": [
-            10,
-            12,
-            13,
-            14,
-            15
+            "28",
+            "30",
+            "32",
+            "34",
+            "36"
         ],
         "precio": 2200,
         "cantidad": 50,
-        "colores": "Verde Militar",
-        "genero": "Niña",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niñas",
         "temporada": "Invierno",
         "imgPrincipal": "16-gorro-niño.jpg"
     },
     {
         "id": 17,
-        "nombreProducto": "Zapatillas urbanas mujer",
+        "nombreProducto": "Zapatillas urbanas m",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": [
             "28",
@@ -179,8 +252,14 @@
         ],
         "precio": 2500,
         "cantidad": 60,
-        "colores": "Gris",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niño",
         "temporada": "Verano",
         "imgPrincipal": "17-zapatillas-urbanas.jpg"
     },
@@ -197,8 +276,14 @@
         ],
         "precio": 1000,
         "cantidad": 35,
-        "colores": "Rojo",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "mijer",
         "temporada": "Verano",
         "imgPrincipal": "18-vestido-cortp.jpg"
     },
@@ -206,17 +291,29 @@
         "id": 19,
         "nombreProducto": "Vestido de modal largos",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 4,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 1200,
         "cantidad": 70,
-        "colores": "Negro",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "mujer",
         "temporada": "Verano",
         "imgPrincipal": "19-vestido-largo.jpg"
     },
     {
         "id": 20,
-        "nombreProducto": "Zapatillas Converse niña",
+        "nombreProducto": "Zapatillas Converse niñas",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": [
             "28",
@@ -227,14 +324,20 @@
         ],
         "precio": 2000,
         "cantidad": 60,
-        "colores": "Negro",
-        "genero": "Niña",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niñas",
         "temporada": "Verano",
         "imgPrincipal": "20-converse-niña.jpg"
     },
     {
         "id": 21,
-        "nombreProducto": "Remera mangas largas niña",
+        "nombreProducto": "Remera mangas largas niñas",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": [
             "8",
@@ -245,14 +348,20 @@
         ],
         "precio": 1500,
         "cantidad": 30,
-        "colores": "Negro",
-        "genero": "Niño",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niñas",
         "temporada": "Invierno",
         "imgPrincipal": "21-remera-niña.mangaslargas.jpg"
     },
     {
         "id": 22,
-        "nombreProducto": "Campera con corderito mujer",
+        "nombreProducto": "Campera con corderito m",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": [
             "s",
@@ -263,8 +372,14 @@
         ],
         "precio": 3000,
         "cantidad": 50,
-        "colores": "Gris",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "mujer",
         "temporada": "Invierno",
         "imgPrincipal": "abrigo-mujer.jpg"
     },
@@ -272,11 +387,23 @@
         "id": 23,
         "nombreProducto": "Juego de gorro y guantes tejido",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 2,
+        "talles": [
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+        ],
         "precio": 1500,
         "cantidad": 20,
-        "colores": "Blanco",
-        "genero": "Niña",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niñas",
         "temporada": "invierno",
         "imgPrincipal": "abrigo-niña.jpg"
     },
@@ -293,8 +420,14 @@
         ],
         "precio": 2400,
         "cantidad": 29,
-        "colores": "Marron",
-        "genero": "Niño",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niños",
         "temporada": "Invierno",
         "imgPrincipal": "abrigo-niño.jpg"
     },
@@ -312,13 +445,15 @@
         "precio": "3300 ",
         "cantidad": "25 ",
         "colores": [
-            "#000000",
-            "#000000",
-            "#000000",
-            "#000000",
-            "#000000"
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
         ],
-        "imgPrincipal": "calzado-mujer.jpg"
+        "imgPrincipal": "calzado-mujer.jpg",
+        "genero": "niñas",
+        "temporada": "Invierno"
     },
     {
         "id": 26,
@@ -340,8 +475,8 @@
             "#000000",
             "#000000"
         ],
-        "genero": "Niño   ",
-        "temporada": "Invierno   ",
+        "genero": "niño",
+        "temporada": "Invierno",
         "imgPrincipal": "calzado-niño.jpg"
     },
     {
@@ -357,8 +492,14 @@
         ],
         "precio": 2600,
         "cantidad": 40,
-        "colores": "azul",
-        "genero": "Niño",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niños",
         "temporada": "Verano",
         "imgPrincipal": "pantalon-niño.jpg"
     },
@@ -375,20 +516,38 @@
         ],
         "precio": 900,
         "cantidad": 30,
-        "colores": "rojo",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niños",
         "temporada": "Verano",
         "imgPrincipal": "28-jeans-rotura.jpg"
     },
     {
         "id": 29,
-        "nombreProducto": "Campera de mujer",
+        "nombreProducto": "Campera de m",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 33,
+        "talles": [
+            "   S",
+            "   M",
+            "   J",
+            "   XL",
+            "   XXL"
+        ],
         "precio": 2000,
         "cantidad": 60,
-        "colores": "Negro",
-        "genero": "Niña",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niñas",
         "temporada": "Verano",
         "imgPrincipal": "29-campera-mujer.jpg"
     },
@@ -405,20 +564,38 @@
         ],
         "precio": 900,
         "cantidad": 30,
-        "colores": "rojo",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "mujer",
         "temporada": "Verano",
         "imgPrincipal": "calzado-niña.jpg"
     },
     {
         "id": 31,
-        "nombreProducto": "Campera con corderito mujer",
+        "nombreProducto": "Campera con corderito m",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 4,
+        "talles": [
+            "   S",
+            "   M",
+            "   J",
+            "   XL",
+            "   XXL"
+        ],
         "precio": 3000,
         "cantidad": 50,
-        "colores": "Gris",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "mujer",
         "temporada": "Invierno",
         "imgPrincipal": "abrigo-mujer.jpg"
     },
@@ -426,11 +603,23 @@
         "id": 32,
         "nombreProducto": "Juego de gorro y guantes tejido",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 2,
+        "talles": [
+            "   S",
+            "   M",
+            "   J",
+            "   XL",
+            "   XXL"
+        ],
         "precio": 1500,
         "cantidad": 20,
-        "colores": "Blanco",
-        "genero": "Niña",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niñas",
         "temporada": "invierno",
         "imgPrincipal": "abrigo-niña.jpg"
     },
@@ -438,11 +627,23 @@
         "id": 33,
         "nombreProducto": "Campera de algodon tipo escocesa",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 5,
+        "talles": [
+            "   S",
+            "   M",
+            "   J",
+            "   XL",
+            "   XXL"
+        ],
         "precio": 2400,
         "cantidad": 29,
-        "colores": "Marron",
-        "genero": "Niño",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niños",
         "temporada": "Invierno",
         "imgPrincipal": "abrigo-niño.jpg"
     },
@@ -459,8 +660,14 @@
         ],
         "precio": 3300,
         "cantidad": 25,
-        "colores": "Negro",
-        "genero": "Mujer",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "mujer",
         "temporada": "Invierno",
         "imgPrincipal": "calzado-mujer.jpg"
     },
@@ -477,8 +684,14 @@
         ],
         "precio": 2000,
         "cantidad": 40,
-        "colores": "Negro",
-        "genero": "Niño",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niño",
         "temporada": "Invierno",
         "imgPrincipal": "calzado-niño.jpg"
     },
@@ -486,47 +699,59 @@
         "id": 36,
         "nombreProducto": "Jeans con desgaste niño",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 10,
+        "talles": [
+            "   S",
+            "   M",
+            "   J",
+            "   XL",
+            "   XXL"
+        ],
         "precio": 2600,
         "cantidad": 40,
-        "colores": "azul",
-        "genero": "Niño",
+        "colores": [
+            "#fa0505",
+            "#040886",
+            "#11e4e0",
+            "#7ba112",
+            "#e010a9"
+        ],
+        "genero": "niño",
         "temporada": "Verano",
         "imgPrincipal": "pantalon-niño.jpg"
     },
     {
         "id": 37,
         "nombreProducto": "Conjunto mujer",
-        "detalleProducto": "largo",
+        "detalleProducto": "largo         ",
         "talles": [
-            "s",
-            "m",
-            "l",
-            "xl",
-            "xxl"
+            "    S",
+            "    M",
+            "    J",
+            "    XL",
+            "    XXL"
         ],
-        "precio": "2700",
-        "cantidad": "1",
+        "precio": "2700         ",
+        "cantidad": "1000    ",
         "colores": [
-            "#c6a9ab",
-            "#fccb8f",
-            "#faf096",
-            "#c5f8c8",
-            "#aeaeae"
+            "#ef0616",
+            "#f48906",
+            "#f7df08",
+            "#04f614",
+            "#590303"
         ],
-        "genero": "on",
-        "temporada": "on",
         "imgPrincipal": "37-conjunto-mujer.jpg",
         "img-secundaria": [
             "",
             "",
             "",
             ""
-        ]
+        ],
+        "genero": "mujer",
+        "temporada": "verano"
     },
     {
         "id": 38,
-        "nombreProducto": "Vestido mujer",
+        "nombreProducto": "Vestido m",
         "detalleProducto": "largo",
         "talles": [
             "s",
@@ -544,8 +769,8 @@
             "#c5f8c8",
             "#aeaeae"
         ],
-        "genero": "on",
-        "temporada": "on",
+        "genero": "mujer",
+        "temporada": "verano",
         "imgPrincipal": "38-vestido-mujer.jpg",
         "img-secundaria": [
             "",
@@ -556,7 +781,7 @@
     },
     {
         "id": 39,
-        "nombreProducto": "Sweater mujer",
+        "nombreProducto": "Sweater m",
         "detalleProducto": "largo",
         "talles": [
             "s",
@@ -574,8 +799,8 @@
             "#c5f8c8",
             "#aeaeae"
         ],
-        "genero": "on",
-        "temporada": "on",
+        "genero": "mujer",
+        "temporada": "verano",
         "imgPrincipal": "39-sweater-mujer.jpg",
         "img-secundaria": [
             "",
@@ -586,7 +811,7 @@
     },
     {
         "id": 40,
-        "nombreProducto": "Sweater niña",
+        "nombreProducto": "Sweater niñas",
         "detalleProducto": "largo",
         "talles": [
             "s",
@@ -604,8 +829,8 @@
             "#c5f8c8",
             "#aeaeae"
         ],
-        "genero": "on",
-        "temporada": "on",
+        "genero": "niñas",
+        "temporada": "invierno",
         "imgPrincipal": "40-sweater-niña.jpg",
         "img-secundaria": [
             "",
@@ -634,8 +859,8 @@
             "#c5f8c8",
             "#aeaeae"
         ],
-        "genero": "on",
-        "temporada": "on",
+        "genero": "niñas",
+        "temporada": "invierno",
         "imgPrincipal": "41-sweater-niño.jpg",
         "img-secundaria": [
             "",
