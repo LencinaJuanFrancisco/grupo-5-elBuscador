@@ -127,7 +127,7 @@ h2 {
 
 .img-principal {
   display: block;
-  width: 303px;
+  width:60% ;
   height: auto;
   margin: auto;
   box-shadow: 2px 2px 30px rgba(0, 0  , 0, 0.2);
@@ -142,6 +142,7 @@ h2 {
 
 .descripcion-producto {
   border-bottom: 1px solid #b4b3b7;
+  width: 100%;
 }
 
 p {
@@ -496,7 +497,7 @@ nav{
   .producto figure {
     position: absolute;
     width: 45%;
-    max-width: 550px;
+    max-width: 600px;
     top: 0;
     left: 10px;
   }
@@ -506,10 +507,11 @@ nav{
     height: auto;
     margin: auto;
     text-align: center;
+    width: 70%;
   }
 
   .img-principal img {
-    width: 100%;
+   
     margin: auto;
   }
 
@@ -528,16 +530,16 @@ nav{
   .img-secundarias {
     display: contents;
     position: relative;
-    width: 50vw;
-    max-width: 550px;
+    width: 75%;
+    max-width: 600px;
     margin: auto;
   }
 
   .img-secundarias img {
-    height: auto;
-    width: auto;
-    max-width: 110px;
-    max-height: 100px;
+    
+    width: 17%;
+    /* max-width: 110px;
+    max-height: 100px; */
     margin: 4px;
   }
 

@@ -39,25 +39,19 @@
                 </div>
                 <div>Detalle</div>
                 <div>
-                    <textarea name="detalleProducto" rows="5" cols="20">Detalle del producto</textarea>
+                    <textarea name="detalleProducto" rows="5" cols="40">Detalle del producto</textarea>
                 </div>
                 <div>
-                    <div>Talles</div>
-                    <label for="talles">
-                        <input type="radio" id="1" name="talles"> 1
-                    </label>
-                    <label for="talles">
-                        <input type="radio" id="2" name="talles"> 2
-                    </label>
-                    <label for="talles">
-                        <input type="radio" id="3" name="talles"> 3
-                    </label>
-                    <label for="talles">
-                        <input type="radio" id="4" name="talles"> 4
-                    </label>
-                    <label for="talles">
-                        <input type="radio" id="5" name="talles"> 5
-                    </label>
+                    <div>Talles</div> 
+                    <%  { product.talles.forEach(product.talle => { %>
+                        
+                 
+                        <label for="<%=product.talle%>">
+                            <input type="radio" id="<%=product.talle%>" name="talles"> 1
+                        </label>
+                    
+                    <%   }); %>
+                    
                 </div>
                 <div class="div-precio">
                     <label for="">Precio $ </label>

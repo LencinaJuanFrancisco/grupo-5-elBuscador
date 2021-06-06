@@ -31,7 +31,13 @@
         "id": 7,
         "nombreProducto": "Botas bordadas",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 38,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 3300,
         "cantidad": 25,
         "colores": "Negro",
@@ -84,7 +90,13 @@
         "id": 13,
         "nombreProducto": "pañuelos panchito",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 1,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 300,
         "cantidad": 200,
         "colores": "Gris",
@@ -94,33 +106,59 @@
     },
     {
         "id": 14,
-        "nombreProducto": "buzo frizado niño",
-        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 4,
-        "precio": 1500,
-        "cantidad": 35,
-        "colores": "Azul",
-        "genero": "Niño",
-        "temporada": "invierno",
-        "imgPrincipal": "abrigo-niño.jpg"
+        "nombreProducto": "   buzo frizado niño",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.   ",
+        "precio": "1500   ",
+        "cantidad": "35   ",
+        "colores": [
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "imgPrincipal": "abrigo-niño.jpg",
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ]
     },
     {
         "id": 15,
-        "nombreProducto": "Campera de jean nena",
-        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 5,
-        "precio": 2900,
-        "cantidad": 25,
-        "colores": "Azul",
-        "genero": "Niña",
-        "temporada": "Invierno",
+        "nombreProducto": "  REMERA ESTAMPADA ",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.     ",
+        "talles": [
+            "   1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "precio": "3000  ",
+        "cantidad": "20   ",
+        "colores": [
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
         "imgPrincipal": "remera-niña.jpg"
     },
     {
         "id": 16,
         "nombreProducto": "Gorro para niño",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 10,
+        "talles": [
+            10,
+            12,
+            13,
+            14,
+            15
+        ],
         "precio": 2200,
         "cantidad": 50,
         "colores": "Verde Militar",
@@ -132,7 +170,13 @@
         "id": 17,
         "nombreProducto": "Zapatillas urbanas mujer",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 36,
+        "talles": [
+            "28",
+            "30",
+            "32",
+            "34",
+            "36"
+        ],
         "precio": 2500,
         "cantidad": 60,
         "colores": "Gris",
@@ -144,7 +188,13 @@
         "id": 18,
         "nombreProducto": "Vestidos de modal cortos",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 4,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 1000,
         "cantidad": 35,
         "colores": "Rojo",
@@ -168,7 +218,13 @@
         "id": 20,
         "nombreProducto": "Zapatillas Converse niña",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 33,
+        "talles": [
+            "28",
+            "30",
+            "32",
+            "34",
+            "36"
+        ],
         "precio": 2000,
         "cantidad": 60,
         "colores": "Negro",
@@ -180,7 +236,13 @@
         "id": 21,
         "nombreProducto": "Remera mangas largas niña",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 12,
+        "talles": [
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+        ],
         "precio": 1500,
         "cantidad": 30,
         "colores": "Negro",
@@ -192,7 +254,13 @@
         "id": 22,
         "nombreProducto": "Campera con corderito mujer",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 4,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 3000,
         "cantidad": 50,
         "colores": "Gris",
@@ -216,7 +284,13 @@
         "id": 24,
         "nombreProducto": "Campera de algodon tipo escocesa",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 5,
+        "talles": [
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+        ],
         "precio": 2400,
         "cantidad": 29,
         "colores": "Marron",
@@ -228,7 +302,13 @@
         "id": 25,
         "nombreProducto": " Botas",
         "detalleProducto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus. ",
-        "talles": "38",
+        "talles": [
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+        ],
         "precio": "3300 ",
         "cantidad": "25 ",
         "colores": [
@@ -244,7 +324,13 @@
         "id": 26,
         "nombreProducto": "   Zapatillas 26",
         "detalleProducto": "LORENA ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.   ",
-        "talles": "30",
+        "talles": [
+            "28",
+            "30",
+            "32",
+            "34",
+            "36"
+        ],
         "precio": "1000  ",
         "cantidad": "50  ",
         "colores": [
@@ -262,7 +348,13 @@
         "id": 27,
         "nombreProducto": "Jeans con desgaste niño",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 10,
+        "talles": [
+            "8",
+            "10",
+            "12",
+            "14",
+            "16"
+        ],
         "precio": 2600,
         "cantidad": 40,
         "colores": "azul",
@@ -274,7 +366,13 @@
         "id": 28,
         "nombreProducto": "Jeans chupin con rotura",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 4,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 900,
         "cantidad": 30,
         "colores": "rojo",
@@ -298,7 +396,13 @@
         "id": 30,
         "nombreProducto": "Jeans chupin con rotura",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 4,
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": 900,
         "cantidad": 30,
         "colores": "rojo",
@@ -346,7 +450,13 @@
         "id": 34,
         "nombreProducto": "Botas bordadas",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 38,
+        "talles": [
+            "20",
+            "20",
+            "24",
+            "28",
+            "30"
+        ],
         "precio": 3300,
         "cantidad": 25,
         "colores": "Negro",
@@ -358,7 +468,13 @@
         "id": 35,
         "nombreProducto": "Zapatillas converse niño",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
-        "talles": 30,
+        "talles": [
+            "20",
+            "20",
+            "24",
+            "28",
+            "30"
+        ],
         "precio": 2000,
         "cantidad": 40,
         "colores": "Negro",
@@ -382,7 +498,13 @@
         "id": 37,
         "nombreProducto": "Conjunto mujer",
         "detalleProducto": "largo",
-        "talles": "on",
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": "2700",
         "cantidad": "1",
         "colores": [
@@ -406,7 +528,13 @@
         "id": 38,
         "nombreProducto": "Vestido mujer",
         "detalleProducto": "largo",
-        "talles": "on",
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": "2100",
         "cantidad": "1",
         "colores": [
@@ -430,7 +558,13 @@
         "id": 39,
         "nombreProducto": "Sweater mujer",
         "detalleProducto": "largo",
-        "talles": "on",
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": "135",
         "cantidad": "2",
         "colores": [
@@ -454,7 +588,13 @@
         "id": 40,
         "nombreProducto": "Sweater niña",
         "detalleProducto": "largo",
-        "talles": "on",
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": "135",
         "cantidad": "2",
         "colores": [
@@ -478,7 +618,13 @@
         "id": 41,
         "nombreProducto": "Sweater niño",
         "detalleProducto": "Para no cagarte de frio",
-        "talles": "on",
+        "talles": [
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
         "precio": "167",
         "cantidad": "3",
         "colores": [

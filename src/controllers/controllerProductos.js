@@ -14,9 +14,13 @@ const controllerProducto = {
        // filtro para mostrar solo el producto que selecciono el usuario
        let productoToView = {};
        let generoToView=[];
+       let talles,colores=[];
+
 
        products.forEach(product=>{
            if (product.id == req.params.id) {
+               talles= product.talles;
+               colores= product.colores;
                productoToView = product;
            }  
        })
@@ -38,7 +42,7 @@ const controllerProducto = {
              
 
 
-            res.render('producto',{product: productoToView, products: generoToView,toThousand});
+            res.render('producto',{product: productoToView, talles,colores, products: generoToView,toThousand});
             
         
         
@@ -131,10 +135,15 @@ const controllerProducto = {
     },
     viewEdit: (req, res) => {
         let productoElegido = req.params.id;
+        let talles, temporada,genero, colores=[];
+        
         products.forEach(product => {
             if(product.id == productoElegido) {
-           
-                res.render("editar", {product})
+                talles= product.talles;
+                temporada = product.temporada;
+                genero = product.genero;
+                colores= product.colores;
+                res.render("editar", {product,talles,temporada,genero,colores})
             };           
               
         });
@@ -142,8 +151,10 @@ const controllerProducto = {
     update: (req, res) => {
         let productoElegido = req.params.id;
         console.log(req.body);
+        
         products.forEach(product => {
             if(product.id == productoElegido) {
+               
                 product.nombreProducto = req.body.nombreProducto,
                 product.detalleProducto = req.body.detalleProducto,
                 product.talles = req.body.talles,
@@ -160,14 +171,10 @@ const controllerProducto = {
         
         let productsJson = JSON.stringify(products, null, 4);
         fs.writeFileSync(productsFilePath, productsJson);
-<<<<<<< HEAD
         products.forEach(product =>{
             if(product.id == productoElegido)
             res.redirect('/producto/'+product.id);
         })
-=======
-        res.redirect(`/producto/${productoElegido.id}`);
->>>>>>> 6e3b78021428813ff80b0521eb93c00795f5d3fd
         },
 
         delete: (req, res) => {

@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/cargas.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/99035ba4e5.js"
-      crossorigin="anonymous"
-    ></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/99035ba4e5.js" crossorigin="anonymous"></script>
+
     <!-- Jquery -->
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title>ABM Productos</title>
 </head>
+
 <body>
     <!-- MENU -->
-<!-- header -->
-<%- include('../views/partials/header') %>
+    <!-- header -->
+    <%- include('../views/partials/header') %>
 
     <!-- FORMULARIO DE CARGA -->
     <main class="main-carga">
         <div class="div-btn">
-<<<<<<< HEAD
             <button class="btn" type="submit">Crear</button>
             <form action="/producto/editar/<%=product.id %>?_method=PUT" method="POST"">
-                <button class="btn" type="submit">Eliminar</button>
+                <button class=" btn" type="submit">Eliminar</button>
             </form>
-=======
-           
-            <form  action="/producto/editar/<%=product.id %>?_method=PUT" method="POST">
-            <button class="btn" type="submit">Editar</button>
-            </form>
-            <button class="btn" type="submit">Eliminar</button>
->>>>>>> 6e3b78021428813ff80b0521eb93c00795f5d3fd
+
+
         </div>
         <form class="form-carga" action="/producto/editar/<%=product.id %>?_method=PUT" method="POST">
+
             <div class="bolsillo-izq">
 
                 <div class="div-nom_producto">
@@ -48,26 +40,21 @@
                 </div>
                 <div>Detalle</div>
                 <div>
-                    <textarea name="detalleProducto" rows="5" cols="40" "><%= product.detalleProducto %> </textarea>
+                    <textarea name="detalleProducto" rows="5" cols="20" "><%= product.detalleProducto %> </textarea>
                 </div>
-                <div>
+               
                     <div>Talles</div>
-                    <label for="1">
-                        <input type="radio" id="1" name="talles" value="<%=product.talles%>"> 1
-                    </label>
-                    <label for="2">
-                        <input type="radio" id="2" name="talles" value="<%=product.talles%>"> 2
-                    </label>
-                    <label for="3">
-                        <input type="radio" id="3" name="talles" value="<%=product.talles%>"> 3
-                    </label>
-                    <label for="4">
-                        <input type="radio" id="4" name="talles" value="<%=product.talles%>"> 4
-                    </label>
-                    <label for="5">
-                        <input type="radio" id="5" name="talles" value="<%=product.talles%>"> 5
-                    </label>
-                </div>
+                    <div class=" talles">
+
+                        <% talles.forEach(talle => { %> 
+                            <label for="talles">
+                                <input type="text" name="talles"  value=" <%= talle %>"  >
+                            </label>
+                            <%});%> 
+                            
+                    </div>
+                  
+                
                 <div class="div-precio">
                     <label for="">Precio $ </label>
                         <label for="precio">
@@ -84,22 +71,23 @@
                     </label>
                 </div>
             </div> <!--cierre de bolsillo izquierdo -->
+            
             <div class="bolsillo-der">
             
             
             <div class="div-colores">
                 <div >Colores</div>
                 
-                <label for="colores"></label>
-                    <input type="color" name="colores" value="<%=product.colores%>" />
-                <label for="colores"></label>
-                    <input type="color" name="colores" value="<%=product.colores%>" />
-                <label for="colores"></label>
-                    <input type="color" name="colores" value="<%=product.colores%>" />
-                <label for="colores"></label>
-                    <input type="color" name="colores" value="<%=product.colores%>" />
-                <label for="colores"></label>
-                    <input type="color" name="colores" value="<%=product.colores%>" />
+               
+                    <div class=" talles">
+
+                        <% colores.forEach(color => { %> 
+                            <label for="colores">
+                                <input type="color" name="colores"  value=" <%= color %>"  >
+                            </label>
+                            <%});%> 
+                            
+                    </div>
             </div>
             <div>
                 <div>Genero</div>

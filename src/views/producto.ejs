@@ -66,31 +66,32 @@
           <form action="" method="POST" class="form-color">
             <label for="">Color</label>
             <div>
-              <label for="color"></label>
-              <input type="color" name="color" value="<%= product.colores %> " />
-              <label for="color"></label>
-              <input type="color" name="color" value="<%= product.colores %> " />
-              <label for="color"></label>
-              <input type="color" name="color" value="<%= product.colores %> " />
-              <label for="color"></label>
-              <input type="color" name="color" value="<%= product.colores %> " />
-              <label for="color"></label>
-              <input type="color" name="color" value="<%= product.colores %> " />
-            </div>
+              
+              <% colores.forEach(color => { %> 
+               
+                <label for="<%= color %> "> <div class="color" style="background-color: <%=color%>">
+                
+                </div>
+                <input type="radio" name="colores"  >
+              </label>
+                
+                <%});%> 
+
+              
+
+
+
+            
           </form>
           <form action="" class="form-talle">
             <label for="">Talle</label>
             <div>
-              <label for="talle"><%= product.talles %> </label>
-              <input type="radio" name="talle" />
-              <label for="talle"><%= product.talles %></label>
-              <input type="radio" name="talle" />
-              <label for="talle"><%= product.talles %></label>
-              <input type="radio" name="talle" />
-              <label for="talle"><%= product.talles %></label>
-              <input type="radio" name="talle" />
-              <label for="talle" ><%= product.talles %></label>
-              <input type="radio" name="talle" />
+              <% talles.forEach(talle => { %> 
+                
+                <label for="talles"><%= talle %> </label>
+                <input type="radio" name="talles" />
+                
+                <%});%> 
             </div>
           </form>
           <!-- </article> -->
