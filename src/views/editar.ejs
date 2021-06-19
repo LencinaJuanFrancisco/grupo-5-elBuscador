@@ -22,14 +22,6 @@
 
     <!-- FORMULARIO DE CARGA -->
     <main class="main-carga">
-        <div class="div-btn">
-            <button class="btn" type="submit">Crear</button>
-            <form action="/producto/editar/<%=product.id %>?_method=PUT" method="POST"">
-                <button class=" btn" type="submit">Eliminar</button>
-            </form>
-
-
-        </div>
         <form class="form-carga" action="/producto/editar/<%=product.id %>?_method=PUT" method="POST">
 
             <div class="bolsillo-izq">
@@ -118,7 +110,7 @@
                 </div>
                 <input type="file" name="imgPrincipal">
             </div>
-            <div>
+            <!-- <div>
                 <div>
                     Imagen Principal
                 </div>
@@ -142,7 +134,7 @@
                     <label for=""> 4- 
                         <input type="file" name="imgPecundaria" id="img-secundaria-4">
                     </label>
-                </div>
+                </div> -->
                 <button class="btn" type="submit">Editar</button>
     
             </div>

@@ -126,7 +126,8 @@ const controllerProducto = {
     store: (req, res) => {
         let productNew = {
             id: productId(),
-            ...req.body
+            ...req.body,
+            imgPrincipal: req.file.filename
         };
         products.push(productNew);
         let productsJson = JSON.stringify(products, null, 4);
@@ -184,7 +185,7 @@ const controllerProducto = {
                 } )
                 let productsJson = JSON.stringify(newProducts, null, 4);
                 fs.writeFileSync(productsFilePath, productsJson);
-                res.redirect('/listadoProducto');
+                res.redirect('/producto/listadoProducto')
                    }
         }
 module.exports = controllerProducto;

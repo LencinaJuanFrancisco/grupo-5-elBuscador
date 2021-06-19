@@ -1,17 +1,17 @@
 [
     {
         "id": 5,
-        "nombreProducto": "Juego de gorro y guantes tejido",
-        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
+        "nombreProducto": "Gorro",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus. ",
         "talles": [
-            "s",
-            "m",
-            "l",
-            "xl",
-            "xxl"
+            " S",
+            " M",
+            " L",
+            " XL",
+            " XXL"
         ],
-        "precio": 1500,
-        "cantidad": 20,
+        "precio": "1500 ",
+        "cantidad": "20 ",
         "colores": [
             "#fa0000",
             "#7331c4",
@@ -19,8 +19,6 @@
             "#06d0f4",
             "#ed07e6"
         ],
-        "genero": "niñas",
-        "temporada": "invierno",
         "imgPrincipal": "abrigo-niña.jpg"
     },
     {
@@ -553,17 +551,17 @@
     },
     {
         "id": 30,
-        "nombreProducto": "Jeans chupin con rotura",
+        "nombreProducto": "Campera con corderito m",
         "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.",
         "talles": [
-            "s",
-            "m",
-            "l",
-            "xl",
-            "xxl"
+            "   S",
+            "   M",
+            "   J",
+            "   XL",
+            "   XXL"
         ],
-        "precio": 900,
-        "cantidad": 30,
+        "precio": 3000,
+        "cantidad": 50,
         "colores": [
             "#fa0505",
             "#040886",
@@ -571,9 +569,9 @@
             "#7ba112",
             "#e010a9"
         ],
-        "genero": "mujer",
-        "temporada": "Verano",
-        "imgPrincipal": "calzado-niña.jpg"
+        "genero": "niña",
+        "temporada": "Invierno",
+        "imgPrincipal": "abrigo-mujer.jpg"
     },
     {
         "id": 31,
@@ -863,16 +861,6 @@
         "temporada": "invierno",
         "imgPrincipal": "41-sweater-niño.jpg",
         "img-secundaria": [
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    {
-        "id": 42,
-        "imgPrincipal": "",
-        "imgSecundaria": [
             "",
             "",
             "",

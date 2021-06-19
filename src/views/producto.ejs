@@ -40,7 +40,7 @@
             />
           </div>
           <!-- estas imagenes se ven recien en modo table en adelante  -->
-          <div class="img-secundarias">
+          <!-- <div class="img-secundarias">
             <img
               src="../img/img/<%= product.imgPrincipal %>"
               alt="img secundaria"
@@ -58,7 +58,7 @@
               alt="img secundaria"
               class="img-sec-4"
             />
-          </div>
+          </div> -->
         </figure>
         <div class="footer-producto-principal">
           <p><%= product.nombreProducto %></p>
@@ -101,9 +101,11 @@
               <a href="./editar/<%=product.id %>">Editar</a>
             </button>
 
-            <button type="submit">
-              <a href="./editar/<%=product.id %>">Borrar</a>
-            </button>
+            <form action="./borrar/<%=product.id %>?_method=DELETE  " method="POST">
+              <button type="submit">
+              Borrar              
+              </button>
+            </form>
           </div>
           <article class="descripcion-producto">
             <p><%= product.detalleProducto%></p>
