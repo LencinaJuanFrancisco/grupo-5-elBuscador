@@ -18,7 +18,7 @@ saveUninitialized: false,
 
 //views engine
 app.set('view engine', 'ejs');
-app.set('views','./scr/views');
+app.set("views", "./src/views");
 
 // con estas lineas de codigo indecamos a app.js que vamos a trabajar los datos enviados
 //por foumulario como un objeto literal, y que en caso de requeririlo poder tener la 

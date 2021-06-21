@@ -5,11 +5,12 @@
 // 5.-Eliminar a un usuario de la DB
 
 // vamos a crear un objeto literal con todas estas cararcteristicas
-const fs= require('fs')
+const fs= require('fs');
+const path = require("path");
 
 const User = {
 
-    fileName: './database/users.json',
+    fileName: path.join(__dirname, '../data/userBD.json'),
     
     getData:function (){
 

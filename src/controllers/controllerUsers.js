@@ -1,10 +1,12 @@
 const { validationResult } = require("express-validator");
 const User = require("../models/User");
+const bcryptsjs = require("bcryptjs");
+
 
 const controllerUsers = {
     
     login: (req,res)=>{
-        res.render('login');
+        res.render("login");
         
     },
     register: (req, res) => {

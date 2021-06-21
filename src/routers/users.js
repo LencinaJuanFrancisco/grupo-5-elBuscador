@@ -23,7 +23,7 @@ router.get('/profile/', authMiddleware, controllerUsers.profile);
 router.get('/logout/', controllerUsers.logout);
 
 router.get('/register', guestMiddleware, controllerUsers.register);
-router.post('/register', multermiddelwareUsers.single("avatar"), validateRegisterMiddelware, controllerUsers.register);
+router.post('/register', multermiddelwareUsers.single("avatar"), validateRegisterMiddelware, controllerUsers.registracion);
 
 
 module.exports = router;                        
