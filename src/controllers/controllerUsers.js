@@ -54,9 +54,65 @@ const controllerUsers = {
     },
 
     login: (req, res) => {
-        return res.render("/users/login");
+        return res.render("/login");
       },
+
+      loginProcess: (req, res) => {
+        // vamos a buscar al usuario
+        let userToLogin = User.findByEmail(req.body.email);
+        //validamos si se encontro el usuario
+        if (userToLogin) {
+        // Una vez que encontramos al usuario tenemos que comparar con su password..
+        // luego tenemos que usar el metodo Bcryptjs.compareSync() 
+        let isOkThePassword = bcryptsjs.compareSync( req.body.password,userToLogin.password);
+        
+        if(isOkThePassword){
+          //recordemos que para poder mostrar el avatar devemos instalar express-sessions
+          
+          // pero antes tenemos que borrar los datos del password por seguridad
+          delete userToLogin.password;
+          // y guardad los datos le las personas en sessions.
+          req.session.userLogged = userToLogin;
     
+          //si tildamos la opcion del formulario de recuerdame
+          if(req.body.remember_user){
+            res.cookie('userEmail',req.body.email, {maxAge: (1000 * 60) * 60 })
+          }
     
-}
+          return res.redirect('/user/profile')
+    
+        }
+    return res.render("userLoginForm", {
+          errors: {
+            email: {
+            msg: "Las credenciales son inválidas",
+            },
+          },
+          });
+        }
+        //si no se encontro el usuario vamos a renderizar la visra del logion
+        // enviando el error
+        return res.render("userLoginForm", {
+          errors: {
+            email: {
+              msg: "No se encontro el usuario",
+            },
+          },
+        });      
+      
+      },    
+      profile: (req, res) => {
+        return res.render("userProfile",{
+        user: req.session.userLogged
+      });
+      },
+    logout: (req,res)=>{
+        // borramos todos los datos que guardamos en session  y en las cookies
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/');
+      }
+    }
+    
+
 module.exports = controllerUsers;
