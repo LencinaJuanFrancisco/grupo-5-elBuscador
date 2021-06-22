@@ -55,9 +55,9 @@ const controllerUsers = {
       return res.redirect("/users/login");
     },
 
-    login: (req, res) => {
-        return res.render("/login");
-      },
+    // login: (req, res) => {
+    //     return res.render("/login");
+    //   },
 
       loginProcess: (req, res) => {
         // vamos a buscar al usuario

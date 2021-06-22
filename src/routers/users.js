@@ -1,6 +1,8 @@
 const express= require('express');
 const router = express.Router();
+
 const controllerUsers= require('../controllers/controllerUsers');
+
 const multermiddelwareUsers = require("../middelwares/multermiddelwareUsers");
 const validateRegisterMiddelware = require("../middelwares/validateRegisterMiddelware");
 const authMiddleware = require("../middelwares/authMiddelware");
