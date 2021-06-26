@@ -241,7 +241,9 @@ footer .map:hover{
  font-size: 26px;
  
 }
-
+.text-danger{
+  color: red;
+}
 
 
 

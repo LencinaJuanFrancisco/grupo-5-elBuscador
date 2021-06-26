@@ -406,5 +406,12 @@
   "user": "carlos",
   "password": "$2a$10$5Lsr/5hED5aGfM1nAYHnxuPgVoJyZqH4OaTXWwGIRtDh0fbb.P54C",
   "avatar": "1624312315830_img.jpg"
+ },
+ {
+  "id": 52,
+  "fullName": "Juan F Lencina",
+  "email": "juanfranciscolencina@gmail.com",
+  "password": "$2a$10$oV0hW7OGgCMNjxfXCzA5tOV9sjWR/kxxK6iYdKjYYA35fRYfv.EhG",
+  "avatar": "1624706866884_img.png"
  }
 ]

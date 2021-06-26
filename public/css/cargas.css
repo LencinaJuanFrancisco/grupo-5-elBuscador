@@ -289,3 +289,18 @@ header{
     right: 20px;
 }
 }
+@media (min-width: 1200px) {
+
+  /***********************/
+  .menu-cel{
+    display: none;
+}
+nav{
+  display: block;
+  position: absolute;
+  right: 20px;
+}
+.form-carga{
+  max-width: 1200px;
+}
+}

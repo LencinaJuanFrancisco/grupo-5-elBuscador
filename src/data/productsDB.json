@@ -1,17 +1,17 @@
 [
     {
         "id": 5,
-        "nombreProducto": "Gorro",
-        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus. ",
+        "nombreProducto": "  Gorros",
+        "detalleProducto": "Lor,em ipsum dolor sit amet consectetur adipisicing elit. Adipisci soluta fugiat totam dicta eligendi quidem facere non ipsa repudiandae voluptas impedit consectetur molestias reprehenderit, perferendis eius porro labore. Eaque, delectus.   ",
         "talles": [
-            " S",
-            " M",
-            " L",
-            " XL",
-            " XXL"
+            "   S",
+            "   M",
+            "   L",
+            "   XL",
+            "   XXL"
         ],
-        "precio": "1500 ",
-        "cantidad": "20 ",
+        "precio": "1500   ",
+        "cantidad": "20   ",
         "colores": [
             "#fa0000",
             "#7331c4",
@@ -19,7 +19,9 @@
             "#06d0f4",
             "#ed07e6"
         ],
-        "imgPrincipal": "abrigo-niña.jpg"
+        "imgPrincipal": "abrigo-niña.jpg",
+        "genero": "niñas",
+        "temporada": "verano"
     },
     {
         "id": 6,

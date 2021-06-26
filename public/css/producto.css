@@ -130,7 +130,7 @@ h2 {
   width:60% ;
   height: auto;
   margin: auto;
-  box-shadow: 2px 2px 30px rgba(0, 0  , 0, 0.2);
+  /* box-shadow: 2px 2px 30px rgba(0, 0  , 0, 0.2); */
   border-radius: 15px;
 }
 
@@ -216,9 +216,9 @@ p {
   }
   
   .box {
-    width: 160px;
-    height: 250px;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    width: 170px;
+    height: 260px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     /* el overflow si lo sacamos no se ven las puntas redondeadas */
     overflow: hidden;
@@ -320,6 +320,14 @@ p {
     background-color: #f9989f;
     transition: all ease 300ms;
   }
+  .btn-admin{
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn-cliente{
+    display: flex;
+    justify-content: space-around;
+  }
   
   /* ocultamos ca lapa para cuando hacemos hover sobre la img la hacemos aparecer */
   .capa {
@@ -351,7 +359,7 @@ p {
   }
 }
 .carusel{
-  width: 90%;
+  width: 100%;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -498,7 +506,7 @@ nav{
     position: absolute;
     width: 45%;
     max-width: 600px;
-    top: 0;
+    top: 30px;
     left: 10px;
   }
 
@@ -507,7 +515,8 @@ nav{
     height: auto;
     margin: auto;
     text-align: center;
-    width: 70%;
+    width: 50%;
+    border: 1px solid red;
   }
 
   .img-principal img {
