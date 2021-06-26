@@ -21,27 +21,41 @@
             <H2>INGRESA A TU CUENTA</H2>
         </div>
 
-        <form action="">
+        <form action="/users/login" method="POST">
            
-            <div class="Usuario">
+            <div class="usuario">
                 <div>
-                    <label for="Usuario">Usuario</label>
+                    <label for="email">E-mail</label>
                 </div>
                 <div>
-                    <input type="text" name="Usuario" placeholder="">
+                    <input type="text" name="email" placeholder="">
+                
+                <% if (locals.errors && errors.email) { %>
+                    
+                    <div class="text-danger">
+                        <%= errors.email.msg%> 
+                    </div>
+                   <% } %>
                 </div>
             </div>
-            <div class="Contraseña">
+            <div class="contraseña">
                 <div>
-                    <label for="Contraseña">Contraseña</label>
+                    <label for="password">Contraseña</label>
                 </div>
                 <div>
-                    <input type="password" name="Contraseña" placeholder="">
+                    <input type="password" name="password" placeholder="">
                 </div>
             </div>
             <div>
+                <label>
+                    <input type="checkbox" name="remember_user">Recordar mi usuario 
+                </label>
+            </div>
+            <div>
                 <div class="guardar">
-                    <input type="button" value="Ingresa">
+                    <button type="submit">
+                        Ingresá
+                    </button>
                 </div>
                 <div class="face">
                     <input type="button" value="Ingresa con fa-facebook">

@@ -66,7 +66,7 @@ const controllerUsers = {
         if (userToLogin) {
         // Una vez que encontramos al usuario tenemos que comparar con su password..
         // luego tenemos que usar el metodo Bcryptjs.compareSync() 
-        let isOkThePassword = bcryptsjs.compareSync( req.body.password,userToLogin.password);
+        let isOkThePassword = bcryptsjs.compareSync( req.body.password, userToLogin.password);
         
         if(isOkThePassword){
           //recordemos que para poder mostrar el avatar devemos instalar express-sessions
@@ -81,10 +81,10 @@ const controllerUsers = {
             res.cookie('userEmail',req.body.email, {maxAge: (1000 * 60) * 60 })
           }
     
-          return res.redirect('/user/profile')
+          return res.redirect('/users/perfil')
     
         }
-    return res.render("userLoginForm", {
+    return res.render("login", {
           errors: {
             email: {
             msg: "Las credenciales son inválidas",
@@ -94,7 +94,7 @@ const controllerUsers = {
         }
         //si no se encontro el usuario vamos a renderizar la visra del logion
         // enviando el error
-        return res.render("userLoginForm", {
+        return res.render("login", {
           errors: {
             email: {
               msg: "No se encontro el usuario",
@@ -104,7 +104,7 @@ const controllerUsers = {
       
       },    
       profile: (req, res) => {
-        return res.render("userProfile",{
+        return res.render("perfil",{
         user: req.session.userLogged
       });
       },

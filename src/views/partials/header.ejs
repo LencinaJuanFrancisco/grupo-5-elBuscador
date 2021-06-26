@@ -6,12 +6,20 @@
     </div>
     <nav>
         <ul>
+            <% if (locals.isLogged) { %>
             <li><a href="/">Home</a></li>
             <li><a href="/producto/listadoProducto">Productos</a></li>
-            <li><a href="/users/login">Login</a></li>
-            <li><a href="/users/register">Registro</a></li>
             <li><a href="/producto/carrito">Carrito</a></li>
             <li><a href="/producto/carga">Carga</a></li>
+            <li><a href="/users/perfil">Perfil</a></li>
+            <%} else { %>
+                <li><a href="/">Home</a></li>
+                <li><a href="/producto/listadoProducto">Productos</a></li>                
+                <li><a href="/users/login">Login</a></li>
+                <li><a href="/users/register">Registro</a></li>
+            <%}%>  
+
+
         </ul>
     </nav>       
 </header>
