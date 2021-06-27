@@ -1,3 +1,18 @@
 [
-
+ {
+  "id": 1,
+  "fullName": "Juan F Lencina",
+  "admin": "false",
+  "email": "juanfranciscolencina@gmail.com",
+  "password": "$2a$10$AudHkRKS2nSkEyWx00y74eNfgGJmp.TOwmgufxBf6Lzb2wk6BSC6i",
+  "avatar": "1624795763992_img.jpg"
+ },
+ {
+  "id": 2,
+  "fullName": "pepe",
+  "admin": "true",
+  "email": "pepe@pepe.com",
+  "password": "$2a$10$E8AJsWYttn61AFhM543v8.nuweQ0orRVZv.19Rl7y4BFMYsSZA8ku",
+  "avatar": "1624795812528_img.jpg"
+ }
 ]

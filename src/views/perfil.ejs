@@ -25,6 +25,14 @@
 
         <div><%= user.email %> </div>
     </div>
+    <div>
+      <% if (user.admin == 'true') { %>
+       <h2>ADMINISTRADOR</h2>
+      <% } else{%>
+        <h2> Bienvenido</h2>
+      <%}%>
+
+    </div>
 
     <div>
         <button>
