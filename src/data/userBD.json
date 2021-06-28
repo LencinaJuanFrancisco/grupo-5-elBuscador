@@ -14,5 +14,13 @@
   "email": "pepe@pepe.com",
   "password": "$2a$10$E8AJsWYttn61AFhM543v8.nuweQ0orRVZv.19Rl7y4BFMYsSZA8ku",
   "avatar": "1624795812528_img.jpg"
+ },
+ {
+  "id": 3,
+  "fullName": "jorge",
+  "admin": "true",
+  "email": "juanperez@gmail.com",
+  "password": "$2a$10$F.XEo1pNS5xyt./q103lROJF6.5/xuLfH/SLgOVI9VrKmAwwFisna",
+  "avatar": "1624919203675_img.png"
  }
 ]

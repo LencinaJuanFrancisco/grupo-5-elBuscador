@@ -11,11 +11,11 @@ const controllerUsers = {
     },
     register: (req, res) => {
         // cookie es un metodo res que nos permite guardar informacion del lado del navegador
-        res.cookie()
+        //res.cookie()
         return res.render("registro");
       },
     
-      registracion: (req, res) => {
+    registracion: (req, res) => {
         const resultValidation = validationResult(req);
     
         if (resultValidation.errors.length > 0) {
@@ -55,9 +55,7 @@ const controllerUsers = {
       return res.redirect("/users/login");
     },
 
-    // login: (req, res) => {
-    //     return res.render("/login");
-    //   },
+   
 
       loginProcess: (req, res) => {
         // vamos a buscar al usuario
@@ -78,20 +76,13 @@ const controllerUsers = {
     
           //si tildamos la opcion del formulario de recuerdame
           if(req.body.remember_user){
-            res.cookie('userEmail',req.body.email, {maxAge: (1000 * 60) * 60 })
+            res.cookie('userEmail',req.body.email, {maxAge: (1000 * 60) * 20 })
           }
     
           return res.redirect('/users/perfil')
     
         }
-    return res.render("login", {
-          errors: {
-            email: {
-            msg: "Las credenciales son inválidas",
-            },
-          },
-          });
-        }
+     
         //si no se encontro el usuario vamos a renderizar la visra del logion
         // enviando el error
         return res.render("login", {
@@ -100,10 +91,12 @@ const controllerUsers = {
               msg: "No se encontro el usuario",
             },
           },
-        });      
-      
-      },    
+        }      
+        )
+        
+      }},   
       profile: (req, res) => {
+       // console.log(req.cookies.userEmail);
         return res.render("perfil",{
         user: req.session.userLogged
       });

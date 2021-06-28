@@ -10,6 +10,7 @@ function userLoggedMiddleware(req, res, next) {
   //la podemos utilizar en todas las vistas , 
   //  indistintamentes al controlador
   res.locals.isLogged = false;
+
   res.locals.isAdmin = false;
 
   let emailInCookie = req.cookies.userEmail;
@@ -27,7 +28,7 @@ function userLoggedMiddleware(req, res, next) {
      console.log(req.session.userLogged.admin)
     
     
-     if(req.session.userLogged.admin== 'true'){
+     if(req.session.userLogged.admin =='true'){
       res.locals.isAdmin = true;
       console.log('isAdmin?')
       console.log(res.locals.isAdmin)
