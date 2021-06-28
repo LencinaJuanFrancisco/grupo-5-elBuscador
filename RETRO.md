@@ -44,4 +44,21 @@ A corregir:
 
 Utilizar con mas frecuencia el trello para reflejar el desarrollo de las distintas actividades realizadas por cada integrante del grupo.
 
+Sprint 5
+
+ - Se agregaron las rutas y validaciones para registro de administradores y compradores. También las rutas de login.
+
+## DEVOLUCIONES Y CORRECCIONES DEL SPRINT ANTERIOR
+ - En la BD JSON de productos, les quedaron productos con talles numéricos y otros con letras que describe un tipo de talle. Les recomiendo no tener dos propiedades distintas para imagenes. En una tienen un array de imagenes y en otra una sola, pero podrían usar la primera imagen del array.
+RESPUESTA: en el tema de las talles lo hicimos así, ya que si son zapatillas son numéricos, si es ropa para chico los talles suelen ser numéricos y por edades, 8,10,12,14 etc, y si es ropa para adulto por lo general es S ,M, L, ,X, XL...
+
+- En la BD JSON de usuarios, le recomiendo agregar un campo que describa que tipo de usuario es (admin, regular, etc...)
+RESPUESTA: Definimos el tipo de usuario Admin como booleano. De esta manera, se habilitan las secciones de admin en caso de que sea True. El admin puede cargar productos, editarlos y borrarlos.
+
+- En la vista de carga de un producto, figuran los botones crear editar y eliminar. En el formulario de creación, no están bien aplicados los labels ya que si aprieto el mismo no ingresa o selecciona el input 
+(recuerden que el atributo for apunta al id y no al name). Falta implementar multer para la carga de imágenes.
+ RESPUESTA: Se eliminaron botones que sobraban y los que quedaron se corregió la funcionalidad.
+
+- La eliminación de un producto, no funciona.
+RESPUESTA: YA FUNCIONA.
 
