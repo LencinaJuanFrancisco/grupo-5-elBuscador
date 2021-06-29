@@ -22,5 +22,13 @@
   "email": "PABLOIGNACIO.CELI@GMAIL.COM",
   "password": "$2a$10$baLTUNcS8rGmOrW3a4r/LOMpGuode7nVSRcGbUSIGMmGPw305kcMe",
   "avatar": "1624911490788_img.jpg"
+ },
+ {
+  "id": 4,
+  "fullName": "hola mundo",
+  "admin": "false",
+  "email": "hola@mundo.com",
+  "password": "$2a$10$5VjFdXTXfxOHSGrMTMco1eWmIfLP2eDoZ2Hq3xWWbUyEJkVeU.B3K",
+  "avatar": "1624968452615_img.jpg"
  }
 ]

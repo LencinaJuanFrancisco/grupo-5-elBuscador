@@ -7,12 +7,13 @@
     <nav>
         <ul>
          
-            <% if (locals.isLogged && locals.isAdmin) { %>
+            <% if (locals.isLogged && locals.userLogged.admin == "true") { %>
             <li><a href="/">Home</a></li>
             <li><a href="/producto/listadoProducto">Productos</a></li>
             <li><a href="/producto/carrito">Carrito</a></li>
             <li><a href="/producto/carga">Carga</a></li>
             <li><a href="/users/perfil">Perfil</a></li>
+           
             <%} else if(locals.isLogged ) { %>
                 <li><a href="/">Home</a></li>
                 <li><a href="/producto/listadoProducto">Productos</a></li>

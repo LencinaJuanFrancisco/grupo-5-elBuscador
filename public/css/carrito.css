@@ -243,9 +243,13 @@ nav ul li a:hover{
     border-bottom: #42B218 1px solid;}*/
   
   .btn button:hover {
-    color: #282828;
+    color: #eef8ff;
     background-color: #f9989f;
     border-radius: 20px;
+    transition: all 0.8s 0s ease, all 0.5s 0s ease;
+    -webkit-transition: all 0.8s 0s ease, all 0.5s 0s ease;
+    -moz-transition: all 0.8s 0s ease, all 0.5s 0s ease;
+    -o-transition: all 0.8s 0s ease, all 0.5s 0s ease;
   }
   .form{
       text-align: center;
@@ -261,7 +265,26 @@ nav ul li a:hover{
       
 
   }
- 
+ .perfil{
+   margin: 0 auto;
+   max-width: 1200px;
+ }
+ .perfil h2{
+   text-align: center;
+  
+ }
+ .avatar{
+   text-align: center;
+ }
+ .avatar img{
+  box-shadow: 13px 11px 6px -4px rgba(180,179,183,0.78);
+  -webkit-box-shadow: 13px 11px 6px -4px rgba(180,179,183,0.78);
+  -moz-box-shadow: 13px 11px 6px -4px rgba(180,179,183,0.78);
+ }
+ a{
+   text-decoration: none;
+   color: #f9989f;
+ }
 
   /*-----Footer-----*/
   

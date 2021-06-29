@@ -18,35 +18,39 @@
     <!-- header -->
     <%- include('../views/partials/header') %>
 <br><br><br><br>
+<main class="perfil">
 
     <div>
         <h2> Hola <%= user.fullName %> </h2>
-        <img src="/img/users/<%= user.avatar %> " width="350px">
-
-        <div><%= user.email %> </div>
+        <div class="avatar">
+            <img src="/img/users/<%= user.avatar %> " width="250px" style="border-radius: 50%;">
+            <div>usuario: <%= user.email %> </div>
+        </div>
+        
     </div>
     <div>
-      <% if (user.admin == 'true') { %>
-       <h2>ADMINISTRADOR</h2>
-      <% } else{%>
-        <h2> Bienvenido</h2>
-      <%}%>
-
-    </div>
-
-    <div>
-        <button>
-            <a href="/users/logout">Logout</a>
-        </button>
-    </div>
-
-
-        <!-- FOOTER -->
-        <%- include ("../views/partials/footer.ejs") %> 
-        <!-- instalcion de jquery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
-        <script type="text/javascript">
+        <% if (user.admin == 'true') { %>
+            <h2>ADMINISTRADOR</h2>
+            <% } else{%>
+                <h2> Bienvenido</h2>
+                <%}%>
+                
+            </div>
+            
+            <div class="btn">
+                <button>
+                    <a href="/users/logout">Logout</a>
+                </button>
+            </div>
+            
+</main>
+            
+            <!-- FOOTER -->
+            <%- include ("../views/partials/footer.ejs") %> 
+            <!-- instalcion de jquery -->
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+            <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
+            <script type="text/javascript">
         $(document).ready(function(){
             $(".menu-cel").click(function(){
                 $(".menu-cel").toggleClass("active")

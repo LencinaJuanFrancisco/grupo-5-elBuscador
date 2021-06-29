@@ -11,7 +11,7 @@ function userLoggedMiddleware(req, res, next) {
   //  indistintamentes al controlador
   res.locals.isLogged = false;
 
-  res.locals.isAdmin = false;
+  //res.locals.isAdmin = false;
 
   let emailInCookie = req.cookies.userEmail;
   let userFromCookie = User.findByEmail(emailInCookie);
@@ -24,18 +24,18 @@ function userLoggedMiddleware(req, res, next) {
   if (req.session.userLogged) {
 
     res.locals.isLogged = true;
-    console.log('usuario en userLogged')
-     console.log(req.session.userLogged.admin)
+    console.log('usuario en userLogged=>')
+     console.log(req.session.userLogged)
     
     
-     if(req.session.userLogged.admin =='true'){
+     /*if(req.session.userLogged.admin =='true'){
       res.locals.isAdmin = true;
       console.log('isAdmin?')
       console.log(res.locals.isAdmin)
       
     }
     console.log('isAdmin?')
-    console.log(res.locals.isAdmin)
+    console.log(res.locals.isAdmin)*/
     //lo que estamos haciendo en esta linea de codico es pasar a las vistas la variable que se encuentra en req,para poder luegro mostrar los datos del usuario, lo hacemos de esta forma xq no estamos renderizando 
     //vistas , si no enviando variables locales
     res.locals.userLogged = req.session.userLogged;

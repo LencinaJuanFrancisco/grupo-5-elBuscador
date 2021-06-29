@@ -51,7 +51,8 @@ const controllerUsers = {
       };
   
       // una vez que pasa la validacion mandamos los datos al Modelo para que lo cree
-      let userToCreated = User.create(userToCreate);
+      
+      User.create(userToCreate);
       return res.redirect("/users/login");
     },
 
@@ -81,20 +82,23 @@ const controllerUsers = {
     
           return res.redirect('/users/perfil')
     
-        }
-     
-        //si no se encontro el usuario vamos a renderizar la visra del logion
-        // enviando el error
-        return res.render("login", {
+        }return res.render('login', {
           errors: {
             email: {
-              msg: "No se encontro el usuario",
-            },
-          },
-        }      
-        )
-        
-      }},   
+              msg: 'Las credenciales son inválidas'
+            }
+          }
+        });
+      }
+  
+      return res.render('login', {
+        errors: {
+          email: {
+            msg: 'No se encuentra este email en nuestra base de datos'
+          }
+        }
+      });
+    },
       profile: (req, res) => {
        // console.log(req.cookies.userEmail);
         return res.render("perfil",{
