@@ -1,4 +1,4 @@
-Sprint 1
+# Sprint 1
 Se trabajó de buena manera pero se puede mejorar la dinámica del grupo:
 - Mejorar la comunicación.
 - No pudimos nunca estar los 5 en una reunión virtual.
@@ -9,14 +9,14 @@ Para destacar:
 - La toma de decisiones consensuada.  
 
 
-Sprint 2 
+ # Sprint 2 
 - Se realizaron las vistas mediante html con sus respectivos estilos (css).
 - Se trabajo en equipo  dividiendo las tareas por vista y una vez       terminadas se ensalmblaron para dejarlas lo mas armonico posible.
 
 Para corregir:
 -Siguen habiendo problemas para reunirnos todos lo integrantes del grupo, lo que nos impide una mejor y mas rapida resolucion a los problemas que se nos presentan.
 
-SPRINT 3
+# SPRINT 3
 Mejoras:
 -La comunicacion en el equipo
 -Mas uso de la plataforma Trello
@@ -31,7 +31,7 @@ Para mejorar:
 -Determinar los tiempos de cada actvidad
 
 
-Sprint 4
+# Sprint 4
 
 Se trabajo en los items marcados en la devolucion del sprint anterior:
 - Se ordenaron las vistas, parcials, rutas y controladores en la carpeta src.
@@ -44,7 +44,7 @@ A corregir:
 
 Utilizar con mas frecuencia el trello para reflejar el desarrollo de las distintas actividades realizadas por cada integrante del grupo.
 
-Sprint 5
+# Sprint 5
 
  - Se agregaron las rutas y validaciones para registro de administradores y compradores. También las rutas de login.
 
@@ -62,3 +62,10 @@ RESPUESTA: Definimos el tipo de usuario Admin como booleano. De esta manera, se 
 - La eliminación de un producto, no funciona.
 RESPUESTA: YA FUNCIONA.
 
+- Oportunidad de mejora: segir trabajando para una mayor comunicacion y mas uso de la herramienta TRELLO. 
+
+### usuario administrador
+- usuario: pepe@pepe.com
+- pass: 123
+
+Con este usuaria van a poder editar, borrar y dar de alta productos.
