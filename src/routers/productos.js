@@ -13,8 +13,8 @@ router.post('/carga', uploadFile.single('imgPrincipal')
 , controllerProducto.store)
 
 
-
 router.get('/editar/:id', controllerProducto.viewEdit)
+
 router.put('/editar/:id', uploadFile.single('imgPrincipal')
 , controllerProducto.update)
 
