@@ -20,7 +20,23 @@ module.exports = (sequelize,dataTypes)=>{
         underscored: true,
     };
     
-        Orden.associate= sequelize.define(alias,cols,config)
+        const Orden = sequelize.define(alias,cols,config);
+
+        Orden.associate = function(models){
+            Orden.belongsTo(models.Usuario,{
+                as:'usuarios',
+                foreignKey:'usuario_id'
+            }),
+            Orden.belongsToMany(models.Producto,{
+                as:'productos',
+                through:'productos_oredenes',
+                foreignKey:'orden_id',
+                otherKey:'producto_id',
+                timestamps:true
+                
+            })
+
+        }
     
     
         return Orden;

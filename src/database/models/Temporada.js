@@ -21,7 +21,14 @@ module.exports = (sequelize,dataTypes)=>{
         underscored: true,
     };
     
-        Temporada.associate= sequelize.define(alias,cols,config)
+        const Temporada= sequelize.define(alias,cols,config);
+
+        Temporada.associate = function(models){
+            Temporada.hasMany(models.Producto,{
+                as:'productos',
+                foreignKey:'temporada_id'
+            })
+        }
     
     
         return Temporada;

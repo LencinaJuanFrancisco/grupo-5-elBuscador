@@ -21,7 +21,18 @@ let cols={
     underscored: true,
 };
 
-    Color.associate= sequelize.define(alias,cols,config)
+    const Color = sequelize.define(alias,cols,config);
+    
+    Color.associate = function(models){
+        Color.belongsToMany(models.Producto,{
+            as:'productos',
+            through:'colores_productos',
+            foreignKey:'color_id',
+            otherKey:'producto_id',
+            timestamps:true
+
+        })        
+    }
 
 
     return Color;
