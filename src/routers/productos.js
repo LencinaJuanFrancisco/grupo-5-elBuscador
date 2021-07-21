@@ -4,9 +4,6 @@ const controllerProducto= require('../controllers/controllerProductos');
 const uploadFile = require("../middelwares/multermiddelware")
 
 //router.get('/', controllerProducto.detalle);
-
-router.get('/carga',controllerProducto.cargaProducto);
-
 router.get('/listadoProducto', controllerProducto.listadoProducto)
 router.get('/carga', controllerProducto.viewCarga)
 router.post('/carga', uploadFile.single('imgPrincipal')

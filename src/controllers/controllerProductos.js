@@ -1,132 +1,84 @@
-// const fs = require("fs");
-// const path = require("path");
-// const productId = require("../utils/idUtils")
-
-// const productsFilePath = path.join(__dirname, '../data/productsDB.json');
-// let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
+const db = require('../database/models')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+/* const lastId = () => {
+	let ultimo = 0;
+	db.Producto.findAll()
+    forEach(product => {
+		if (ultimo < product.id) {
+			ultimo = product.id;
+		}
+	})
+	return ultimo;
+}
+*/
+
 
 
 const controllerProducto = {
     
     detalle: (req,res)=>{
-       // filtro para mostrar solo el producto que selecciono el usuario
-       let productoToView = {};
-       let generoToView=[];
-       let talles,colores=[];
-
-
-       products.forEach(product=>{
-           if (product.id == req.params.id) {
-               talles= product.talles;
-               colores= product.colores;
-               productoToView = product;
-           }  
-       })
-        products.forEach(product=>{
-            if (product.genero == productoToView.genero) {
-                generoToView.push(product)
-            }
-        })
-        
-    //    let productoToView = products.filter(product=>{
-    //              return product.id == req.params.id;
-    //         } )
-    //         let genero= productoToView.genero
-
-        // filtro por el genero que producto seleccionodo para el carrusel
-            // let generoToView = products.filter(product=>{
-            //     return product.genero == genero;
-            // })
-             
-
-
-            res.render('producto',{product: productoToView, talles,colores, products: generoToView,toThousand});
-            
-        
-        
+            db.Producto.findByPk(req.params.id)
+                .then(producto => {
+                    res.render('producto',{product: productoToView, talles,colores, products: generoToView,toThousand})
+                })
+            ; 
     },
+
     carrito: (req,res)=>{
         
         res.render('carrito', {carrito});
        
           
     },
-    cargaProducto: (req,res)=>{
-
-        res.render('carga');
-    },
     
     listadoProducto:(req,res)=>{
-        res.render('listadoProducto', {products})
+        db.Producto.findAll()
+            .then(productos => {
+                res.render('listadoProducto', {products})
+            })
     },
     viewCarga: (req, res) => {
         res.render("carga");
     },
     store: (req, res) => {
-        let productNew = {
-            id: productId(),
-            ...req.body,
-            imgPrincipal: req.file.filename
-        };
-        products.push(productNew);
-        let productsJson = JSON.stringify(products, null, 4);
-        fs.writeFileSync(productsFilePath, productsJson);
-        res.redirect(`/producto/${productNew.id}`);
+        db.Producto.create({
+            id: lastId(),
+            nombre: req.body.nombreProducto,
+            precio: req.body.precio,
+            talle: req.body.talles,
+            color: req.body.colores,
+            genero: req.body.genero,
+            descripcion: req.body.description,
+            cantidad: req.body.cantidad,
+            //temporada_id: ,
+            //genero_id: ,
+
+        })
+
+        
     },
     viewEdit: (req, res) => {
-        let productoElegido = req.params.id;
-        let talles, temporada,genero, colores =[];
-        
-        products.forEach(product => {
-            if(product.id == productoElegido) {
-                talles= product.talles;
-                temporada = product.temporada;
-                genero = product.genero;
-                colores= product.colores;
-                res.render("editar", {product,talles,temporada,genero,colores})
-            };           
-              
-        });
+           db.Producto.findByPk(req.params.id)
+            .then(producto => {
+                res.render("editar", 
+                {
+                    product: producto,
+                    talles: producto.talles,
+                    temporada:producto.temporada,
+                    genero: producto.genero,
+                    colores: producto.colores
+                })
+            })         
     },
+
     update: (req, res) => {
-        let productoElegido = req.params.id;
-        console.log(req.body);
-        
-        products.forEach(product => {
-            if(product.id == productoElegido) {
-               
-                product.nombreProducto = req.body.nombreProducto,
-                product.detalleProducto = req.body.detalleProducto,
-                product.talles = req.body.talles,
-                product.precio = req.body.precio,
-                product.cantidad = req.body.cantidad,
-                product.colores = req.body.colores,
-                product.genero = req.body.genero,
-                product.temporada = req.body.temporada
+       //Lógica guardado producto.
 
-                console.log(product)
-               // product.imgPrincipal = req.body.imgPrincipal                
-            }   
-        })
-        
-        let productsJson = JSON.stringify(products, null, 4);
-        fs.writeFileSync(productsFilePath, productsJson);
-        products.forEach(product =>{
-            if(product.id == productoElegido)
-            res.redirect('/producto/'+product.id);
-        })
-        },
+    },
+    delete: (req, res) => {
+           
+    }}
 
-        delete: (req, res) => {
-            let newProducts = products.filter(
-                product => {
-                    return product.id != req.params.id;
-                } )
-                let productsJson = JSON.stringify(newProducts, null, 4);
-                fs.writeFileSync(productsFilePath, productsJson);
-                res.redirect('/producto/listadoProducto')
-                   }
-        }
+
 module.exports = controllerProducto;
