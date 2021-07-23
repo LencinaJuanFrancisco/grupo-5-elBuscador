@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/cargas.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/99035ba4e5.js"
-      crossorigin="anonymous"
-    ></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/99035ba4e5.js" crossorigin="anonymous"></script>
+
     <!-- Jquery -->
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title>ABM Productos</title>
 </head>
+
 <body>
     <!-- MENU -->
-<!-- header -->
-<%- include('../views/partials/header') %>
+    <!-- header -->
+    <%- include('../views/partials/header') %>
 
     <!-- FORMULARIO DE CARGA -->
     <main class="main-carga">
@@ -42,51 +39,55 @@
                     <textarea name="detalleProducto" rows="5" cols="40">Detalle del producto</textarea>
                 </div>
                 <div>
-                    <div>Talles</div> 
-                    <div class=" talles">
-                        <label for="talles">
-                             <input type="text" name="talles"  value=""  >
-                        </label>
-                        <label for="talles">
-                            <input type="text" name="talles"  value=""  >
-                       </label>
-                       <label for="talles">
-                        <input type="text" name="talles"  value=""  >
-                   </label>
-                   <label for="talles">
-                    <input type="text" name="talles"  value=""  >
-               </label>
-               <label for="talles">
-                <input type="text" name="talles"  value=""  >
-           </label>
-                       
-                            
-                    </div>
+                    <div>Talles</div>
                     
-                </div>
-                <div class="div-precio">
-                    <label for="">Precio $ </label>
+                        <% for(let i=0; i<5;i++){ %>
+
+                        <select name="talles">
+                            <option disabled selected>talle</option>
+                            <% talles.forEach(talle =>{%>
+
+                            <option value="<%= talle.id %>"> <%= talle.nombre %> </option>
+                            <%  }) %>
+
+                        </select>
+                        <% } %>
+
+                    </div>
+                    <div class="div-precio">
+                        <label for="">Precio $ </label>
                         <label for="precio">
                             <input type="text" name="precio"></label>
 
                         </label>
-                    
-                    
+
+
+                    </div>
+                    <div class="div-cantidad">
+                        <label for="">Cantidad</label>
+                        <label for="cantidad">
+                            <input type="text" name="cantidad">
+                        </label>
+                    </div>
                 </div>
-                <div class="div-cantidad">
-                    <label for="">Cantidad</label>
-                    <label for="cantidad">
-                        <input type="text" name="cantidad">
-                    </label>
-                </div>
-            </div> <!--cierre de bolsillo izquierdo -->
-            <div class="bolsillo-der">
-            
-            
-            <div class="div-colores">
-                <div >Colores</div>
-                
-                <label for="colores"></label>
+                <!--cierre de bolsillo izquierdo -->
+                <div class="bolsillo-der">
+
+
+                    <div class="div-colores">
+                        <div>Colores</div>
+                        <% for(let i=0; i<5;i++){ %>
+
+                        <select name="colores">
+                            <option disabled selected>color</option>
+                            <% colores.forEach(color =>{%>
+
+                            <option value="<%= color.id %>"> <%= color.nombre %> </option>
+                            <%  }) %>
+
+                        </select>
+                        <% } %>
+                        <!-- <label for="colores"></label>
                     <input type="color" name="colores" value="#f9989f" />
                 <label for="colores"></label>
                     <input type="color" name="colores" value="#fccb8f" />
@@ -95,37 +96,37 @@
                 <label for="colores"></label>
                     <input type="color" name="colores" value="#c5f8c8" />
                 <label for="colores"></label>
-                    <input type="color" name="colores" value="#aeaeae" />
-            </div>
-            <div>
-                <div>Genero</div>
-                <label for="genero">
-                    <input type="radio" name="genero" id="mujer" value="mujer">Mujer
-                </label>
-                <label for="genero">
-                    <input type="radio" name="genero" id="niñas" value="niñas">Niñas
-                </label>
-                <label for="genero">
-                    <input type="radio" name="genero" id="niños" value="nuños">Niños
-                </label>
-            </div>
-            <div>
-                <div>Temporada</div>
-                <label for="temporada">
-                    <input type="radio" name="temporada" id="verano" value="verano">Verano
-                </label>
-                <label for="temporada">
-                    <input type="radio" name="temporada" id="invierno" value="invierno">Invierno
-                </label>
-            </div>
-            <div>
-                
-                <div>
-                    Imagen Principal
-                </div>
-                <input type="file" name="imgPrincipal">
-            </div>
-            <!-- <div>
+                    <input type="color" name="colores" value="#aeaeae" /> -->
+                    </div>
+                    <div>
+                        <div>Genero</div>
+                        <label for="genero">
+                            <input type="radio" name="genero" id="mujer" value="1">Mujer
+                        </label>
+                        <label for="genero">
+                            <input type="radio" name="genero" id="niñas" value="2">Niñas
+                        </label>
+                        <label for="genero">
+                            <input type="radio" name="genero" id="niños" value="3">Niños
+                        </label>
+                    </div>
+                    <div>
+                        <div>Temporada</div>
+                        <label for="temporada">
+                            <input type="radio" name="temporada" id="verano" value="1">Verano
+                        </label>
+                        <label for="temporada">
+                            <input type="radio" name="temporada" id="invierno" value="2">Invierno
+                        </label>
+                    </div>
+                    <div>
+
+                        <div>
+                            Imagen Principal
+                        </div>
+                        <input type="file" name="imgPrincipal">
+                    </div>
+                    <!-- <div>
                 <div>
                     Imagen Principal
                 </div>
@@ -150,29 +151,29 @@
                         <input type="file" name="imgSecundaria" id="imgSecundaria-4">
                     </label>
                 </div> -->
-                <button class="btn" type="submit">Aceptar</button>
-    
+                    <button class="btn" type="submit">Aceptar</button>
+
+                </div>
             </div>
-        </div><!--bolsillo derecho  -->
+            <!--bolsillo derecho  -->
 
 
         </form>
     </main>
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
 
     <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
     <script type="text/javascript">
-      $(document).ready(function () {
-        $(".menu-cel").click(function () {
-          $(".menu-cel").toggleClass("active");
-          $("nav").toggleClass("active");
+        $(document).ready(function () {
+            $(".menu-cel").click(function () {
+                $(".menu-cel").toggleClass("active");
+                $("nav").toggleClass("active");
+            });
         });
-      });
     </script>
 </body>
+
 </html>
