@@ -28,14 +28,15 @@ module.exports=(sequelize,dataTypes)=>{
         genero_id:{
             type: dataTypes.BIGINT(10)
         },
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+        deletedAt: 'deleted_at',
 
     }
    
         let config={
             timestamps: true,
-            createdAt: 'created_at',
-            updatedAt: 'updated_at',
-            deletedAt: 'deleted_at',
+            
             paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
             underscored: true,
 
@@ -64,7 +65,7 @@ module.exports=(sequelize,dataTypes)=>{
             timestamps:true
 
         }),
-        Prodocto.belongsToMany(models.Orden,{
+        Producto.belongsToMany(models.Orden,{
             as:'ordenes',
             through:'productos_oredenes',
             foreignKey:'producto_id',

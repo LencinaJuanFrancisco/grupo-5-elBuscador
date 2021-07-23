@@ -5,13 +5,15 @@ const path = require('path');
 const routeIndex=    require('./src/routers/index');
 const routeProducto= require('./src/routers/productos')
 const routeUsers =require ('./src/routers/users')
+const routeApi = require('./src/routers/api/producto')
 const methodOverride = require("method-override");
 const session = require("express-session")
 const userLoggedMiddleware = require('./src/middelwares/userLoggedMiddleware')
 //es para habilitar o desabilitar el user y el login dependiendo si esta o no esta 
 //logueado el usuario, se configura aqui xq es un middelware de app y no de ruta, 
 //ya que lo que vamos a usar ensta en el menu, y el menu se encuentra en toda la app
-const cookies = require ('cookie-parser')
+const cookies = require ('cookie-parser');
+const router = require('./src/routers/api/producto');
 
 
 
@@ -24,7 +26,7 @@ saveUninitialized: false,
 }))
 app.use(cookies());
 //el userLoggedMiddelware debe ir si o si despues del app.use(session....{}), si no da error
-app.use(userLoggedMiddleware)
+//app.use(userLoggedMiddleware)
 
 
 //views engine
@@ -42,6 +44,7 @@ app.listen(3000,()=>{
 })
 
 app.use('/',routeIndex);
+app.use('/api',routeApi)
 app.use('/producto', routeProducto);
 app.use('/users', routeUsers);
 

@@ -7,7 +7,7 @@
     <nav>
         <ul>
          
-            <% if (locals.isLogged && locals.userLogged.admin == "true") { %>
+            <% if (locals.isLogged && locals.userLogged.admin == 'admin') { %>
             <li><a href="/">Home</a></li>
             <li><a href="/producto/listadoProducto">Productos</a></li>
             <li><a href="/producto/carrito">Carrito</a></li>

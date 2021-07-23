@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -82,7 +82,9 @@
         <div class="box">
           <!-- box-producto -->
           <div class="slide-img">
-            <img src="../img/img/<%= product.imgPrincipal%>" alt="imagen de <%= product.nombreProducto %>"/>
+            <% product.imagenes.forEach(imagen => { %>
+            <img src="../img/img/<%= imagen.nombre%>" alt="imagen de <%= product.nombre %>"/>
+            <% }) %> 
             <!-- capa -->
             <div class="capa">
               <!-- btn comprar -->
@@ -92,7 +94,7 @@
           <!-- detalle-producto -->
           <div class="detalle-producto">
             <div class="type">
-              <a href="/producto/<%= product.id%>"><%= product.nombreProducto %></a>
+              <a href="/producto/<%= product.id%>"><%= product.nombre %></a>
              <!-- <span>New Arrival</span> -->
             </div>
             <a href="/producto/<%= product.id%>" class="price">$<%= product.precio %></a>

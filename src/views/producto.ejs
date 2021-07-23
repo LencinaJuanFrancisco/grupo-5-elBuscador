@@ -34,10 +34,12 @@
         <!-- <article> -->
         <figure>
           <div class="img-principal">
+            <% product.imagenes.forEach(imagen => { %>
             <img
-              src="../img/img/<%= product.imgPrincipal  %> "
+              src="../img/img/<%= imagen.nombre %> "
               alt="imigen principal"
             />
+            <% }) %> 
           </div>
           <!-- estas imagenes se ven recien en modo table en adelante  -->
           <!-- <div class="img-secundarias">
@@ -61,22 +63,22 @@
           </div> -->
         </figure>
         <div class="footer-producto-principal">
-          <p><%= product.nombreProducto %></p>
+          <p><%= product.nombre %></p>
           <p>$ <%= product.precio %></p>
           <form action="" method="POST" class="form-color">
             <label for="">Color :</label>
 
-            <% colores.forEach(color => { %>
+            <% product.colores.forEach(color => { %>
 
             <div
               
               style="
-                background-color: <%=color%>;
+                background-color: <%=color.nombre%>;
                 width: 35px;
                 display: inline-block;
               "
             >
-              <label for="<%= color %> ">
+              <label for="<%= color.nombre %> ">
                 <input type="radio" name="colores" />
               </label>
             </div>
@@ -85,9 +87,9 @@
           <form action="" class="form-talle">
             <label for="">Talles</label>
             <div>
-              <% talles.forEach(talle => { %>
+              <% product.talles.forEach(talle => { %>
 
-              <label for="talles"><%= talle.toUpperCase() %> </label>
+              <label for="talles"><%= talle.nombre %> </label>
               <input type="radio" name="talles" /> / <%});%>
             </div>
           </form>
@@ -97,7 +99,7 @@
             <button type="submit">Comparar ahora</button>
           </div>
 
-         <% if(locals.userLogged.admin == "true"){ %>
+         <% if( locals.userLogged  && locals.userLogged.admin == "admin"){ %>
          
           <div class="btn btn-admin">
             <button type="submit">
@@ -111,7 +113,7 @@
         <% } %>
             
           <article class="descripcion-producto">
-            <p><%= product.detalleProducto%></p>
+            <p><%= product.descripcion%></p>
           </article>
         </div>
       </section>
@@ -125,36 +127,7 @@
       <h2>Productos Relacionados con <%= product.genero %></h2>
       <section class="carusel">
         <!-- codigo extraido de http://sachinchoolur.github.io/lightslider/examples.html -->
-        <ul id="autoWidth" class="cs-hidden">
-          <% products.forEach(product => {%>
-
-          <!-- img-1 ------------------------------->
-          <li class="item">
-            <div class="box">
-              <!-- box-producto -->
-              <div class="slide-img">
-                <img src="../img/img/<%= product.imgPrincipal %> " alt="" />
-                <!-- capa -->
-                <div class="capa">
-                  <!-- btn comprar -->
-                  <a href="" class="btn-comprar">Comprar</a>
-                </div>
-              </div>
-              <!-- detalle-producto -->
-              <div class="detalle-producto">
-                <div class="type">
-                  <a href="/producto/<%= product.id %> "
-                    ><%= product.nombreProducto %>
-                  </a>
-                  <span>New Arrival</span>
-                </div>
-                <a href="" class="price">$<%= product.precio %> </a>
-              </div>
-            </div>
-            <!-- cierre-box -->
-          </li>
-          <%});%>
-        </ul>
+       
       </section>
 
       <!-- <section class="corte">

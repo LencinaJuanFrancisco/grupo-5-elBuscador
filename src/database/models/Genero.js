@@ -10,13 +10,13 @@ module.exports = (sequelize,dataTypes)=>{
         nombre:{  
             type: dataTypes.STRING(45),
             allowNull: false
-        }
-    };
-        let config={
-        timestamps: true,
+        },
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: 'deleted_at',
+    };
+        let config={
+        timestamps: false,
         paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
         underscored: true,
     };

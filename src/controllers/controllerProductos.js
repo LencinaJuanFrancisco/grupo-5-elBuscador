@@ -1,28 +1,22 @@
 const db = require('../database/models')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
-/* const lastId = () => {
-	let ultimo = 0;
-	db.Producto.findAll()
-    forEach(product => {
-		if (ultimo < product.id) {
-			ultimo = product.id;
-		}
-	})
-	return ultimo;
-}
-*/
-
-
 
 const controllerProducto = {
     
     detalle: (req,res)=>{
-            db.Producto.findByPk(req.params.id)
-                .then(producto => {
-                    res.render('producto',{product: productoToView, talles,colores, products: generoToView,toThousand})
-                })
-            ; 
+
+    
+         db.Producto.findByPk(req.params.id,{
+             include:['generos','colores','talles','imagenes']//aca van los alias
+         })
+         .then(producto =>
+            res.render('producto',{product:producto}))
+            
+         .catch(e=>{
+             console.log('***********************llegue');
+            res.send(e)
+     })
     },
 
     carrito: (req,res)=>{
@@ -33,9 +27,11 @@ const controllerProducto = {
     },
     
     listadoProducto:(req,res)=>{
-        db.Producto.findAll()
+        db.Producto.findAll({
+            include:['imagenes']
+        })
             .then(productos => {
-                res.render('listadoProducto', {products})
+                res.render('listadoProducto', {products:productos})
             })
     },
     viewCarga: (req, res) => {
@@ -43,7 +39,7 @@ const controllerProducto = {
     },
     store: (req, res) => {
         db.Producto.create({
-            id: lastId(),
+            
             nombre: req.body.nombreProducto,
             precio: req.body.precio,
             talle: req.body.talles,
