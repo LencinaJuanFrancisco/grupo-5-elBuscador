@@ -9,13 +9,17 @@ module.exports = (sequelize,dataTypes)=>{
         },
         usuario_id:{
             type: dataTypes.BIGINT(10)
-        }
-    };
-        let config={
-        timestamps: true,
+        },
+        total_de_compra:{
+            type: dataTypes.DECIMAL(8,2)
+        },
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: 'deleted_at',
+    };
+        let config={
+        tableName:'ordenes',
+        timestamps: true,
         paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
         underscored: true,
     };
@@ -24,7 +28,7 @@ module.exports = (sequelize,dataTypes)=>{
 
         Orden.associate = function(models){
             Orden.belongsTo(models.Usuario,{
-                as:'usuarios',
+                as:'usuario',
                 foreignKey:'usuario_id'
             }),
             Orden.belongsToMany(models.Producto,{

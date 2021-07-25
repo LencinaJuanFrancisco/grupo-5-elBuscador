@@ -22,29 +22,34 @@
 
     <!-- FORMULARIO DE CARGA -->
     <main class="main-carga">
-        <form class="form-carga" action="/producto/editar/<%=product.id %>?_method=PUT" method="POST">
+        <form class="form-carga" action="/producto/editar/<%=product.id %>?_method=PUT"  enctype="multipart/form-data" method="POST">
 
             <div class="bolsillo-izq">
 
                 <div class="div-nom_producto">
                     <label for="nombre-producto">Nombre del Producto</label>
-                    <input type="text" name="nombreProducto" value=" <%= product.nombreProducto %>">
+                    <input type="text" name="nombreProducto" value=" <%= product.nombre%>">
                 </div>
                 <div>Detalle</div>
                 <div>
-                    <textarea name="detalleProducto" rows="5" cols="30" "><%= product.detalleProducto %> </textarea>
+                    <textarea name="detalleProducto" rows="5" cols="30" "><%= product.descripcion %> </textarea>
                 </div>
                
+                <div>
                     <div>Talles</div>
-                    <div class=" talles">
-                        
-                        <% talles.forEach(talle => { %> 
-                           
-                            <label for="talles">
-                                <input type="text" name="talles"  value=" <%=talle.toUpperCase()%>"  >
-                            </label>
-                            <%});%> 
-                            
+                    
+                        <% for(let i=0; i<5;i++){ %>
+
+                        <select name="talles">
+                            <option disabled selected>talle</option>
+                            <% talles.forEach(talle =>{ %>
+
+                            <option value="<%= talle.id %>"> <%= talle.nombre %> </option>
+                            <%  }) %>
+
+                        </select>
+                        <% } %>
+
                     </div>
                   
                 
@@ -68,39 +73,40 @@
             <div class="bolsillo-der">
             
             
-            <div class="div-colores">
-                <div >Colores</div>
-                
-               
-                    <div class=" talles">
+                <div class="div-colores">
+                    <div>Colores</div>
+                    <% for(let i=0; i<5;i++){ %>
 
-                        <% colores.forEach(color => { %> 
-                            <label for="colores">
-                                <input type="color" name="colores"  value= <%=color%>  > 
-                            </label>
-                            <%});%> 
-                            
-                    </div>
-            </div>
+                    <select name="colores">
+                        <option disabled selected>color</option>
+                        <% colores.forEach(color =>{%>
+
+                        <option value="<%= color.id %>"> <%= color.nombre %> </option>
+                        <%  }) %>
+
+                    </select>
+                    <% } %>
+                    
+                </div>
             <div>
                 <div>Genero</div>
 
-                <input type="radio" name="genero" id="mujer" value="mujer">
+                <input type="radio" name="genero" id="mujer" value="1">
                 <label for="mujer">Mujer</label>
                 
-                <input type="radio" name="genero" id="niñas" value="niñas">
+                <input type="radio" name="genero" id="niñas" value="2">
                 <label for="niñas">Niñas </label>
                 
-                <input type="radio" name="genero" id="niños" value="niños" >
+                <input type="radio" name="genero" id="niños" value="3" >
                 <label for="niños">Niños</label>
             </div>
             <div>
                 <div>Temporada</div>
                 
-                <input type="radio" name="temporada" id="verano"  value="verano">
+                <input type="radio" name="temporada" id="verano"  value="1">
                 <label for="verano">Verano</label>
                 
-                <input type="radio" name="temporada" id="invierno"  value="invierno">
+                <input type="radio" name="temporada" id="invierno"  value="2">
                 <label for="invierno">Invierno</label>
             </div>
             <div>
@@ -110,31 +116,7 @@
                 </div>
                 <input type="file" name="imgPrincipal">
             </div>
-            <!-- <div>
-                <div>
-                    Imagen Principal
-                </div>
-                <div>
-                    <label for=""> 1- 
-                        <input type="file" name="imgPecundaria" id="img-secundaria-1">
-                    </label>
-                </div>
-                <div>
-                    <label for="">2- 
-                        <input type="file" name="imgPecundaria" id="img-secundaria-2">
-                    </label>
-                </div>
-    
-                <div>
-                    <label for=""> 3- 
-                        <input type="file" name="imgPecundaria" id="img-secundaria-3">
-                    </label>
-                </div>
-                <div>
-                    <label for=""> 4- 
-                        <input type="file" name="imgPecundaria" id="img-secundaria-4">
-                    </label>
-                </div> -->
+            
                 <button class="btn" type="submit">Editar</button>
                 
            

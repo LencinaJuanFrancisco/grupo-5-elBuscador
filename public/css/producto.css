@@ -582,6 +582,7 @@ nav{
   .img-principal img {
     width: 100%;
     margin: auto;
+    display: block;
   }
 
   .descripcion-producto {

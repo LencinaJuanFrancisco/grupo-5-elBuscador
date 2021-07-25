@@ -1,7 +1,7 @@
 const { validationResult } = require("express-validator");
 const User = require("../models/User");
 const bcryptsjs = require("bcryptjs");
-
+const db = require ('../database/models')
 
 const controllerUsers = {
     
@@ -60,18 +60,32 @@ const controllerUsers = {
 
       loginProcess: (req, res) => {
         // vamos a buscar al usuario
-        let userToLogin = User.findByEmail(req.body.email);
+        //------>let userToLogin = User.findByEmail(req.body.email);
+         db.Usuario.findOne({
+          where:{
+              email:req.body.email}
+          })
+          .then((user)=>{
+           return console.log('//////'+ user) 
+          })
+          .catch((e)=>{
+           console.log(e)
+          })
+
         //validamos si se encontro el usuario
+        console.log('userToLOgin?--------> '+ userToLogin)
+        
         if (userToLogin) {
+          console.log('userToLOgin?------->>> '+ userToLogin)
         // Una vez que encontramos al usuario tenemos que comparar con su password..
         // luego tenemos que usar el metodo Bcryptjs.compareSync() 
-        let isOkThePassword = bcryptsjs.compareSync( req.body.password, userToLogin.password);
+        let isOkThePassword = bcryptsjs.compareSync( req.body.password, userToLogin.pass);
         
         if(isOkThePassword){
           //recordemos que para poder mostrar el avatar devemos instalar express-sessions
           
           // pero antes tenemos que borrar los datos del password por seguridad
-          delete userToLogin.password;
+          delete userToLogin.pass;
           // y guardad los datos le las personas en sessions.
           req.session.userLogged = userToLogin;
     
@@ -99,7 +113,7 @@ const controllerUsers = {
         }
       });
     },
-      profile: (req, res) => {
+    profile: (req, res) => {
        // console.log(req.cookies.userEmail);
         return res.render("perfil",{
         user: req.session.userLogged

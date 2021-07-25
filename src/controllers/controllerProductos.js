@@ -12,7 +12,7 @@ const controllerProducto = {
          })
          .then(producto =>{
 
-            console.log(producto.imagenes)
+            //console.log(producto.imagenes)
            // res.render(producto)
            res.render('producto',{product:producto})
          })
@@ -56,8 +56,7 @@ const controllerProducto = {
         
     },
     store: (req, res) => {
-        console.log(req.body)
-
+        //console.log(req.body)
             db.Producto.create({
                 nombre: req.body.nombreProducto,
                 precio: req.body.precio,
@@ -91,7 +90,7 @@ const controllerProducto = {
         .then((producto)=>{
             let colores = req.body.colores
             colores.forEach(color => {
-                console.log(color)
+                console.log("colores" + color)
                 db.ColoresProductos.create({
                 producto_id: producto.id,
                 color_id:parseInt(color)
@@ -108,22 +107,107 @@ const controllerProducto = {
            res.send(e)
     })
     },
-    viewEdit: (req, res) => {
-           db.Producto.findByPk(req.params.id)
-            .then(producto => {
-                res.render("editar", 
-                {
-                    product: producto,
-                    talles: producto.talles,
-                    temporada:producto.temporada,
-                    genero: producto.genero,
-                    colores: producto.colores
+
+    viewEdit: async (req, res) => {
+        let talles= await db.Talle.findAll()
+        let colores = await db.Color.findAll()
+        
+        try{
+            db.Producto.findByPk(req.params.id,{
+                include:['generos','colores','talles','imagenes']//aca van los alias
+            })
+                .then(producto => {
+                    res.render("editar", {product: producto, colores,talles})
                 })
-            })         
+            
+        
+        }
+        catch(e){
+            console.log(e)
+        }
+
+                 
     },
 
     update: (req, res) => {
-       //Lógica guardado producto.
+
+        db.Producto.findByPk(req.params.id,{
+            include:['generos','colores','talles','imagenes']
+        })
+        .then((response)=>{
+            db.Producto.update({
+                nombre: req.body.nombreProducto,
+                precio: req.body.precio,
+                genero_id: req.body.genero,
+                temporada_id:req.body.temporada,
+                descripcion: req.body.detalleProducto,
+                cantidad: req.body.cantidad,
+            },{
+                where:{
+                    id:response.id
+                }
+            }
+            ) 
+            //console.log(response)
+            return response
+        })
+            .then((response)=>{
+            let imagen = req.file.filename
+         
+           db.Imagen.update({
+               nombre: imagen
+            },{
+                where:{
+                    producto_id: response.id
+                }
+            }
+           )
+         
+           return response
+            })
+    
+        .then((producto)=>{
+            //console.log(producto)
+            let talles = req.body.talles
+            talles.forEach(talle => {
+                console.log(talle)
+                db.TallesProductos.update({
+               
+                talle_id:parseInt(talle)
+            },{
+                where:{
+                    producto_id:req.params.id
+                }
+            });
+                 
+            })
+            return producto
+        })
+        // .then((producto)=>{
+        //     let colores = req.body.colores
+        //     colores.forEach(color => {
+        //         console.log("colores" + color)
+        //         db.ColoresProductos.update({
+        //         producto_id: producto.id,
+        //         color_id:parseInt(color)
+        //     },{
+        //         where:{
+        //             producto_id:req.params.id
+        //         }
+        //     });
+                 
+        //     })
+        //     return producto
+        // })
+        .then((producto)=>{
+            res.redirect('/producto/'+ producto.id)
+        })
+        .catch(e=>{
+            console.log('***********************llegue tallesProductos');
+          console.log(e)
+    })
+    
+      
 
     },
     delete: (req, res) => {
