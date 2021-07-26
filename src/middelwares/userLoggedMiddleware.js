@@ -42,16 +42,16 @@ const User = require('../models/User')//requiremimos recien cuendo empezamos con
 function userLoggedMiddleware(req, res, next) {
   
   res.locals.isLogged = false;
-  //let emailInCookie = req.cookies.userEmail;
   console.log("que es esto req.cookies.userEmail----"+req.cookies.userEmail)
   
   if(req.cookies.userEmail){
     db.Usuario.findOne({
       where: {
-          email: req.cookies.userEmail
+        email: req.cookies.userEmail
       }
-  }).then((user)=>{
-        if(user){
+    }).then((user)=>{
+      if(user){
+          let emailInCookie = req.cookies.userEmail;
           req.session.userLogged = req.cookies.userEmail;
         }
   

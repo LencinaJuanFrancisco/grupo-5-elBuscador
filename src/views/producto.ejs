@@ -100,7 +100,7 @@
           </div>
 
           
-         <% if( locals.userLogged  && locals.userLogged.rol_id == 1){ %>
+         <% if( locals.userLogged  && locals.isLogged == "true"){ %>
           <div class="btn btn-admin">
             <button type="submit">
               <a href="./editar/<%=product.id %>">Editar</a>

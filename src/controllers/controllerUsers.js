@@ -102,7 +102,7 @@ const controllerUsers = {
                       delete userToLogin.pass;
                       req.session.userLogged = userToLogin;
 
-console.log('req.session.userLogged---------------------'+req.session.userLogged.rol_id)
+console.log('req.session.userLogged---------------------'+req.session.userLogged)
 
                       if (req.body.remember_user) {
                           res.cookie('userEmail', req.body.email, {
