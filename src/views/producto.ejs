@@ -99,8 +99,8 @@
             <button type="submit">Comparar ahora</button>
           </div>
 
-         <% if( locals.userLogged  && locals.userLogged.admin == "admin"){ %>
-         
+          
+         <% if( locals.userLogged  && locals.userLogged.rol_id == 1){ %>
           <div class="btn btn-admin">
             <button type="submit">
               <a href="./editar/<%=product.id %>">Editar</a>

@@ -41,14 +41,14 @@ module.exports = (sequelize, dataTypes) => {
 
     const Usuario = sequelize.define(alias, cols, config);
      Usuario.associate = function(models){
-        // Usuario.hasMany(models.Orden,{
-        //     as:'ordenes',
-        //     foreignKey:'usuario_id'
-        // }),
-        // Usuario.belongsTo(models.Rol,{
-        //     as:'roles',
-        //     foreignKey:'rol_id'
-        // })
+        Usuario.hasMany(models.Orden,{
+            as:'ordenes',
+            foreignKey:'usuario_id'
+        }),
+        Usuario.belongsTo(models.Rol,{
+            as:'roles',
+            foreignKey:'rol_id'
+        })
     }
     
     

@@ -41,30 +41,30 @@ const User = {
         //let allUser = this.findAll();
        // let userFound = allUser.find(oneUser => oneUser.id === id)
        
-       return db.Usuarios.findByPk(id)
+     //  return db.Usuarios.findByPk(id)
     },
     // vamos a buscar a un usuario por su EMAIL
-    findByEmail:async (email)=>{
+    // findByEmail:async (email)=>{
 
-        console.log('******> findByEmail '+ email)
-        //let allUser= this.findAll();
-        //let userFound = allUser.find(oneUser => oneUser.email === email);
+    //     console.log('******> findByEmail '+ email)
+    //     //let allUser= this.findAll();
+    //     //let userFound = allUser.find(oneUser => oneUser.email === email);
 
-       let usuario = await db.Usuario.findOne({
-            where:{
-                email:email}
-            })
+    //    let usuario = await db.Usuario.findOne({
+    //         where:{
+    //             email:email}
+    //         })
 
-            try{
-                console.log('es este?---->'+ usuario)
+    //         try{
+    //             console.log('es este?---->'+ usuario)
 
-            }
-            catch(e){
-                console.log(e)
-            }
+    //         }
+    //         catch(e){
+    //             console.log(e)
+    //         }
            
     
-        },
+    //     },
 
     create: function(userData){
 
@@ -107,3 +107,5 @@ const User = {
 
 
 module.exports= User;
+
+

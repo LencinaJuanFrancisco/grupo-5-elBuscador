@@ -26,7 +26,7 @@ saveUninitialized: false,
 }))
 app.use(cookies());
 //el userLoggedMiddelware debe ir si o si despues del app.use(session....{}), si no da error
-//app.use(userLoggedMiddleware)
+app.use(userLoggedMiddleware)
 
 
 //views engine

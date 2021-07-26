@@ -93,8 +93,78 @@ INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `canti
 VALUES ('JEAN TANDORI NAITEE', '14.900', 'Jean de tiro medio con calce Oxford y línea A, ajustado en la cintura y suelto desde la cadera hacia el tobillo. Está confeccionado en tejido 100% algodón, azul con lavado stone localizado y detalles gastados en el frente. No llega al piso, así que es ideal para usar con zapatillas en un look bien informal.', '72', '1', '1');
 
 -- niña --
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('SWEATER VALENTINA 1-3', '4190', 'Sweater de viscosa y poliamida con bordado en lentejuelas y botones en el hombro.', '100', '2', '2');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('CAMPERA CATY 1-3', '3890', 'Campera de microfibra rellena de guata con bolsillos con botones, cierre frontal. Piel en capucha', '100', '2', '2');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA BEGONIA 1-3', '1070', 'Remera manga larga de jersey con elastano estampado y lleva broches en la espalda.', '100', '2', '2');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA KAREN 1-3', '1130', 'Remera manga larga con estampa de glitter. Es de jersey con elastano rayado. Lleva boton en la espalda hasta el talle 2.', '100', '2', '2');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('SWEATER CARMELA 4-12', '4390', 'Sweater de algodón con bordado en lentejuelas.', '100', '2', '2');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('PANTALON DENIM OXFORD 4-14', '2090', 'Pantalón oxford de denim con lavado stonewash y localizado. Lleva elástico interno con ojal para ajustar cintura.', '100', '1', '2');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('PANTALON CORDEROY AMELIA 4-14', '1730', 'Pantalón ancho de corderoy acanalado, con elástico en la cintura.', '100', '1', '2');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA SPEED 4-14', '1990', 'Remera manga larga de jersey vanizado con estampa en delantero en degrade de colores y glitter. Detalle de espalda mas larga que el delantero.', '100', '1', '2');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA HUGS 4-12', '1170', 'Remera manga larga con estampa con glitter. Es de jersey 100% algodón.', '100', '1', '2');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA NICOLE 4-14', '1170', 'Remera manga larga con estampa. Es de jersey 100% algodon con cuello de ribb.', '100', '1', '2');
+
 
 -- niño --
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('BUZO TROOPER 4-12', '4190', 'Buzo deportivo abierto con capucha y bolsillos laterales , en frisa con elastano camuflada y negra. Cierre a contratono y estampa en fluo en relieve. Ojal en punos para pasar el pulgar.', '100', '2', '3');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA GAEL 4-14', '1110', 'Remera manga larga con estampa y aplique. Es de jersey 100% algodon con cuello de ribb.', '100', '1', '3');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA BENNET 4-14', '1170', 'Remera manga larga con estampa. Es de jersey 100% algodón con cuello de ribb.', '100', '1', '3');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('CAMPERA BENJA XL', '3710', 'Campera de nylon matelaseado rellena de guata siliconada, con cierre. Parche de goma y cinta estampada en brazos', '100', '2', '3');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA JOY 4-12', '1950', 'Remera de jersey 100% algodon con estampa con detalles en relieve y fluo', '100', '1', '3');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA COSME 4-14', '1500', 'Remera manga larga con estampa. Es de jersey 100% algodon con cuello de ribb.', '100', '1', '3');
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA LOLO 4-8', '1250', 'Remera manga larga con estampa. Es de jersey 100% algodón con cuello de ribb.', '100', '1', '3');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('PANTALON DENIM BORJA 1-3', '1790', 'Pantalón super skinny de denim con lavado stonewash, localizado y efectoarrugas con relieve 3d. Lleva elástico interno con ojal para ajustar cintura.', '100', '1', '3');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('ZAPATILLAS KYLE 18-24', '1790', 'Zapatillas con tiras de velcro en sintético y detalle de estrella en caña lateral a contracolor', '100', '1', '3');
+
+
+INSERT INTO `elbuscador1`.`productos` (`nombre`, `precio`, `descripcion`, `cantidad`, `temporada_id`, `genero_id`) 
+VALUES ('REMERA THOMAS 1-3', '1130', 'Remera manga larga con estampa. Es de jersey rayado 100% algodón con cuello de ribb. Lleva broches en el hombro hasta el talle 2.', '100', '1', '3');
+
+
 
 
 -- tabla rol ---

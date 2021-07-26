@@ -7,8 +7,9 @@
     <nav>
         <ul>
          
-            <% if (locals.isLogged && locals.userLogged.admin == 'admin') { %>
+            <% if (locals.isLogged && locals.userLogged.rol_id == '1') { %>
             <li><a href="/">Home</a></li>
+            <li><%= locals.userLogged.rol_id %> </li>
             <li><a href="/producto/listadoProducto">Productos</a></li>
             <li><a href="/producto/carrito">Carrito</a></li>
             <li><a href="/producto/carga">Carga</a></li>
@@ -23,6 +24,7 @@
             
             <%}else{%> 
                 <li><a href="/">Home</a></li>
+                
                 <li><a href="/producto/listadoProducto">Productos</a></li>                
                 <li><a href="/users/register">Registro</a></li>
                 <li><a href="/users/login">Login</a></li>
