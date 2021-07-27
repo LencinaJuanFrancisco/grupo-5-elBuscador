@@ -100,7 +100,7 @@
           </div>
 
           
-         <% if( locals.userLogged  && locals.isLogged == "true"){ %>
+         <%if( locals.isAdmin){ %>
           <div class="btn btn-admin">
             <button type="submit">
               <a href="./editar/<%=product.id %>">Editar</a>
@@ -110,7 +110,7 @@
               <button class="btn" type="submit">Borrar</button>
             </form>
           </div>
-        <% } %>
+        <%} %>
             
           <article class="descripcion-producto">
             <p><%= product.descripcion%></p>

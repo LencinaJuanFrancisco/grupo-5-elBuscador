@@ -52,7 +52,7 @@ const controllerUsers = {
           avatar: req.file.filename,
         };
     
-      //   //una vez que pasa la validacion mandamos los datos al Modelo para que lo cree
+       //una vez que pasa la validacion mandamos los datos al Modelo para que lo cree
         
         User.create(userToCreate);
        return res.redirect("/users/login");
@@ -63,25 +63,6 @@ const controllerUsers = {
       })
     },
 
-    
-    // if (userInDB) {
-    //   // si el usuaria existe enviamos a la vista todos los datos
-    //   // para que vuelva y corrija el error del email
-    //   return res.render("registro", {
-    //     errors: {
-    //       email: {
-    //         // usamos express-validater
-    //         msg: "este email ya esta registrado",
-    //       },
-    //     },
-    //     oldData: req.body,
-    //   });
-    // }
-
-    // antes de enviar la informacion al modelo vamos a hasear el password
-    // PERO NO NOS TENEMOS QUE OLVIDAR de instalar bcryptsjs con npm
-   
-  
     
       
     loginProcess: (req, res) => {
@@ -96,14 +77,16 @@ const controllerUsers = {
 
             console.log('userTologue------->'+ userToLogin.email)
 
-              if(userToLogin){
+              if(userToLogin != null){
                   let isOkThePassword = bcryptsjs.compareSync(req.body.password, userToLogin.pass);
                   if (isOkThePassword) {
+
+                    //una vez que verificamos que coicidan los pass que ingreso el usuario con el de DB, eliminamos el pass por seguridad y luego creamos y asignamos el usuario buscado a la variable session userLogged
                       delete userToLogin.pass;
                       req.session.userLogged = userToLogin;
 
-console.log('req.session.userLogged---------------------'+req.session.userLogged)
-
+                       
+                    // si el usuario tildo en recuerdame se almacena el email en una COOKIE y la llamamos userEmail
                       if (req.body.remember_user) {
                           res.cookie('userEmail', req.body.email, {
                               maxAge: (1000 * 60) * 20
@@ -111,7 +94,7 @@ console.log('req.session.userLogged---------------------'+req.session.userLogged
                       }
 
                       return res.redirect('/users/perfil')
-                  }
+                  }// si las credenciales no coinciden
                   return res.render('login', {
                       errors: {
                           email: {
@@ -120,8 +103,7 @@ console.log('req.session.userLogged---------------------'+req.session.userLogged
                       }
 
                   })
-                }else{
-
+                }// si el email no se encuentra
                   return res.render('login', {
                           errors: {
                               email: {
@@ -129,7 +111,7 @@ console.log('req.session.userLogged---------------------'+req.session.userLogged
                               }
                           }
                       })
-                }
+                
 
 
               })
