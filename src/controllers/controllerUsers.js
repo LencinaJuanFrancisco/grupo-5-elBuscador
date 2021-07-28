@@ -77,7 +77,7 @@ const controllerUsers = {
 
             console.log('userTologue------->'+ userToLogin.email)
 
-              if(userToLogin != null){
+              if(userToLogin){
                   let isOkThePassword = bcryptsjs.compareSync(req.body.password, userToLogin.pass);
                   if (isOkThePassword) {
 
@@ -103,17 +103,19 @@ const controllerUsers = {
                       }
 
                   })
-                }// si el email no se encuentra
-                  return res.render('login', {
-                          errors: {
-                              email: {
-                                  msg: 'No se encuentra este email en nuestra base de datos'
-                              }
-                          }
-                      })
-                
+                }
 
-
+              })
+              
+              .catch((e)=>{
+                return res.render('login', {
+                  errors: {
+                      email: {
+                          msg: 'No se encuentra este email en nuestra base de datos'
+                      }
+                  }
+              })
+               console.log(e)
               })
    },
 

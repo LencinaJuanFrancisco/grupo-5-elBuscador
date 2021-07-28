@@ -19,9 +19,10 @@ module.exports=(sequelize,dataTypes)=>{
     config={
         underscored: true,
         tableName:'talles_productos',
-        timestamps: true,
-        paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
+        timestamps: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
+        paranoid: true,
     }
+
 
     const TallesProductos = sequelize.define(alias,cols,config);
 

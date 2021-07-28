@@ -11,14 +11,14 @@ const controllerProducto = {
              include:['generos','colores','talles','imagenes']//aca van los alias
          })
          .then(producto =>{
-
+            console.log(producto)
             //console.log(producto.imagenes)
            // res.render(producto)
            res.render('producto',{product:producto})
          })
          .catch(e=>{
-             console.log('***********************llegue');
-            res.send(e)
+             console.log('***********************llegue'+e);
+            
      })
     },
 
@@ -76,9 +76,12 @@ const controllerProducto = {
         })
         .then((producto)=>{
             console.log(producto)
+            
             let talles = req.body.talles
+            
             talles.forEach(talle => {
                 console.log(talle)
+                
                 db.TallesProductos.create({
                 producto_id: producto.id,
                 talle_id:parseInt(talle)
@@ -89,8 +92,11 @@ const controllerProducto = {
         })
         .then((producto)=>{
             let colores = req.body.colores
+
             colores.forEach(color => {
+
                 console.log("colores" + color)
+                
                 db.ColoresProductos.create({
                 producto_id: producto.id,
                 color_id:parseInt(color)
@@ -100,7 +106,8 @@ const controllerProducto = {
             return producto
         })
         .then((producto)=>{
-            res.redirect('/producto/'+producto.id)
+            res.redirect('/producto/'+ producto.id)
+            //res.redirect('/producto/'+producto.id)
         })
         .catch(e=>{
             console.log('***********************llegue tallesProductos');
@@ -165,20 +172,27 @@ const controllerProducto = {
          
            return response
             })
-    
+            
         .then((producto)=>{
-            //console.log(producto)
+            console.log(producto)
+            db.TallesProductos.destroy({
+                where:{
+                producto_id:req.params.id
+                }
+            })
+            
+        .then(()=>{
+                  
             let talles = req.body.talles
             talles.forEach(talle => {
                 console.log(talle)
-                db.TallesProductos.update({
-               
+                
+                db.TallesProductos.create({
+                producto_id:req.params.id ,
                 talle_id:parseInt(talle)
-            },{
-                where:{
-                    producto_id:req.params.id
-                }
-            });
+                })
+            }
+            );
                  
             })
             return producto

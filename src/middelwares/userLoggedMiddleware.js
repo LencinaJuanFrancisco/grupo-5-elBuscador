@@ -74,8 +74,10 @@ function userLoggedMiddleware(req, res, next) {
           return req.session.userLogged = user;
         }
       })
-      .catch((e) => console.log(e));
-  }
+      .catch((e) => {
+        console.log(e);
+  })
+}
 
   res.locals.isLogged = false;
   if (req.session.userLogged) {
