@@ -14,13 +14,13 @@ module.exports=(sequelize,dataTypes)=>{
         },
         createdAt: 'created_at',
         updatedAt: 'updated_at',
-        deletedAt: 'deleted_at',
+        //deletedAt: 'deleted_at',
     };
     config={
         underscored: true,
         tableName:'colores_productos',
         timestamps: true,
-        paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
+        //paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
     }
 
     const ColoresProductos = sequelize.define(alias,cols,config);

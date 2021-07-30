@@ -13,11 +13,11 @@ module.exports = (sequelize,dataTypes)=>{
         },
         createdAt: 'created_at',
         updatedAt: 'updated_at',
-        deletedAt: 'deleted_at',
+        //deletedAt: 'deleted_at',
     };
         let config={
         timestamps: false,
-        paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
+       // paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
         underscored: true,
     };
     

@@ -44,7 +44,7 @@
                             <option disabled selected>talle</option>
                             <% talles.forEach(talle =>{ %>
 
-                            <option value="<%= talle.id %>"> <%= talle.nombre %> </option>
+                            <option value="<%= talle.id %>" > <%= talle.nombre %> </option>
                             <%  }) %>
 
                         </select>
@@ -81,7 +81,7 @@
                         <option disabled selected>color</option>
                         <% colores.forEach(color =>{%>
 
-                        <option value="<%= color.id %>"> <%= color.nombre %> </option>
+                        <option value="<%= color.id %>" style="background-color:<%= color.nombre %>;color:beige"> <%= color.nombre %> </option>
                         <%  }) %>
 
                     </select>
