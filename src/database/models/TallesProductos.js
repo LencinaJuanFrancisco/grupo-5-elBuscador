@@ -14,13 +14,13 @@ module.exports=(sequelize,dataTypes)=>{
         },
         createdAt: 'created_at',
         updatedAt: 'updated_at',
-        deletedAt: 'deleted_at',
+        //deletedAt: 'deleted_at',
     };
     config={
         underscored: true,
         tableName:'talles_productos',
         timestamps: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
-        paranoid: true,
+        //paranoid: true,
     }
 
 

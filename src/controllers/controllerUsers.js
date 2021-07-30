@@ -104,7 +104,7 @@ const controllerUsers = {
 
                   })
                 }
-
+                
               })
               
               .catch((e)=>{
@@ -115,7 +115,7 @@ const controllerUsers = {
                       }
                   }
               })
-               console.log(e)
+                console.log(e)
               })
    },
 
