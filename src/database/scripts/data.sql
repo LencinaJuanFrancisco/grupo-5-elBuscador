@@ -175,3 +175,35 @@ INSERT INTO `elbuscador1`.`roles` (`id`, `nombre`) VALUES ('2', 'buyer');
 
 INSERT INTO `elbuscador1`.`usuarios` (`id`, `nombre`, `email`, `pass`, `rol_id`) VALUES ('1', 'pepe', 'pepe@gmail.com', '123', '1');
 INSERT INTO `elbuscador1`.`usuarios` (`id`, `nombre`, `email`, `pass`, `rol_id`) VALUES ('2', 'pancho', 'pancho@gmail.com', '123', '2');
+
+-- tabla imagenes
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('1', 'saco-jeanne-gina.jpg', '78');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('2', 'saco-jeanne-gina.jpg', '79');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('3', 'saco-jeanne-gina.jpg', '80');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('4', 'saco-jeanne-gina.jpg', '81');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('5', 'saco-jeanne-gina.jpg', '82');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('6', 'saco-jeanne-gina.jpg', '83');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('7', 'saco-jeanne-gina.jpg', '84');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('8', 'saco-jeanne-gina.jpg', '85');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('9', 'saco-jeanne-gina.jpg', '86');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('10', 'saco-jeanne-gina.jpg', '87');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('11', 'saco-jeanne-gina.jpg', '88');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('12', 'saco-jeanne-gina.jpg', '89');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('13', 'saco-jeanne-gina.jpg', '90');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('14', 'saco-jeanne-gina.jpg', '91');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('15', 'saco-jeanne-gina.jpg', '92');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('16', 'saco-jeanne-gina.jpg', '93');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('17', 'saco-jeanne-gina.jpg', '94');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('18', 'saco-jeanne-gina.jpg', '95');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('19', 'saco-jeanne-gina.jpg', '96');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('20', 'saco-jeanne-gina.jpg', '97');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('21', 'saco-jeanne-gina.jpg', '98');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('22', 'saco-jeanne-gina.jpg', '99');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('23', 'saco-jeanne-gina.jpg', '100');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('24', 'saco-jeanne-gina.jpg', '101');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('25', 'saco-jeanne-gina.jpg', '102');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('26', 'saco-jeanne-gina.jpg', '103');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('27', 'saco-jeanne-gina.jpg', '104');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('28', 'saco-jeanne-gina.jpg', '105');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('29', 'saco-jeanne-gina.jpg', '106');
+INSERT INTO `elbuscador1`.`imagenes` (`id`, `nombre`, `producto_id`) VALUES ('30', 'saco-jeanne-gina.jpg', '107');
