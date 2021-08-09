@@ -22,23 +22,28 @@
         <div class="titulo">
             <H2>CREA TU CUENTA GRATIS</H2>
         </div>
+        <div class = "errores">
+        <ul>
 
-        <form action="/users/register" enctype="multipart/form-data" method="POST">
+        </ul>   
+        </div>
+
+        <form class="form" action="/users/register" enctype="multipart/form-data" method="POST">
             <div class="Nombre">
                 <div>
                     <label for="fullName">Nombre y Apellido</label>
                 </div>
                 <div>
-                    <input type="text" name="fullName" placeholder="" value="<%= locals.oldData ? oldData.fullName : null %>">
+                    <input class = "fullName" type="text" name="fullName" placeholder="" value="<%= locals.oldData ? oldData.fullName : null %>">
                     <% if (locals.errors && errors.fullName) { %>
                         <div class="text-danger">
                             <%= errors.fullName.msg %> 
-                        </div>
+</div>
                     <% } %>
                 </div>
             </div>
             <div>
-                <input type="file" name="avatar">
+                <input class = "avatar" type="file" name="avatar">
                 <% if (locals.errors && errors.avatar) { %>
                     <div class="text-danger">
                         <%= errors.avatar.msg %>
@@ -55,7 +60,7 @@
                     <label for="email">Email</label>
                 </div>
                 <div>
-                    <input type="email" name="email" placeholder="" value="<%= locals.oldData ? oldData.email : null %>"
+                    <input class = "email" type="email" name="email" placeholder="" value="<%= locals.oldData ? oldData.email : null %>"
                     >
                     <% if (locals.errors && errors.email) { %>
                         <div class="text-danger">
@@ -82,7 +87,7 @@
                     <label for="password">Contraseña</label>
                 </div>
                 <div>
-                    <input type="password" name="password" placeholder="">
+                    <input class = "password" type="password" name="password" placeholder="">
                     <% if (locals.errors && errors.password) { %>
                         <div class="text-danger">
                             <%= errors.password.msg %>
@@ -115,6 +120,7 @@
         });
     </script>
     </div>
+    <script src = '../js/validaciones.js'></script>
 </body>
 
 </html>
