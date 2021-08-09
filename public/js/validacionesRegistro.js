@@ -21,14 +21,18 @@ window.addEventListener("load", function () {
     let email = document.querySelector("input.email");
 
     if (email.value != /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i) {
-      errors.push("Debes ingresar un mail valido");
+      errors.push("Debes ingresar un mail válido");
     }
 
     let contraseña = document.querySelector("input.password");
 
     if (contraseña.value == "") {
       errors.push("Debes ingresar una contraseña");
+    } else if() {
+      
     }
+
+
     console.log("errores de validacion FRONT---------------------");
     console.log("--------" + errors);
     console.log("----------------------------------------****----");
