@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/registro.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registro.css" />
     <link rel="shortcut icon" href="../img/img/icono-web.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/99035ba4e5.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/99035ba4e5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>El Buscador - Ropa y accesorios</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-body">
-    <!-- header -->
-    <%- include('../views/partials/header') %>
+      <!-- header -->
+      <%- include('../views/partials/header') %>
 
-    <main>
+      <main>
         <div class="titulo">
-            <H2>CREA TU CUENTA GRATIS</H2>
-        </div>
-        <div class = "errores">
-        <ul>
-
-        </ul>   
+          <H2>CREA TU CUENTA GRATIS</H2>
         </div>
 
-        <form class="form" action="/users/register" enctype="multipart/form-data" method="POST">
-            <div class="Nombre">
-                <div>
-                    <label for="fullName">Nombre y Apellido</label>
-                </div>
-                <div>
-                    <input class = "fullName" type="text" name="fullName" placeholder="" value="<%= locals.oldData ? oldData.fullName : null %>">
-                    <% if (locals.errors && errors.fullName) { %>
-                        <div class="text-danger">
-                            <%= errors.fullName.msg %> 
-</div>
-                    <% } %>
-                </div>
+        <div class="errores">
+          <ul></ul>
+        </div>
+
+        <form
+          class="formulario"
+          action="/users/register"
+          enctype="multipart/form-data"
+          method="POST"
+        >
+          <div class="Nombre">
+            <div>
+              <label for="fullName">Nombre y Apellido</label>
             </div>
             <div>
-                <input class = "avatar" type="file" name="avatar">
-                <% if (locals.errors && errors.avatar) { %>
-                    <div class="text-danger">
-                        <%= errors.avatar.msg %>
-                    </div>
-                <% } %>
+              <input
+                class="fullName"
+                type="text"
+                name="fullName"
+                placeholder=""
+                value="<%= locals.oldData ? oldData.fullName : null %>"
+              />
+              <% if (locals.errors && errors.fullName) { %>
+              <div class="text-danger"><%= errors.fullName.msg %></div>
+              <% } %>
             </div>
- 
-                <div>
-                    <input type="text" name="admin"  placeholder=""  value="2" style="display: none;">
-                </div>
-            
-            <div class="email">
-                <div>
-                    <label for="email">Email</label>
-                </div>
-                <div>
-                    <input class = "email" type="email" name="email" placeholder="" value="<%= locals.oldData ? oldData.email : null %>"
-                    >
-                    <% if (locals.errors && errors.email) { %>
-                        <div class="text-danger">
-                            <%= errors.email.msg %>
-                        </div>
-                    <% } %>
-                </div>
+          </div>
+          <div>
+            <input class="avatar" type="file" name="avatar" />
+            <% if (locals.errors && errors.avatar) { %>
+            <div class="text-danger"><%= errors.avatar.msg %></div>
+            <% } %>
+          </div>
+
+          <div>
+            <input
+              type="text"
+              name="admin"
+              placeholder=""
+              value="2"
+              style="display: none"
+            />
+          </div>
+
+          <div class="email">
+            <div>
+              <label for="email">Email</label>
             </div>
-            <!-- <div class="Usuario">
+            <div>
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder=""
+                value="<%= locals.oldData ? oldData.email : null %>"
+              />
+              <% if (locals.errors && errors.email) { %>
+              <div class="text-danger"><%= errors.email.msg %></div>
+              <% } %>
+            </div>
+          </div>
+          <!-- <div class="Usuario">
                 <div>
                     <label for="user">Usuario</label>
                 </div>
@@ -82,45 +101,50 @@
                     <% } %>
                 </div>
             </div> -->
-            <div class="Contraseña">
-                <div>
-                    <label for="password">Contraseña</label>
-                </div>
-                <div>
-                    <input class = "password" type="password" name="password" placeholder="">
-                    <% if (locals.errors && errors.password) { %>
-                        <div class="text-danger">
-                            <%= errors.password.msg %>
-                        </div>
-                    <% } %>
-                </div>
+          <div class="Contraseña">
+            <div>
+              <label for="password">Contraseña</label>
             </div>
             <div>
-                <div class="guardar">
-                    <input type="submit" value="Guardar">
-                </div>
-                <!-- <div class="borrar">
+              <input
+                class="password"
+                type="password"
+                name="password"
+                placeholder=""
+              />
+              <% if (locals.errors && errors.password) { %>
+              <div class="text-danger"><%= errors.password.msg %></div>
+              <% } %>
+            </div>
+          </div>
+          <div>
+            <div class="guardar">
+              <input type="submit" value="Guardar" />
+            </div>
+            <!-- <div class="borrar">
                     <input type="button" value="Borrar">
                 </div> -->
-            </div>
+          </div>
         </form>
-    </main>
-    <!-- FOOTER -->
-    <%- include ("../views/partials/footer.ejs") %> 
-    <!-- instalcion de jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
-    <script type="text/javascript">
+      </main>
+      <!-- FOOTER -->
+      <%- include ("../views/partials/footer.ejs") %>
+      <!-- instalcion de jquery -->
+      <script src="../js/validaciones.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"
+      ></script>
+      <!-- con javascript insertamos la clase active para mostrar una cosa o la otra, asi podemos mostrar el menu hamburguesa o la x para cerrar, indicando cual esta activa(haciendo click) mostramos -->
+      <script type="text/javascript">
         $(document).ready(function () {
-            $(".menu-cel").click(function () {
-                $(".menu-cel").toggleClass("active")
-                $("nav").toggleClass("active")
-            })
+          $(".menu-cel").click(function () {
+            $(".menu-cel").toggleClass("active");
+            $("nav").toggleClass("active");
+          });
         });
-    </script>
+      </script>
     </div>
-    <script src = '../js/validaciones.js'></script>
-</body>
-
+  </body>
 </html>
