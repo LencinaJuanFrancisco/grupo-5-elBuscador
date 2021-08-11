@@ -52,13 +52,23 @@
               <% if (locals.errors && errors.fullName) { %>
               <div class="text-danger"><%= errors.fullName.msg %></div>
               <% } %>
+              <span class="errorNombre visible"
+                >El Nombre NO DEBE ESTAR VACIO
+              </span>
+              <span class="errorNombreLongitud visible"
+                >El Nombre debe contener al menos 5 caracteres
+              </span>
             </div>
           </div>
+
           <div>
             <input class="avatar" type="file" name="avatar" />
             <% if (locals.errors && errors.avatar) { %>
             <div class="text-danger"><%= errors.avatar.msg %></div>
             <% } %>
+            <span class="errorAvatar visible"
+              >Debes Seleccionar una Imagen
+            </span>
           </div>
 
           <div>
@@ -86,6 +96,10 @@
               <% if (locals.errors && errors.email) { %>
               <div class="text-danger"><%= errors.email.msg %></div>
               <% } %>
+              <span class="errorEmail visible">Debe ingresar un Email </span>
+              <span class="errorEmailValido visible"
+                >Debe ingresar en un email Valido
+              </span>
             </div>
           </div>
           <!-- <div class="Usuario">
@@ -115,6 +129,13 @@
               <% if (locals.errors && errors.password) { %>
               <div class="text-danger"><%= errors.password.msg %></div>
               <% } %>
+              <span class="errorPass visible"
+                >Debe ingresar en un contraseña Valida
+              </span>
+              <span class="errorPassValido visible"
+                >La contraseña debe contener al menos 8 caracteres,mayusacula y
+                caracter Especial
+              </span>
             </div>
           </div>
           <div>
@@ -130,7 +151,7 @@
       <!-- FOOTER -->
       <%- include ("../views/partials/footer.ejs") %>
       <!-- instalcion de jquery -->
-      <script src="/js/validacionesRegistro.js"></script>
+      <script src="/js/validaciones.js"></script>
       <script
         src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
