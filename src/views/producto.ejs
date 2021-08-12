@@ -39,7 +39,7 @@
               src="../img/img/<%= imagen.nombre %> "
               alt="imigen principal"
             />
-            <% }) %> 
+            <% }) %>
           </div>
           <!-- estas imagenes se ven recien en modo table en adelante  -->
           <!-- <div class="img-secundarias">
@@ -71,7 +71,6 @@
             <% product.colores.forEach(color => { %>
 
             <div
-              
               style="
                 background-color: <%=color.nombre%>;
                 width: 35px;
@@ -99,19 +98,21 @@
             <button type="submit">Comparar ahora</button>
           </div>
 
-          
-         <%if( locals.isAdmin){ %>
+          <%if( locals.isAdmin){ %>
           <div class="btn btn-admin">
             <button type="submit">
               <a href="./editar/<%=product.id %>">Editar</a>
             </button>
-  
-            <form action="./borrar/<%=product.id %>?_method=DELETE  " method="POST">
+
+            <form
+              action="./borrar/<%=product.id %>?_method=DELETE  "
+              method="POST"
+            >
               <button class="btn" type="submit">Borrar</button>
             </form>
           </div>
-        <%} %>
-            
+          <%} %>
+
           <article class="descripcion-producto">
             <p><%= product.descripcion%></p>
           </article>
@@ -127,7 +128,6 @@
       <h2>Productos Relacionados con <%= product.genero %></h2>
       <section class="carusel">
         <!-- codigo extraido de http://sachinchoolur.github.io/lightslider/examples.html -->
-       
       </section>
 
       <!-- <section class="corte">
@@ -166,6 +166,7 @@
     <!-- FOOTER -->
     <%- include ("../views/partials/footer.ejs") %>
     <!-- script del carusel -->
+
     <script type="text/javascript" src="../js/script.js"></script>
 
     <script
