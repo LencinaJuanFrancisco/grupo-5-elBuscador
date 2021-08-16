@@ -3,8 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+input{
+  margin: 5px;
+  
+}
+.errorNombreLongitud,
+.errorNombre,
+.errorAvatar,
+.errorEmail,
+.errorEmailValido,
+.errorPass,
+.errorPassValido
+{
+  text-align: center;
+  color: red;
+  background-color: rgba(255,255, 255, 0.3);
+  padding: 2px;
+  font-size: 10px;
+}
+
+.invalido{
+  border: 2px solid red;
+  box-shadow: 0px 0px 5px 1px red;
+
+}
 
 
+.valido{
+  border: 2px solid green;
+  box-shadow: 0px 0px 5px 1px green;
+
+}
+.visible{
+  display: none;
+  transition: all 0.5s ease-out
+}
 .container-body{
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
@@ -35,13 +68,6 @@ header{
   justify-content: space-between;
   z-index: 999;
   opacity: 0.9;
-}
-.errores ul{
-  color: #be343d;
-  display: block;
-  margin-left: 35%;
-  padding: 30px;
-
 }
 .logo{
   display: block;
@@ -142,7 +168,6 @@ nav ul li a:hover{
 }
 form div input{
    width: 100%;
-   padding: 5px;
 }
 
 .titulo{text-align: center;
@@ -150,26 +175,19 @@ form div input{
 
 }
 
-.input{
+
+input{
    border: solid 1px #ccc;
    padding: 10px;
    /* width: 280px; */
 }
 .face input{
-background-color: rgb(6, 6, 117);
+background-color: blue;
 color: white;}
 
-.guardar1 button {
+.guardar {
    padding: 10px;
-   background-color: blue;
-   color: white;
-
-   width: 100%;
-   margin-bottom: 5px;
-   margin-top: 5px;
-
-  }
-   
+   }
 
 .borrar {
    padding: 10px;
@@ -621,4 +639,3 @@ header{
  }
 
 }
-

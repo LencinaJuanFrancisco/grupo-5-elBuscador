@@ -1,16 +1,5 @@
 window.addEventListener("load", function () {
-  // function ValidateEmail(mail) {
-  //   if (
-  //     /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
-  //       myForm.emailAddr.value
-  //     )
-  //   ) {
-  //     return true;
-  //   }
-
-  //   return false;
-  // }
-
+  //const Swal = require("sweetalert2");
   let form = document.querySelector("form.formulario");
 
   let nombre = document.querySelector("input.fullName");
@@ -22,6 +11,7 @@ window.addEventListener("load", function () {
     eNombreLongitud.classList.add("visible");
     if (nombre.value == "") {
       // alert("Debe agregar un nombre");
+
       nombre.classList.add("invalido");
       nombre.classList.remove("valido");
       eNombre.classList.remove("visible");
@@ -29,6 +19,7 @@ window.addEventListener("load", function () {
       // errors.push("El nombre debe tener al menos 2 caracteres");
     } else if (nombre.value.length < 5) {
       //alert("El Nombre debe contener al menos 5 caracteres");
+
       nombre.classList.add("invalido");
       nombre.classList.remove("valido");
       eNombreLongitud.classList.remove("visible");
@@ -54,10 +45,18 @@ window.addEventListener("load", function () {
     }
   });
 
+  // *************************
+  function validateEmail(email) {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+  // *****************************
+
   let email = document.querySelector("input.email");
   let eEmail = document.querySelector(".errorEmail");
   let eEmailValido = document.querySelector(".errorEmailValido");
-  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  //var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   email.addEventListener("blur", () => {
     eEmail.classList.add("visible");
 
@@ -65,7 +64,11 @@ window.addEventListener("load", function () {
       email.classList.add("invalido");
       email.classList.remove("valido");
       eEmail.classList.remove("visible");
-    } else if (email.value == mailformat) {
+    } else if (!validateEmail(email.value)) {
+      console.log("email.value------" + email.value);
+      console.log(
+        "validateEmail(email.value)------" + validateEmail(email.value)
+      );
       email.classList.add("invalido");
       email.classList.remove("valido");
       eEmailValido.classList.remove("visible");
@@ -101,18 +104,36 @@ window.addEventListener("load", function () {
   });
 
   form.addEventListener("submit", (e) => {
-    if (nombre.classList.replace("invalido")) {
+    if (
+      nombre.classList.contains("valido") &&
+      avatar.classList.contains("valido") &&
+      email.classList.contains("valido") &&
+      contraseña.classList.contains("valido")
+    ) {
+      // console.log(nombre.classList.contains("valido"));
+      // console.log(avatar.classList.contains("valido"));
+      // console.log(email.classList.contains("valido"));
+      // console.log(contraseña.classList.contains("valido"));
       e.preventDefault();
-      nombre.addEventListener("focus", () => {
-        nombre.value = "Ingrese un nombre";
+      Swal.fire({
+        title: "Bienvenido!",
+        text: "Usuario creado con exito!",
+        icon: "success",
+
+        timer: 3000,
       });
-    } else if (avatar.classList.replace("invalido")) {
-      e.preventDefault();
-      avatar.addEventListener("focus", () => {});
-    } else if (email.value.classList.replace("invalido")) {
+      form.submit();
     } else {
-      alert("usuario creado con exito!!!!");
+      // console.log(nombre.classList.contains("valido"));
+      // console.log(avatar.classList.contains("valido"));
+      // console.log(email.classList.contains("valido"));
+      // console.log(contraseña.classList.contains("valido"));
+      e.preventDefault();
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Debe completar todos los campos!",
+      });
     }
   });
 });
-
