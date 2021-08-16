@@ -2,49 +2,6 @@ window.addEventListener("load", function () {
   //const Swal = require("sweetalert2");
   let form = document.querySelector("form.formulario");
 
-  let nombre = document.querySelector("input.fullName");
-  let eNombre = document.querySelector(".errorNombre");
-  let eNombreLongitud = document.querySelector(".errorNombreLongitud");
-
-  nombre.addEventListener("blur", () => {
-    eNombre.classList.add("visible");
-    eNombreLongitud.classList.add("visible");
-    if (nombre.value == "") {
-      // alert("Debe agregar un nombre");
-
-      nombre.classList.add("invalido");
-      nombre.classList.remove("valido");
-      eNombre.classList.remove("visible");
-
-      // errors.push("El nombre debe tener al menos 2 caracteres");
-    } else if (nombre.value.length < 5) {
-      //alert("El Nombre debe contener al menos 5 caracteres");
-
-      nombre.classList.add("invalido");
-      nombre.classList.remove("valido");
-      eNombreLongitud.classList.remove("visible");
-    } else {
-      nombre.classList.remove("invalido");
-      nombre.classList.add("valido");
-      eNombreLongitud.classList.add("visible");
-    }
-  });
-
-  let avatar = document.querySelector("input.avatar");
-  let eAvatar = document.querySelector(".errorAvatar");
-
-  avatar.addEventListener("blur", () => {
-    if (avatar.value == "") {
-      avatar.classList.add("invalido");
-      avatar.classList.remove("valido");
-      eAvatar.classList.remove("visible");
-    } else {
-      avatar.classList.remove("invalido");
-      avatar.classList.add("valido");
-      eAvatar.classList.add("visible");
-    }
-  });
-
   // *************************
   function validateEmail(email) {
     const re =
