@@ -28,24 +28,49 @@
 
         <form action="/users/login" method="POST">
           <div class="usuario">
-            <div>
-              <label for="email">E-mail</label>
-            </div>
-            <div>
-              <input type="text" name="email" placeholder="" />
-
-              <% if (locals.errors && errors.email) { %>
-
-              <div class="text-danger"><%= errors.email.msg%></div>
-              <% } %>
+            <div class="email">
+              <div>
+                <label for="email">Email</label>
+              </div>
+              <div>
+                <input
+                  class="email"
+                  type="email"
+                  name="email"
+                  placeholder=""
+                  value="<%= locals.oldData ? oldData.email : null %>"
+                />
+                <% if (locals.errors && errors.email) { %>
+                <div class="text-danger"><%= errors.email.msg %></div>
+                <% } %>
+                <span class="errorEmail visible">Debe ingresar un Email </span>
+                <span class="errorEmailValido visible"
+                  >Debe ingresar en un email Valido
+                </span>
+              </div>
             </div>
           </div>
-          <div class="contraseña">
+          <div class="Contraseña">
             <div>
               <label for="password">Contraseña</label>
             </div>
             <div>
-              <input type="password" name="password" placeholder="" />
+              <input
+                class="password"
+                type="password"
+                name="password"
+                placeholder=""
+              />
+              <% if (locals.errors && errors.password) { %>
+              <div class="text-danger"><%= errors.password.msg %></div>
+              <% } %>
+              <span class="errorPass visible"
+                >Debe ingresar en un contraseña Valida
+              </span>
+              <span class="errorPassValido visible"
+                >La contraseña debe contener al menos 8 caracteres,mayusacula y
+                caracter Especial
+              </span>
             </div>
           </div>
           <div>
