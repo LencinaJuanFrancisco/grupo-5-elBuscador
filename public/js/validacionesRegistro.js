@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
       eNombre.classList.remove("visible");
 
       // errors.push("El nombre debe tener al menos 2 caracteres");
-    } else if (nombre.value.length < 5) {
+    } else if (nombre.value.length < 2) {
       //alert("El Nombre debe contener al menos 5 caracteres");
 
       nombre.classList.add("invalido");
@@ -32,13 +32,24 @@ window.addEventListener("load", function () {
 
   let avatar = document.querySelector("input.avatar");
   let eAvatar = document.querySelector(".errorAvatar");
+  // let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
+  // let { name:fileName } = this.files[0];
+  // let fileExtension = fileName.split(".").pop();
+
+  
 
   avatar.addEventListener("blur", () => {
     if (avatar.value == "") {
       avatar.classList.add("invalido");
       avatar.classList.remove("valido");
       eAvatar.classList.remove("visible");
-    } else {
+    } 
+    // else if(!acceptedExtensions.includes(fileExtension)) {
+    //   avatar.classList.add("invalido");
+    //   avatar.classList.remove("valido");
+    //   eAvatar.classList.remove("visible");
+    // }
+    else {
       avatar.classList.remove("invalido");
       avatar.classList.add("valido");
       eAvatar.classList.add("visible");
