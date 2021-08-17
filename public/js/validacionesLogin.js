@@ -49,7 +49,7 @@ window.addEventListener("load", function () {
       contraseña.classList.add("invalido");
       contraseña.classList.remove("valido");
       ePass.classList.remove("visible");
-    } else if (contraseña.value.length < 7) {
+    } else if (contraseña.value.length < 2) {
       contraseña.classList.add("invalido");
       contraseña.classList.remove("valido");
       ePassValido.classList.remove("visible");
