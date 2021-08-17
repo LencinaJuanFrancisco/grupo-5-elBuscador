@@ -34,10 +34,23 @@
                     <label for="nombreProducto">Nombre del Producto</label>
                     <input type="text" name="nombreProducto">
                 </div>
+                <div>
+                <span class="errorNombre visible"
+                >El Nombre NO DEBE ESTAR VACIO
+              </span>
+              <span class="errorNombreLongitud visible"
+                >El Nombre debe contener al menos 5 caracteres
+              </span>
+            </div>  
                 <div>Detalle</div>
                 <div>
-                    <textarea name="detalleProducto" rows="5" cols="40">Detalle del producto</textarea>
+                    <textarea class= "detalleProducto" name="detalleProducto" rows="5" cols="40">Detalle del producto</textarea>
                 </div>
+                <div>
+                <span class="errorDetalleLongitud visible"
+                >El Detalle debe contener al menos 20 caracteres
+              </span>
+            </div> 
                 <div>
                     <div>Talles</div>
                     
@@ -115,7 +128,12 @@
                         <div>
                             Imagen Principal
                         </div>
-                        <input type="file" name="imgPrincipal">
+                        <input class= "imgPrincipal" type="file" name="imgPrincipal">
+                    </div>
+                    <div>
+                        <span class="errorImagen visible"
+                        >Debes Seleccionar una Imagen
+                      </span> 
                     </div>
                     <!-- <div>
                 <div>
@@ -165,6 +183,8 @@
             });
         });
     </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src = "../../public/js/validacionesLogin.js"></script>
 </body>
 
 </html>
