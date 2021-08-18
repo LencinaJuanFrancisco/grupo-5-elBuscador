@@ -9,7 +9,7 @@ const validations = [
 	body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
 	body('avatar').custom((value, { req }) => {
 		let file = req.file;
-		let acceptedExtensions = ['.jpg', '.png', '.gif'];
+		let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
 		
 		if (!file) {
 			throw new Error('Tienes que subir una imagen');
