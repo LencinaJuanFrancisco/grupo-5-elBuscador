@@ -47,28 +47,20 @@ window.addEventListener("load", function () {
   });
 
   let imagen = document.querySelector("input.imgPrincipal");
-
-  let imagen_ext = document.querySelector("input.imgPrincipal").value;
-
-  //vamos a empezar a leerdesde el punto(.) y lo pasamos a minuscula para compararlo con el array de extenciones
-  let img_ext = imagen_ext.substring(imagen_ext.lastIndexOf(".")).toLowerCase;
   let eImagen = document.querySelector(".errorImagen");
-
-  let extenciones_validas = [".jpg", ".png", ".gif"];
+  let extenciones_validas = [".jpg", ".jpeg", ".png", ".gif"];
 
   imagen.addEventListener("blur", () => {
-    if (imagen.value == "") {
-      imagen.classList.add("invalido");
-      imagen.classList.remove("valido");
-      eImagen.classList.remove("visible");
-    } else if (extenciones_validas.includes(img_ext)) {
-      console.log("-----*****extencion de la imagen------------------");
-
-      console.log("true");
-    } else {
+    let imagen_ext = document.querySelector("input.imgPrincipal").value;
+    let img_ext = imagen_ext.substr(imagen_ext.lastIndexOf("."));
+    if (imagen.value != "" && extenciones_validas.includes(img_ext)) {
       imagen.classList.remove("invalido");
       imagen.classList.add("valido");
       eImagen.classList.add("visible");
+    } else {
+      imagen.classList.add("invalido");
+      imagen.classList.remove("valido");
+      eImagen.classList.remove("visible");
     }
   });
 
