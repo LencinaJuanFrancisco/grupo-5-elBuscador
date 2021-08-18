@@ -32,9 +32,12 @@ window.addEventListener("load", function () {
 
   let avatar = document.querySelector("input.avatar");
   let eAvatar = document.querySelector(".errorAvatar");
-  // let acceptedExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
+  // let acceptedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
   // let { name:fileName } = this.files[0];
   // let fileExtension = fileName.split(".").pop();
+  let fileInput = document.getElementById('file');
+  let filePath = fileInput.value;
+  let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
 
   
 
@@ -45,10 +48,16 @@ window.addEventListener("load", function () {
       eAvatar.classList.remove("visible");
     } 
     // else if(!acceptedExtensions.includes(fileExtension)) {
+    //   // alert("file type not allowed");
     //   avatar.classList.add("invalido");
     //   avatar.classList.remove("valido");
     //   eAvatar.classList.remove("visible");
     // }
+    else if(!allowedExtensions.exec(filePath)){
+      alert('Please upload file having extensions .jpeg/.jpg/.png/.gif only.');
+      fileInput.value = '';
+      return false;
+    }
     else {
       avatar.classList.remove("invalido");
       avatar.classList.add("valido");
