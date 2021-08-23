@@ -5,6 +5,7 @@ const apiControllers = require("../../controllers/apiControlles/apiUser");
 
 router.get("/", apiControllers.listadoUsuarios);
 
-router.get("/detalle", apiControllers.detalleUsuario);
+router.get("/:id", apiControllers.detalleUsuario);
+
 
 module.exports = router;

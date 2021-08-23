@@ -12,5 +12,17 @@ router.get('/producto',(req,res)=>{
 
 })
 
+// FALTA DESDE ACA - EL FILTRADO POR CATEGORIAS 
+router.get('/producto/temporada',(req,res)=>{
+    db.Producto.findAll({
+        where: {
+            temporada_id: 2,
+        }
+    })
+    .then(productos => {
+        return res.status(200).json(produtos);
+    })
+})
+
 
 module.exports= router;
