@@ -34,27 +34,23 @@ const User = require("../models/User"); //requiremimos recien cuendo empezamos c
 // }
 
 function userLoggedMiddleware(req, res, next) {
-  console.log("-------------------estoy en todo------------------------");
+  //console.log("-------------------estoy en todo------------------------");
   //console.log("que es esto req.cookies.userEmail----"+req.cookies.userEmail)
-  console.log(
-    "-------------------" + req.cookies.userEmail + "------------------------"
-  );
-
+  // console.log(
+  //   "-------------------" + req.cookies.userEmail + "------------------------"
+  // );
 
   // se verifica si es usuario administrador o no  luego se crea variable local isAdmin
   //para habilirar o desabilitar funciones segun su ROL
   res.locals.isAdmin = false;
-  if(req.session.userLogged){
-    if(req.session.userLogged.rol_id == 1){
+  if (req.session.userLogged) {
+    if (req.session.userLogged.rol_id == 1) {
       res.locals.isAdmin = true;
-      
     }
+  }
 
-  }    
-  
-    
-//si el usuario marco recuerdame, se creo una cooki que luego la solicitamos
-// aqui para hacer todo el proceso de logueeo automatico
+  //si el usuario marco recuerdame, se creo una cooki que luego la solicitamos
+  // aqui para hacer todo el proceso de logueeo automatico
 
   if (req.cookies.userEmail) {
     let emailInCookie = req.cookies.userEmail;
@@ -67,23 +63,22 @@ function userLoggedMiddleware(req, res, next) {
       .then((user) => {
         console.log("quien sos------->" + user);
         if (user) {
-
           //destruimos el pass por seguridad una vez que localizamos al usuario
           // y retornamos al usuaria en una variable session llamada userLogged
           delete user.pass;
-          return req.session.userLogged = user;
+          return (req.session.userLogged = user);
         }
       })
       .catch((e) => {
         console.log(e);
-  })
-}
+      });
+  }
 
   res.locals.isLogged = false;
   if (req.session.userLogged) {
     res.locals.isLogged = true;
     res.locals.isLogged = req.session.userLogged;
-   return next();
+    return next();
   }
   return next();
 }
