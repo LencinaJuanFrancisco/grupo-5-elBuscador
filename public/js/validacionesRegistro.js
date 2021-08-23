@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
       eNombre.classList.remove("visible");
 
       // errors.push("El nombre debe tener al menos 2 caracteres");
-    } else if (nombre.value.length < 2) {
+    } else if (nombre.value.length < 5) {
       //alert("El Nombre debe contener al menos 5 caracteres");
 
       nombre.classList.add("invalido");
@@ -32,36 +32,20 @@ window.addEventListener("load", function () {
 
   let avatar = document.querySelector("input.avatar");
   let eAvatar = document.querySelector(".errorAvatar");
-  // let acceptedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
-  // let { name:fileName } = this.files[0];
-  // let fileExtension = fileName.split(".").pop();
-  let fileInput = document.getElementById('file');
-  let filePath = fileInput.value;
-  let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
-
-  
+  let extenciones_validas = [".jpg", ".jpeg", ".png", ".gif"];
 
   avatar.addEventListener("blur", () => {
-    if (avatar.value == "") {
-      avatar.classList.add("invalido");
-      avatar.classList.remove("valido");
-      eAvatar.classList.remove("visible");
-    } 
-    // else if(!acceptedExtensions.includes(fileExtension)) {
-    //   // alert("file type not allowed");
-    //   avatar.classList.add("invalido");
-    //   avatar.classList.remove("valido");
-    //   eAvatar.classList.remove("visible");
-    // }
-    else if(!allowedExtensions.exec(filePath)){
-      alert('Please upload file having extensions .jpeg/.jpg/.png/.gif only.');
-      fileInput.value = '';
-      return false;
-    }
-    else {
+    let imagen_ext = document.querySelector("input.avatar").value;
+    let img_ext = imagen_ext.substr(imagen_ext.lastIndexOf("."));
+    if (avatar.value != "" && extenciones_validas.includes(img_ext)) {
       avatar.classList.remove("invalido");
       avatar.classList.add("valido");
       eAvatar.classList.add("visible");
+    } 
+    else {
+      avatar.classList.add("invalido");
+      avatar.classList.remove("valido");
+      eAvatar.classList.remove("visible");
     }
   });
 
@@ -112,7 +96,7 @@ window.addEventListener("load", function () {
       contraseña.classList.add("invalido");
       contraseña.classList.remove("valido");
       ePass.classList.remove("visible");
-    } else if (contraseña.value.length < 7) {
+    } else if (contraseña.value.length < 8) {
       contraseña.classList.add("invalido");
       contraseña.classList.remove("valido");
       ePassValido.classList.remove("visible");
