@@ -11,7 +11,7 @@ const controllerProducto = {
     })
     .then((productos) => {
       productos.forEach((producto) => {
-        console.log(producto.temporada_id);
+        // console.log(producto.temporada_id);
         return producto.temporada_id == 1 ? countVerano++ : countInvierno++;
       });
       res.json({

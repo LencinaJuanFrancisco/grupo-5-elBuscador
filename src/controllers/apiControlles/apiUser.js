@@ -3,7 +3,8 @@ const db = require("../../database/models");
 const apiControllers = {
   listadoUsuarios: (req, res) => {
     // console.log("entre a la API listadoUsuarios");
-    db.Usuario.findAll()
+    db.Usuario.findAll({include: ["roles"],
+  })
     // db.Usuario.findAll({include: [{association: "roles"}]})
       .then((usuarios) => {
         let nuevosUsuarios = usuarios.map((user) => {

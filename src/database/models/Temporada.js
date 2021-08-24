@@ -17,6 +17,7 @@ module.exports = (sequelize,dataTypes)=>{
     };
         let config={
         timestamps: true,
+        tableName: "temporadas",
        // paranoid: true,// para poder habilitar el paranoid debe estar habilitado el timestamps en true
         underscored: true,
     };
