@@ -3,14 +3,14 @@ const db = require("../../database/models");
 const apiControllers = {
   listadoUsuarios: (req, res) => {
     // console.log("entre a la API listadoUsuarios");
-    db.Usuario.findAll({include: ["roles"],
-  })
+    db.Usuario.findAll()
     // db.Usuario.findAll({include: [{association: "roles"}]})
       .then((usuarios) => {
         let nuevosUsuarios = usuarios.map((user) => {
           delete user.dataValues.pass;
           user.dataValues.avatar =
             "http://localhost:3000/img/users/" + user.dataValues.avatar;
+            user.dataValues.detail = "http://localhost:3000/api/usuarios/" + user.id;
 
           console.log(user);
 

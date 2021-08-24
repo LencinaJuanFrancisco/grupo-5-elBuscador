@@ -12,7 +12,7 @@ module.exports = (sequelize,dataTypes)=>{
             allowNull: false
         },
         createdAt: 'created_at',
-        updatedAt: 'updated_at',
+        // updatedAt: 'update_at',
        // deletedAt: 'deleted_at',
     };
         let config={
