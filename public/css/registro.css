@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-input{
-  margin: 5px;
-  
-}
+
 .errorNombreLongitud,
 .errorNombre,
 .errorAvatar,
@@ -178,17 +175,51 @@ form div input{
 
 
 input{
-   border: solid 1px #ccc;
+   border: none;
    padding: 10px;
+   margin-top: 5px;
    /* width: 280px; */
 }
 .face input{
-background-color: blue;
-color: white;}
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  color: white;
+  font-weight:bold;
+}
 
-.guardar {
-   padding: 10px;
-   }
+
+.face input:hover {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+  cursor: pointer;
+}
+.guardar button {
+  font-weight:bold;
+  color: white;
+   padding: 10px; 
+   width: 100%; 
+   border: none;
+   background: -webkit-linear-gradient(to right, #93291E, #ED213A); 
+   background: linear-gradient(to right, #93291E, #ED213A); 
+}
+
+.guardar button:hover {
+  background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  
+  background: linear-gradient(to right, #BD3F32, #CB356B); 
+  cursor: pointer;
+}
+
+.guardar input[type=submit] {
+  font-weight:bold;
+  color: white;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.guardar input[type=submit]:hover {
+  opacity: 0.9;  
+  cursor: pointer;
+}
 
 .borrar {
    padding: 10px;
@@ -196,13 +227,17 @@ color: white;}
 
 
 #whatsapp {
- height: 40px;
- width: auto;
- position: fixed;
- bottom: 20px;
- right: 15px;
- z-index: 999;
+  height: 60px;
+  width: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 999;
 }
+
+ #whatsapp:hover {
+   transform: scale(1.1);
+ }
 
 footer {
  width: 100vw;
@@ -250,30 +285,30 @@ footer .redes{
 }
 footer .redes p{
  color: #b4b3b7;
+ font-size: 1.3em;
 }
 footer .redes a{
  text-decoration: none;
  color: #b4b3b7;
- font-size: 24px;
+ font-size: 36px;
  margin: 5px;
  font-family: fontAwesom;
  
  
 }
 footer .face:hover{
- color:#f9989f;
- font-size: 26px;
+ color:#1877F2;
+ font-size: 38px;
  
 }
 footer .insta:hover{
- color:#c5f8c8;
- font-size: 26px;
+ color:#E4405F;
+ font-size: 38px;
  
 }
 footer .map:hover{
  color:#faf096;
- font-size: 26px;
- 
+ font-size: 38px;
 }
 .text-danger{
   color: red;
@@ -630,13 +665,21 @@ header{
    width: 100%;
  }
 
- #whatsapp {
-   height: 60px;
-   width: auto;
-   position: fixed;
-   bottom: 20px;
-   right: 15px;
-   z-index: 999;
- }
+ 
 
 }
+
+/* Checkbox*/
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  height: initial;
+  width: initial;
+  cursor: pointer;
+  
+}
+

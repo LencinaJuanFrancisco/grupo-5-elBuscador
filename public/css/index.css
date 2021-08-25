@@ -310,13 +310,17 @@ p {
 
 /***************footer**********************/
 #whatsapp {
-  height: 40px;
+  height: 60px;
   width: auto;
   position: fixed;
   bottom: 20px;
   right: 15px;
   z-index: 999;
 }
+
+ #whatsapp:hover {
+   transform: scale(1.1);
+ }
 
 
 footer {
@@ -365,30 +369,30 @@ footer .redes{
 }
 footer .redes p{
   color: #b4b3b7;
+  font-size: 1.3em;
 }
 footer .redes a{
   text-decoration: none;
   color: #b4b3b7;
-  font-size: 24px;
+  font-size: 36px;
   margin: 5px;
   
   
 }
 footer .face:hover{
-  color:#f9989f;
-  font-size: 26px;
+  color:#1877F2;
+  font-size: 38px;
   
-}
-footer .insta:hover{
-  color:#c5f8c8;
-  font-size: 26px;
+ }
+ footer .insta:hover{
+  color:#E4405F;
+  font-size: 38px;
   
-}
-footer .map:hover{
+ }
+ footer .map:hover{
   color:#faf096;
-  font-size: 26px;
-  
-}
+  font-size: 38px;
+ }
 
 @media (min-width: 678px) {
 
