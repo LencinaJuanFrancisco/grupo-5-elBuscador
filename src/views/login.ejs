@@ -26,7 +26,7 @@
           <H2>INGRESA A TU CUENTA</H2>
         </div>
 
-        <form action="/users/login" method="POST">
+        <form class='login-form' action="/users/login" method="POST">
           <div class="usuario">
             <div class="email">
               <div>
@@ -43,9 +43,9 @@
                 <% if (locals.errors && errors.email) { %>
                 <div class="text-danger"><%= errors.email.msg %></div>
                 <% } %>
-                <span class="errorEmail visible">Debe ingresar un Email </span>
+                <span class="errorEmail visible">Debe ingresar un email. </span>
                 <span class="errorEmailValido visible"
-                  >Debe ingresar en un email Valido
+                  >Debe ingresar en un email válido.
                 </span>
               </div>
             </div>
@@ -65,11 +65,10 @@
               <div class="text-danger"><%= errors.password.msg %></div>
               <% } %>
               <span class="errorPass visible"
-                >Debe ingresar en un contraseña Valida
+                >Debe ingresar en un contraseña válida.
               </span>
               <span class="errorPassValido visible"
-                >La contraseña debe contener al menos 8 caracteres,mayusacula y
-                caracter Especial
+                >La contraseña debe contener al menos 8 caracteres, mayúscula y un caracter especial.
               </span>
             </div>
           </div>

@@ -206,13 +206,13 @@ color: white;}
 
 
 #whatsapp {
- height: 40px;
- width: auto;
- position: fixed;
- bottom: 20px;
- right: 15px;
- z-index: 999;
-}
+  height: 40px;
+  width: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 999;
+ }
 
 footer {
  width: 100vw;

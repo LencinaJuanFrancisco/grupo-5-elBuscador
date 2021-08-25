@@ -104,6 +104,15 @@ nav ul li a:hover{
 
 }
 
+/*****************************************************/
+/************* whatsapp *******************************/
+#whatsapp {
+  height: 40px;
+  width: auto;
+  position: fixed;
+  bottom: 14px;
+  right: 10px;
+}
 
     /****************body home************/
 
@@ -309,24 +318,12 @@ p {
 }
 
 /***************footer**********************/
-#whatsapp {
-  height: 60px;
-  width: auto;
-  position: fixed;
-  bottom: 20px;
-  right: 15px;
-  z-index: 999;
-}
 
- #whatsapp:hover {
-   transform: scale(1.1);
- }
 
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: 150px;
-  
   background-color: #282828;
   display: flex;
   justify-content: space-around;
@@ -369,16 +366,16 @@ footer .redes{
 }
 footer .redes p{
   color: #b4b3b7;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 footer .redes a{
   text-decoration: none;
   color: #b4b3b7;
   font-size: 36px;
   margin: 5px;
-  
-  
 }
+
 footer .face:hover{
   color:#1877F2;
   font-size: 38px;
@@ -722,5 +719,9 @@ nav{
     right: 15px;
     z-index: 999;
   }
+  
+   #whatsapp:hover {
+     transform: scale(1.1);
+   }
 
 }

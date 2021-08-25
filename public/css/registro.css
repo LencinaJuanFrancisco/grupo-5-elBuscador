@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+main {
+  margin-top: 100px;
+  text-align: center;
+}
+  
 .errorNombreLongitud,
 .errorNombre,
 .errorAvatar,
@@ -148,9 +153,6 @@ nav ul li a:hover{
 
 
     /****************body home************/
-   
-   
-
    form{
    background-color: rgba(249, 152, 159, 0.5);
     padding: 20px;
@@ -160,10 +162,12 @@ nav ul li a:hover{
    display:table;
    box-shadow: 0 0 20px 0 rgba(255, 255, 255);
    max-width: 350px;
-   margin-bottom: 100px;
-   
-
+   margin-bottom: 110px;
 }
+  .login-form {
+      padding-bottom: 30px;
+  }
+
 form div input{
    width: 100%;
 }
@@ -173,6 +177,9 @@ form div input{
 
 }
 
+.email, .Contraseña, .Nombre {
+  margin-bottom: 5px;
+}
 
 input{
    border: none;
@@ -180,11 +187,14 @@ input{
    margin-top: 5px;
    /* width: 280px; */
 }
+
 .face input{
   background-color: #4C69BA;
   background-image: linear-gradient(#4C69BA, #3B55A0);
   color: white;
   font-weight:bold;
+  padding: 20px;
+  margin-top: 10px;
 }
 
 
@@ -196,11 +206,12 @@ input{
 .guardar button {
   font-weight:bold;
   color: white;
-   padding: 10px; 
+   padding: 20px; 
    width: 100%; 
    border: none;
    background: -webkit-linear-gradient(to right, #93291E, #ED213A); 
    background: linear-gradient(to right, #93291E, #ED213A); 
+   margin-top: 10px;
 }
 
 .guardar button:hover {
@@ -227,22 +238,16 @@ input{
 
 
 #whatsapp {
-  height: 60px;
+  height: 40px;
   width: auto;
   position: fixed;
-  bottom: 20px;
-  right: 15px;
-  z-index: 999;
+  bottom: 14px;
+  right: 10px;
 }
 
- #whatsapp:hover {
-   transform: scale(1.1);
- }
-
 footer {
- width: 100vw;
+ width: 100%;
  height: 150px;
- 
  background-color: #282828;
  display: flex;
  justify-content: space-around;
@@ -285,8 +290,10 @@ footer .redes{
 }
 footer .redes p{
  color: #b4b3b7;
- font-size: 1.3em;
+ font-size: 1.2em;
+ margin-bottom: 10px;
 }
+
 footer .redes a{
  text-decoration: none;
  color: #b4b3b7;
@@ -313,9 +320,6 @@ footer .map:hover{
 .text-danger{
   color: red;
 }
-
-
-
 
 
 
@@ -665,7 +669,18 @@ header{
    width: 100%;
  }
 
- 
+ #whatsapp {
+  height: 60px;
+  width: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 999;
+}
+
+ #whatsapp:hover {
+   transform: scale(1.1);
+ }
 
 }
 
@@ -680,6 +695,6 @@ header{
   height: initial;
   width: initial;
   cursor: pointer;
-  
 }
+
 
