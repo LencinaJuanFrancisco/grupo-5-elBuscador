@@ -41,7 +41,7 @@
                         <% for(let i=0; i<5;i++){ %>
 
                         <select name="talles">
-                            <option disabled selected>talle</option>
+                            <option disabled selected>Talle</option>
                             <% talles.forEach(talle =>{ %>
 
                             <option value="<%= talle.id %>" > <%= talle.nombre %> </option>
@@ -78,7 +78,7 @@
                     <% for(let i=0; i<5;i++){ %>
 
                     <select name="colores">
-                        <option disabled selected>color</option>
+                        <option disabled selected>Color</option>
                         <% colores.forEach(color =>{%>
 
                         <option value="<%= color.id %>" style="background-color:<%= color.nombre %>;color:beige"> <%= color.nombre %> </option>

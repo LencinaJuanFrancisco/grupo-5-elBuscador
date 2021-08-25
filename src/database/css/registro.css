@@ -16,7 +16,7 @@ input{
 .errorEmail,
 .errorEmailValido,
 .errorPass,
-.errorPassValido
+.errorPassValido  
 {
   text-align: center;
   color: red;

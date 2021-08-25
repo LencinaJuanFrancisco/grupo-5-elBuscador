@@ -24,7 +24,7 @@
 
       <main>
         <div class="titulo">
-          <H2>CREA TU CUENTA GRATIS</H2>
+          <H2>CREÁ TU CUENTA GRATIS</H2>
         </div>
 
         <div class="errores">
@@ -53,10 +53,10 @@
               <div class="text-danger"><%= errors.fullName.msg %></div>
               <% } %>
               <span class="errorNombre visible"
-                >El Nombre NO DEBE ESTAR VACIO
+                >¡El nombre no debe estar vacío!
               </span>
               <span class="errorNombreLongitud visible"
-                >El Nombre debe contener al menos 5 caracteres
+                >¡El nombre debe contener al menos 5 caracteres!
               </span>
             </div>
           </div>
@@ -67,7 +67,7 @@
             <div class="text-danger"><%= errors.avatar.msg %></div>
             <% } %>
             <span class="errorAvatar visible"
-              >Debes Seleccionar una Imagen
+              >¡Debes seleccionar una imagen!
             </span>
           </div>
 
@@ -96,9 +96,9 @@
               <% if (locals.errors && errors.email) { %>
               <div class="text-danger"><%= errors.email.msg %></div>
               <% } %>
-              <span class="errorEmail visible">Debe ingresar un Email </span>
+              <span class="errorEmail visible">¡Debe ingresar un email!</span>
               <span class="errorEmailValido visible"
-                >Debe ingresar en un email Valido
+                >¡Debe ingresar en un email válido!
               </span>
             </div>
           </div>
@@ -130,11 +130,11 @@
               <div class="text-danger"><%= errors.password.msg %></div>
               <% } %>
               <span class="errorPass visible"
-                >Debe ingresar en un contraseña Valida
+                >¡Debe ingresar en un contraseña válida!
               </span>
               <span class="errorPassValido visible"
-                >La contraseña debe contener al menos 8 caracteres,mayusacula y
-                caracter Especial
+                >La contraseña debe contener al menos 8 caracteres, mayúscula y
+                un caracter especial.
               </span>
             </div>
           </div>
