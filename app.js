@@ -54,3 +54,7 @@ app.use("/api/productos", routeApiProducto);
 app.use("/api/usuarios", routeApiUsuario);
 app.use("/producto", routeProducto);
 app.use("/users", routeUsers);
+
+app.use((req, res, next)=>{
+  res.status(404).render('not-found')
+})
