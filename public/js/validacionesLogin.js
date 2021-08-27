@@ -71,11 +71,16 @@ window.addEventListener("load", function () {
       // console.log(avatar.classList.contains("valido"));
       // console.log(email.classList.contains("valido"));
       // console.log(contraseña.classList.contains("valido"));
+      e.preventDefault();
       Swal.fire({
         title: "Bienvenido!",
         text: "Usuario creado con exito!",
         icon: "success",
-      });
+        timer: 3000,
+      })
+      .then(() => {
+        form.submit();
+    })
     } else {
       // console.log(nombre.classList.contains("valido"));
       // console.log(avatar.classList.contains("valido"));
