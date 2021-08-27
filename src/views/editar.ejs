@@ -28,12 +28,25 @@
 
                 <div class="div-nom_producto">
                     <label for="nombre-producto">Nombre del Producto</label>
-                    <input type="text" name="nombreProducto" value=" <%= product.nombre%>">
+                    <input type="text" name="nombreProducto" class="nombreProducto" value=" <%= product.nombre%>">
                 </div>
+                <div>
+                    <span class="errorNombre visible"
+                    >¡El nombre no debe estar vacío!
+                  </span>
+                  <span class="errorNombreLongitud visible"
+                    >El nombre debe contener al menos 5 caracteres.
+                  </span>
+                </div> 
                 <div>Detalle</div>
                 <div>
-                    <textarea name="detalleProducto" rows="5" cols="30" "><%= product.descripcion %> </textarea>
+                    <textarea class= "detalleProducto" name="detalleProducto" rows="5" cols="30" "><%= product.descripcion %> </textarea>
                 </div>
+                <div>
+                    <span class="errorDetalleLongitud visible"
+                    >El detalle debe contener al menos 20 caracteres.
+                  </span>
+                </div> 
                
                 <div>
                     <div>Talles</div>
@@ -114,7 +127,12 @@
                 <div>
                     Imagen Principal
                 </div>
-                <input type="file" name="imgPrincipal">
+                <input class= "imgPrincipal" type="file" name="imgPrincipal">
+            </div>
+            <div>
+                <span class="errorImagen visible"
+                >¡Debes seleccionar una imagen!
+              </span> 
             </div>
             
                 <button class="btn" type="submit">Editar</button>
@@ -142,5 +160,6 @@
         });
       });
     </script>
+    <script src = "/js/validacionesCarga.js"></script>
 </body>
 </html>
