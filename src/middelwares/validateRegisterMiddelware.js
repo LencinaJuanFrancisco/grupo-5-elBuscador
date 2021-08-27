@@ -2,7 +2,9 @@ const path = require('path');
 
 const { body } = require('express-validator');
 const validations = [
-	body('fullName').notEmpty().withMessage('Tienes que escribir un nombre'),
+	body('fullName')
+	.notEmpty().withMessage('Tienes que escribir un nombre')
+	.isLength({ min: 5 }).withMessage('Tu nombre debe tener un mínimo de 5 carácteres'),
 	body('email')
 		.notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
 		.isEmail().withMessage('Debes escribir un formato de correo válido'),
