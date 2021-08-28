@@ -62,8 +62,6 @@ window.addEventListener("load", function () {
 
   form.addEventListener("submit", (e) => {
     if (
-      nombre.classList.contains("valido") &&
-      avatar.classList.contains("valido") &&
       email.classList.contains("valido") &&
       contraseña.classList.contains("valido")
     ) {
