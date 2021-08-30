@@ -23,3 +23,13 @@ body{
     background: url("/img/img/indumentaria.jpg") center no-repeat ;
     color: black
 }
+
+.imagen{
+padding-top: 20px;
+}
+
+.ul{
+    padding: auto;
+    width: 150px;
+    margin-left: 41%;
+}
