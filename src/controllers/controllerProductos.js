@@ -98,7 +98,9 @@ const controllerProducto = {
         return producto;
       })
       .then((producto) => {
-        res.redirect("/producto/" + producto.id);
+       res.redirect("/producto/" + producto.id);
+        // return res.redirect("/index");
+
         //res.redirect('/producto/'+producto.id)
       })
       .catch((e) => {

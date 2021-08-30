@@ -72,7 +72,6 @@ window.addEventListener("load", function () {
       e.preventDefault();
       Swal.fire({
         title: "Bienvenido!",
-        text: "Usuario creado con exito!",
         icon: "success",
         timer: 3000,
       })

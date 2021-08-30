@@ -72,7 +72,7 @@ window.addEventListener("load", function () {
     ) {
       e.preventDefault();
       Swal.fire({
-        title: "El archivo fue creao con exito!",
+        title: "El archivo fuecreao con exito!",
         icon: "success",
 
         timer: 3000,
