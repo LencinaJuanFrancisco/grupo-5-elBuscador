@@ -69,3 +69,21 @@ RESPUESTA: YA FUNCIONA.
 - pass: 123
 
 Con este usuaria van a poder editar, borrar y dar de alta productos.
+
+# Sprint 6
+
+Se creo el diagrama de base de datos, Script de creación de estructura, la carpeta Sequelize y el CRUD
+
+## DEVOLUCIONES Y CORRECCIONES DEL SPRINT ANTERIOR
+
+Se corrigio la funionaliad tanto en la vista como administrador como el input del registro.
+
+Para mejorar:
+
+Organizar mejor las tareas para finalizar el Sprint con tiempo
+
+Juntarse con mas frecuencia
+
+Corregir errores en el funcionamiento de la pagina 
+
+
