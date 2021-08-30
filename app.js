@@ -7,6 +7,7 @@ const routeProducto = require("./src/routers/productos");
 const routeUsers = require("./src/routers/users");
 const routeApiProducto = require("./src/routers/api/producto");
 const routeApiUsuario = require("./src/routers/api/user");
+const routeApiGenero = require("./src/routers/api/genero");
 const methodOverride = require("method-override");
 const session = require("express-session");
 const userLoggedMiddleware = require("./src/middelwares/userLoggedMiddleware");
@@ -52,9 +53,10 @@ app.listen(3000, () => {
 app.use("/", routeIndex);
 app.use("/api/productos", routeApiProducto);
 app.use("/api/usuarios", routeApiUsuario);
+app.use("/api/generos", routeApiGenero);
 app.use("/producto", routeProducto);
 app.use("/users", routeUsers);
 
-app.use((req, res, next)=>{
-  res.status(404).render('not-found')
-})
+app.use((req, res, next) => {
+  res.status(404).render("not-found");
+});
