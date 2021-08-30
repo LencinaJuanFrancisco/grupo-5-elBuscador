@@ -270,6 +270,8 @@ p {
   margin: 20px 10px;
   border-top: #282828 1px solid;
   border-bottom: #282828 1px solid;
+  
+
 }
 
 .btn button {
@@ -281,7 +283,8 @@ p {
   width: 115px;
   height: 41px;
   border: 1px solid #f9989f;
-  transition: all 0.2s
+  transition: all 0.2s;
+  text-decoration: none;
 }
 
 .btn button:hover {
