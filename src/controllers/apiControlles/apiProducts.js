@@ -7,21 +7,31 @@ const controllerProducto = {
     let countInvierno = 0;
     let countVerano = 0;
     db.Producto.findAll({
-      include: ["generos"],
+      include: ["generos", "imagenes"],
     })
-    .then((productos) => {
-      productos.forEach((producto) => {
-        // console.log(producto.temporada_id);
-        return producto.temporada_id == 1 ? countVerano++ : countInvierno++;
+      // .then((productos) => {
+      //   let nuevoProducto = productos.map((producto) => {
+      //     console.log("solo producto API " + producto.dataValues.imagenes);
+      //     producto.dataValues.imagenes =
+      //       "http://localhost:3000/img/img/" + producto.imagenes.nombre;
+      //   });
+      //   console.log("NuevoProducto API " + nuevoProducto.length);
+      //   //return nuevoProducto;
+      //})
+      .then((productos) => {
+        console.log("----------------> " + productos.length);
+        productos.forEach((producto) => {
+          // console.log(producto.temporada_id);
+          return producto.temporada_id == 1 ? countVerano++ : countInvierno++;
+        });
+        res.json({
+          total: productos.length,
+          totalVerano: countVerano,
+          totalInvierno: countInvierno,
+          data: productos,
+          status: 200,
+        });
       });
-      res.json({
-        total: productos.length,
-        totalVerano: countVerano,
-        totalInvierno: countInvierno,
-        data: productos,
-        status: 200,
-      });
-    });
   },
   detalleProducto: (req, res) => {
     db.Producto.findByPk(req.params.id)

@@ -1,7 +1,7 @@
 const db = require("../../database/models");
 
 const apiControllers = {
-  listadoImagenes: (req, res) => {
+  listadoGenero: (req, res) => {
     // console.log("entre a la API listadoUsuarios");
     db.Genero.findAll()
       // db.Usuario.findAll({include: [{association: "roles"}]})
