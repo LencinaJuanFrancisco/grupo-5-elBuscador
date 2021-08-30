@@ -8,15 +8,18 @@ const routeUsers = require("./src/routers/users");
 const routeApiProducto = require("./src/routers/api/producto");
 const routeApiUsuario = require("./src/routers/api/user");
 const routeApiGenero = require("./src/routers/api/genero");
+const routeApiImagen = require("./src/routers/api/imagen");
 const methodOverride = require("method-override");
 const session = require("express-session");
 const userLoggedMiddleware = require("./src/middelwares/userLoggedMiddleware");
+const cors = require("cors");
 //es para habilitar o desabilitar el user y el login dependiendo si esta o no esta
 //logueado el usuario, se configura aqui xq es un middelware de app y no de ruta,
 //ya que lo que vamos a usar ensta en el menu, y el menu se encuentra en toda la app
 const cookies = require("cookie-parser");
 const router = require("./src/routers/api/producto");
 
+app.use(cors());
 app.use(express.static(path.resolve(__dirname, "./public")));
 app.use(methodOverride("_method"));
 app.use(express.json());
@@ -54,6 +57,7 @@ app.use("/", routeIndex);
 app.use("/api/productos", routeApiProducto);
 app.use("/api/usuarios", routeApiUsuario);
 app.use("/api/generos", routeApiGenero);
+app.use("/api/imagenes", routeApiImagen);
 app.use("/producto", routeProducto);
 app.use("/users", routeUsers);
 
