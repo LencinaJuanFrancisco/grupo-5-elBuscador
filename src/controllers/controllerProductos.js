@@ -215,7 +215,7 @@ const controllerProducto = {
       });
   },
   delete: (req, res) => {
-    //anted de destruir el producto que deceamos eliminar , tenemos que borrar todas las relaciones
+    //anted de destruir el producto que deseamos eliminar , tenemos que borrar todas las relaciones
     db.ColoresProductos.destroy({
       where: {
         producto_id: req.params.id,
