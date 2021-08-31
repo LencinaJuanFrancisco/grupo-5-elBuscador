@@ -11,14 +11,21 @@ const controllerProducto = {
     })
       // .then((productos) => {
       //   let nuevoProducto = productos.map((producto) => {
-      //     console.log("solo producto API " + producto.dataValues.imagenes);
+      //     console.log(
+      //       "solo producto API " + producto.imagenes.dataValues.nombre
+      //     );
       //     producto.dataValues.imagenes =
       //       "http://localhost:3000/img/img/" + producto.imagenes.nombre;
       //   });
       //   console.log("NuevoProducto API " + nuevoProducto.length);
       //   //return nuevoProducto;
-      //})
+      // })
       .then((productos) => {
+        // console.log(productos);
+        // let prod = productos.map((producto) => {
+        //   producto = console.log("********" + producto);
+        // });
+
         console.log("----------------> " + productos.length);
         productos.forEach((producto) => {
           // console.log(producto.temporada_id);
