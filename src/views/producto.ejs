@@ -94,14 +94,14 @@
           </form>
           <!-- </article> -->
           <div class="btn btn-cliente">
-            <button type="submit">Añadir al carrito.</button>
-            <button type="submit">Comparar ahora.</button>
+            <button type="submit">Añadir al carrito</button>
+            <button type="submit">Comparar ahora</button>
           </div>
 
           <%if( locals.isAdmin){ %>
-          <div class="btn btn-admin">
+          <div class="btn btn-admin boton-fondo-rosa">
             <button type="submit">
-              <a href="./editar/<%=product.id %>">Editar</a>
+              <a class="boton-edit" href="./editar/<%=product.id %>">Editar</a>
             </button>
 
             <form

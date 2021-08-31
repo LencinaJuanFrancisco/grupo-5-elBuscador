@@ -56,7 +56,7 @@
                     
                         <% for(let i=0; i<5;i++){ %>
 
-                        <select name="talles">
+                        <select class="talle-selector" name="talles">
                             <option disabled selected>talle</option>
                             <% talles.forEach(talle =>{%>
 
@@ -67,21 +67,28 @@
                         <% } %>
 
                     </div>
+                    <span class="errorTalle visible"
+                    >Debe completar todos los talles.
+                  </span>
                     <div class="div-precio">
                         <label for="">Precio $ </label>
                         <label for="precio">
-                            <input type="text" name="precio"></label>
+                            <input type="text" name="precio" class="precio-producto"></label>
 
                         </label>
-
-
                     </div>
+                    <span class="errorPrecio visible"
+                >¡No olvides ponerle un precio!
+              </span>
                     <div class="div-cantidad">
                         <label for="">Cantidad</label>
                         <label for="cantidad">
-                            <input type="text" name="cantidad">
+                            <input type="text" name="cantidad" class="cantidad-producto">
                         </label>
                     </div>
+                    <span class="errorCantidad visible"
+                    >¡No olvides seleccionar una cantidad!
+                  </span>
                 </div>
                 <!--cierre de bolsillo izquierdo -->
                 <div class="bolsillo-der">
@@ -91,7 +98,7 @@
                         <div>Colores</div>
                         <% for(let i=0; i<5;i++){ %>
 
-                        <select name="colores">
+                        <select class="color-selector" name="colores">
                             <option disabled selected>color</option>
                             <% colores.forEach(color =>{%>
 
@@ -102,6 +109,9 @@
                         <% } %>
                         
                     </div>
+                    <!-- <span class="errorColores visible"
+                    >Debe completar todos los colores.
+                  </span> -->
                     <div>
                         <div>Género</div>
                         <label for="genero">

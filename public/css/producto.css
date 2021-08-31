@@ -3,14 +3,14 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  
+
 }
 body{
   background-color: #eef8ff;
 }
 /*******configuracion del menu*************/
 header{
-  position: fixed; 
+  position: fixed;
   top: 0;
   margin: 0 auto;
   /* max-width: 1200px; */
@@ -49,7 +49,7 @@ header{
   color: #f9989f;
   position:absolute;
   right: 20px;
-  
+
 }
 .menu-cel.active::before{
   content: "\f00d";
@@ -60,11 +60,11 @@ header{
   content: "\f0c9";
   font-family: fontAwesome;
   line-height: 40px;
-  
+
 }
 nav ul{
   display: flex;
-  
+
 }
 nav ul li {
   list-style: none;
@@ -92,7 +92,7 @@ nav.active ul{
   border-radius: 5px;
 }
 nav.active ul li a{
-  
+
   margin: 0;
 }
 
@@ -174,7 +174,7 @@ p {
   background-color: #f9989f;
 }
 .corte div{
-  
+
   height: 100%;
   display: flex;
   justify-content: center;
@@ -185,7 +185,7 @@ p {
   color: #f9989f;
   font-size: 54px;
   font-weight: 700;
-  
+
 
 }
 .corte{
@@ -198,7 +198,7 @@ p {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  
+
 
 }
 /*************** carusel**********************/
@@ -208,13 +208,13 @@ p {
     width: 100vw;
     max-width: 1200px;
   }
-  
+
   article .productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .box {
     width: 170px;
     height: 260px;
@@ -224,42 +224,42 @@ p {
     overflow: hidden;
     margin: 5px;
     text-align: center;
-  
+
   }
-  
+
   .box a {
     text-decoration: none;
     background-color: transparent;
   }
-  
+
   .slide-img {
     height: 65%;
     /* ponemos position:relative para poder manupular el btn de comprar */
     position: relative;
   }
-  
+
   .slide-img img {
     width: 100%;
     height: 100%;
-  
+
     object-fit: cover;
   }
-  
+
   .detalle-producto {
-  
-  
+
+
     /* display: flex;
       justify-content: space-between;
       align-items: center; */
     font-family: 'Poppins', sans-serif;
     padding: 5px
   }
-  
+
   .type {
     display: flex;
     flex-direction: column;
   }
-  
+
   .type a {
     color: #222222;
     text-decoration: none;
@@ -269,12 +269,12 @@ p {
     letter-spacing: 0.5px;
     padding-right: 8px;
   }
-  
+
   .type span {
     color: rgba(26, 26, 26, 0.5);
     font-size: 12px;
   }
-  
+
   .price {
     display: block;
     padding: 2px;
@@ -285,7 +285,7 @@ p {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
   }
-  
+
   .capa {
     position: absolute;
     /* usamos left y top 50% para centar, luego el trasform como artilijio para que quede bien centrado */
@@ -299,7 +299,7 @@ p {
     justify-content: center;
     align-items: center;
   }
-  
+
   .btn-comprar {
     width: 160px;
     height: 40px;
@@ -314,7 +314,7 @@ p {
     border-radius: 20px;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   }
-  
+
   .btn-comprar:hover {
     color: #ffffff;
     background-color: #f9989f;
@@ -328,28 +328,37 @@ p {
     display: flex;
     justify-content: space-around;
   }
-  
+
+  .boton-edit {
+    text-decoration: none;
+    color: #f9989f;
+  }
+
+  .btn button:hover .boton-edit {
+    color: #282828;
+  }
+
   /* ocultamos ca lapa para cuando hacemos hover sobre la img la hacemos aparecer */
   .capa {
     visibility: hidden;
   }
-  
+
   .slide-img:hover .capa {
     visibility: visible;
     animation: aparecer 500ms;
-  
+
   }
-  
+
   @keyframes aparecer {
     0% {
       opacity: 0;
     }
-  
+
     100% {
       opacity: 1;
     }
   }
-  
+
 @keyframes aparecer{
   0%{
       opacity: 0;
@@ -370,11 +379,11 @@ p {
 /*************** secciones ****************************/
 .secciones{
   width: 100vw;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
+
 }
 .seccion {
   width: 45%;
@@ -405,7 +414,7 @@ p {
 footer {
   width: 100vw;
   height: 150px;
-  
+
   background-color: #282828;
   display: flex;
   justify-content: space-around;
@@ -413,7 +422,7 @@ footer {
 }
 footer .contacto{
   width: 50%;
-  padding-left: 40px;  
+  padding-left: 40px;
 }
 
   footer .contacto a{
@@ -444,7 +453,7 @@ footer .contacto p{
 footer .redes{
   text-align: center;
   width: 50%;
-  
+
 }
 footer .redes p {
   color: #b4b3b7;
@@ -464,12 +473,12 @@ footer .redes a {
 footer .face:hover{
   color:#1877F2;
   font-size: 38px;
-  
+
  }
  footer .insta:hover{
   color:#E4405F;
   font-size: 38px;
-  
+
  }
  footer .map:hover{
   color:#faf096;
@@ -523,7 +532,7 @@ nav{
   }
 
   .img-principal img {
-   
+
     margin: auto;
   }
 
@@ -534,7 +543,7 @@ nav{
     width: 50vw;
     top: 30px;
     right: 20px;
-    
+
   }
   .footer-producto-principa form{
     margin: 10px 0 0 0;
@@ -548,14 +557,14 @@ nav{
   }
 
   .img-secundarias img {
-    
+
     width: 17%;
     /* max-width: 110px;
     max-height: 100px; */
     margin: 4px;
   }
 
-  
+
 }
 
 @media (min-width: 1200px) {
@@ -566,7 +575,7 @@ nav{
   max-width: 1200px;
 
 } */
- /******************************************/   
+ /******************************************/
   .producto {
     display: inline-block;
     height: 100vh;
@@ -628,6 +637,6 @@ nav{
   #whatsapp:hover {
     transform: scale(1.1);
   }
-  
+
 
 }

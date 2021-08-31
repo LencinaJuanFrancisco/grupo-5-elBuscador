@@ -193,7 +193,11 @@ header{
 .errorNombre
 .errorNombreLongitud
 .errorDetalleLongitud
-.errorImagen  
+.errorImagen
+.errorTalle
+.errorColor
+.errorPrecio
+.errorCantidad
 {
   text-align: center;
   color: red;

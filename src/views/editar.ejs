@@ -69,18 +69,22 @@
                 <div class="div-precio">
                     <label for="">Precio $ </label>
                         <label for="precio">
-                            <input type="text" name="precio" value="<%= product.precio %> "></label>
+                            <input type="text" name="precio" value="<%= product.precio %> " class="precio-producto"></label>
 
-                        </label>
-                    
-                    
+                        </label>                                     
                 </div>
+                <span class="errorPrecio visible"
+                >¡No olvides ponerle un precio!
+              </span>
                 <div class="div-cantidad">
                     <label for="">Cantidad</label>
                     <label for="cantidad">
-                        <input type="text" name="cantidad" value= "<%= product.cantidad %> ">
+                        <input type="text" name="cantidad" value= "<%= product.cantidad %> " class="cantidad-producto">
                     </label>
                 </div>
+                <span class="errorCantidad visible"
+                >¡No olvides seleccionar una cantidad!
+              </span>
             </div> <!--cierre de bolsillo izquierdo -->
             
             <div class="bolsillo-der">

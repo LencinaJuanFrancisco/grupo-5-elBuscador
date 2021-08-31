@@ -46,6 +46,82 @@ window.addEventListener("load", function () {
     }
   });
 
+// validaciones input precio
+  let precio = document.querySelector(".precio-producto");
+  let ePrecio = document.querySelector(".errorPrecio");
+
+  precio.addEventListener("blur", () => {
+    ePrecio.classList.add(".visible");
+    if (precio.value.length < 1) {
+      precio.classList.add("invalido");
+      precio.classList.remove("valido");
+      ePrecio.classList.remove("visible");
+    } else {
+      precio.classList.remove("invalido");
+      precio.classList.add("valido");
+      ePrecio.classList.add("visible");
+    }
+  });
+
+// validaciones input cantidad
+
+
+  let cantidad = document.querySelector(".cantidad-producto");
+  let eCantidad = document.querySelector(".errorCantidad");
+
+  cantidad.addEventListener("blur", () => {
+    eCantidad.classList.add(".visible");
+    if (cantidad.value.length < 1) {
+      cantidad.classList.add("invalido");
+      cantidad.classList.remove("valido");
+      eCantidad.classList.remove("visible");
+    } else {
+      cantidad.classList.remove("invalido");
+      cantidad.classList.add("valido");
+      eCantidad.classList.add("visible");
+    }
+  });
+
+  
+
+  // validaciones front talle
+  // let selectTalle = document.querySelector(".talle-selector");
+  // let eTalle = document.querySelector(".errorTalle");
+
+  // selectTalle.addEventListener("blur", () => {
+  //   eTalle.classList.add(".visible");
+  //   if (selectTalle.value !== "talle") {
+  //     selectTalle.classList.remove("invalido");
+  //     selectTalle.classList.add("valido");
+  //     eTalle.classList.add("visible");
+
+  //   } else {
+  //     selectTalle.classList.add("invalido");
+  //     selectTalle.classList.remove("valido");
+  //     eTalle.classList.remove("visible");
+  //   }
+  // });
+
+    // validaciones front colores
+    // let selectColor = document.querySelector(".color-selector");
+    // let eColor = document.querySelector(".errorColor");
+  
+    // selectColor.addEventListener("blur", () => {
+    //   eColor.classList.add(".visible");
+    //   if (selectColor.value == "red") {
+    //     selectColor.classList.remove("invalido");
+    //     selectColor.classList.add("valido");
+    //     eColor.classList.add("visible");
+  
+    //   } else {
+    //     selectColor.classList.add("invalido");
+    //     selectColor.classList.remove("valido");
+    //     eColor.classList.remove("visible");
+    //   }
+    // });
+
+
+// validaciones imagen
   let imagen = document.querySelector("input.imgPrincipal");
   let eImagen = document.querySelector(".errorImagen");
   let extenciones_validas = [".jpg", ".jpeg", ".png", ".gif"];

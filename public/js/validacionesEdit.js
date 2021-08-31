@@ -46,6 +46,43 @@ window.addEventListener("load", function () {
     }
   });
 
+  // validaciones input precio
+  let precio = document.querySelector(".precio-producto");
+  let ePrecio = document.querySelector(".errorPrecio");
+
+  precio.addEventListener("blur", () => {
+    ePrecio.classList.add(".visible");
+    if (precio.value.length < 1) {
+      precio.classList.add("invalido");
+      precio.classList.remove("valido");
+      ePrecio.classList.remove("visible");
+    } else {
+      precio.classList.remove("invalido");
+      precio.classList.add("valido");
+      ePrecio.classList.add("visible");
+    }
+  });
+
+// validaciones input cantidad
+
+
+  let cantidad = document.querySelector(".cantidad-producto");
+  let eCantidad = document.querySelector(".errorCantidad");
+
+  cantidad.addEventListener("blur", () => {
+    eCantidad.classList.add(".visible");
+    if (cantidad.value.length < 1) {
+      cantidad.classList.add("invalido");
+      cantidad.classList.remove("valido");
+      eCantidad.classList.remove("visible");
+    } else {
+      cantidad.classList.remove("invalido");
+      cantidad.classList.add("valido");
+      eCantidad.classList.add("visible");
+    }
+  });
+
+
   let imagen = document.querySelector("input.imgPrincipal");
   let eImagen = document.querySelector(".errorImagen");
   let extenciones_validas = [".jpg", ".jpeg", ".png", ".gif"];
