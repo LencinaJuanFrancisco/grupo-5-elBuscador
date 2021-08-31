@@ -113,8 +113,10 @@ window.addEventListener("load", function () {
         icon: "success",
 
         timer: 3000,
-      });
-      form.submit();
+      }).then(()=>{
+        form.submit();
+
+      })
     } else {
       // console.log(nombre.classList.contains("valido"));
       // console.log(avatar.classList.contains("valido"));

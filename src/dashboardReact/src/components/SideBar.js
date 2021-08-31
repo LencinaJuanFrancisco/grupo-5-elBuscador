@@ -1,5 +1,5 @@
 import React from "react";
-//import image from "../assets/images/icono-web.png";
+import image from "../assets/images/icono-web.png";
 
 import ContentWrapper from "./ContentWrapper";
 import LastProduct from "./LastProduct";

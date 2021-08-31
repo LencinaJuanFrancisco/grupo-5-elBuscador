@@ -28,11 +28,11 @@ class Producto extends Component {
     return (
       <React.Fragment>
         {/*<!-- PRODUCTS LIST -->*/}
-        <h1 className="h3 mb-2 text-gray-800">Listado de Productos</h1>
 
         {/*<!-- DataTales Example -->*/}
         <div className="card shadow mb-4">
           <div className="card-body">
+          <h1 className="h3 mb-2 text-gray-800">Listado de Productos</h1>
             <div className="table-responsive">
               <table
                 className="table table-bordered"

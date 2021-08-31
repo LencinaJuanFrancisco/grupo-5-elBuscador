@@ -70,7 +70,7 @@ const controllerProducto = {
         return producto;
       })
       .then((producto) => {
-        console.log(producto);
+        // console.log(producto);
 
         let talles = req.body.talles;
 
