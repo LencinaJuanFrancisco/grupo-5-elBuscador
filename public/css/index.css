@@ -150,7 +150,7 @@ nav ul li a:hover{
       height: 35px;
     }
 
-    #boton-stock button a {
+    .btn button a {
       text-decoration: none;
       color: black;
     }  
