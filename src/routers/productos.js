@@ -19,9 +19,6 @@ router.put('/editar/:id', uploadFile.single('imgPrincipal')
 
 router.delete('/borrar/:id', authMiddleware, controllerProducto.delete)
 
-
-router.get('/carrito', controllerProducto.carrito);
-
 router.get('/:id', controllerProducto.detalle);
 
 module.exports = router;
